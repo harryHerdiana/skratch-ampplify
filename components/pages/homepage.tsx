@@ -1,50 +1,10 @@
 "use client";
 import HeroSlideShow from "@/components/common/HeroSlideshow";
 import Head from "next/head";
-import { useState } from "react";
-
-const image_1 = "/img/img01.jpg";
-const image_8 = "/img/img08.jpg";
-const image_2 = "/img/img02.jpg";
-const image_4 = "/img/img04.jpg";
-const image_3 = "/img/img03.jpg";
-
-const capabilityItems = [
-    { image: image_1, content: "JAMStack", description: "Description 1" },
-    { image: image_2, content: "Webflow", description: "Description 2" },
-    { image: image_3, content: "Wordpress", description: "Description 3" },
-    { image: image_8, content: "Design", description: "Description 4" },
-];
-
-const featuredProjectItems = [
-    {
-        image: image_1,
-        content: "Next.js + Shopify",
-        description: "Description 5",
-    },
-    {
-        image: image_3,
-        content: "Shopify unified shopping cart",
-        description: "Description 6",
-    },
-    {
-        image: image_2,
-        content: "Webflow + Shopify subscriptions",
-        description: "Description 7",
-    },
-    {
-        image: image_8,
-        content: " Gatsby + Netlify CMS",
-        description: "Description 8",
-    },
-];
+import ProjectList from "../sections/project-list";
 
 export default function Homepage() {
-    const [isDark, setIsDark] = useState(true);
-    const [imageHover, setImageHover] = useState<boolean>(false);
-    const [featuredItemHover, setFeaturedItemHover] = useState<string>("");
-    const [menuHover, setMenuHover] = useState<boolean>(false);
-
+    
     return (
         <>
             <Head>
@@ -56,8 +16,9 @@ export default function Homepage() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
            
-            <div className="relative">
+            <div className="relative bg-black">
             <HeroSlideShow/>
+            <ProjectList/>
             </div>
        
         

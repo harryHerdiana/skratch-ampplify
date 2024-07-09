@@ -1,4 +1,4 @@
-import NewHeader from "@/components/header/NewHeader";
+import NewHeader from "@/components/common/header/NewHeader";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body >
+      <body className="max-w-[1440px] m-auto">
       <NewHeader/>
         {children}
         </body>
