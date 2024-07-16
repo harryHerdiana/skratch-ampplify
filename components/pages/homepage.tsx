@@ -1,10 +1,11 @@
 "use client";
 import HeroSlideShow from "@/components/common/HeroSlideshow";
 import Head from "next/head";
+import ProfileSection from "../sections/profile-section";
 import ProjectList from "../sections/project-list";
+import TestimonialsSection from "../sections/testimonials-section";
 
 export default function Homepage() {
-    
     return (
         <>
             <Head>
@@ -15,13 +16,13 @@ export default function Homepage() {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-           
+
             <div className="relative bg-black">
-            <HeroSlideShow/>
-            <ProjectList/>
+                <HeroSlideShow />
+                <ProjectList />
+                <ProfileSection/>
+                <TestimonialsSection/>
             </div>
-       
-        
         </>
     );
 }

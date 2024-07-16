@@ -1,9 +1,9 @@
-import Image from "next/image";
-
 import CertorProduct from "@/public/img/products/certor/certorproduct.png";
+import Image from "next/image";
 import Link from "next/link";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-const ProjectItem = () => {
+const ProjectItem:React.FC = () => {
     const services = [
         "UX/UI design",
         "custom theme development",
@@ -41,7 +41,9 @@ const ProjectItem = () => {
 const ProjectList = () => {
     return (
         <div className="bg-white pt-[60px] px-2.5 pb-4 rounded-[20px] text-12 md:text-15">
-            <h3 className="uppercase font-bold text-52 md:text-120">projects</h3>
+            <h3 className="uppercase text-52 md:text-120 font-['MonumentGrotesk-Bold'] tracking-[-2px] text-[#1f1f1f]">
+                projects
+            </h3>
             <div className="flex my-[60px]">
                 <h4 className="w-full">Our Work</h4>
                 <p className="uppercase">
@@ -50,9 +52,22 @@ const ProjectList = () => {
                 </p>
             </div>
             <div className="mb-32">
-                <ProjectItem />
+                <Swiper
+                    spaceBetween={20}
+                    slidesPerView={1.1}
+               
+                >
+                    <SwiperSlide>
+                        <ProjectItem />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <ProjectItem />
+                    </SwiperSlide>
+                </Swiper>
             </div>
-            <Link href="/projects" className="text-20 md:text-32">View All Projects</Link>
+            <Link href="/projects" className="text-20 md:text-32 text-[#1f1f1f]">
+                View All Projects
+            </Link>
         </div>
     );
 };

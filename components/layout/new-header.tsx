@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const NewHeader = () => {
     return (
-        <div className=" fixed top-0 w-full text-15 px-2.5 py-4 flex mix-blend-difference text-white justify-between z-50 max-w-[1440px]">
+        <header className=" fixed top-0 w-full text-15 px-2.5 py-4 flex mix-blend-difference text-white justify-between z-50 max-w-[1440px]">
             <Link href="/" className=" mix">
                 Skratch®
             </Link>
@@ -10,7 +10,7 @@ const NewHeader = () => {
                 <Link href="/">Projects²⁴</Link>
                 <Link href="/">Get in Touch</Link>
             </div>
-        </div>
+        </header>
     );
 };
 
