@@ -1,9 +1,9 @@
 import CertorProduct from "@/public/img/products/certor/certorproduct.png";
 import Image from "next/image";
 import Link from "next/link";
-import { Swiper, SwiperSlide } from "swiper/react";
+import Slider from "react-slick";
 
-const ProjectItem:React.FC = () => {
+const ProjectItem: React.FC = () => {
     const services = [
         "UX/UI design",
         "custom theme development",
@@ -38,7 +38,15 @@ const ProjectItem:React.FC = () => {
     );
 };
 
-const ProjectList = () => {
+const ProjectList: React.FC = () => {
+    const settings = {
+        // dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode:true
+    };
     return (
         <div className="bg-white pt-[60px] px-2.5 pb-4 rounded-[20px] text-12 md:text-15">
             <h3 className="uppercase text-52 md:text-120 font-['MonumentGrotesk-Bold'] tracking-[-2px] text-[#1f1f1f]">
@@ -51,21 +59,17 @@ const ProjectList = () => {
                     help brands stay ahead of the game.
                 </p>
             </div>
+     
             <div className="mb-32">
-                <Swiper
-                    spaceBetween={20}
-                    slidesPerView={1.1}
-               
-                >
-                    <SwiperSlide>
-                        <ProjectItem />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <ProjectItem />
-                    </SwiperSlide>
-                </Swiper>
+                <Slider {...settings}>
+                    {" "}
+                    <ProjectItem /> <ProjectItem />
+                </Slider>
             </div>
-            <Link href="/projects" className="text-20 md:text-32 text-[#1f1f1f]">
+            <Link
+                href="/projects"
+                className="text-20 md:text-32 text-[#1f1f1f]"
+            >
                 View All Projects
             </Link>
         </div>
