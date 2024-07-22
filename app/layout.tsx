@@ -3,7 +3,6 @@ import NewHeader from "@/components/layout/new-header";
 import type { Metadata } from "next";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-import "swiper/css";
 import "./globals.css";
 
 export const metadata: Metadata = {
