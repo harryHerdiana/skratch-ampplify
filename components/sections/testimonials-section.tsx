@@ -1,5 +1,6 @@
 import { ArrowLeftIcon } from "@heroicons/react/20/solid";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
+import { useRef } from "react";
 import Slider from "react-slick";
 
 const TestimonialItem: React.FC = () => {
@@ -25,28 +26,34 @@ const TestimonialsSection: React.FC = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    centerMode: true,
+    centerMode: false,
+    // centerPadding: "200px",
+    arrows:false
   };
+  const sliderRef = useRef<any>(null)
+
+  const next = ()=>sliderRef.current.slickNext()
+  const prev = ()=>sliderRef.current.slickPrev()
   return (
     <div className="bg-white pt-[60px] px-2.5 pb-4 rounded-[20px] text-12 md:text-15 text-[#1f1f1f]">
       <div className="md:grid md:grid-cols-2 border-t-[1px] border-t-[#1F1F1F26] md:pt-5">
         <h3 className=" pt-2.5 md:pt-0 mb-16 ">Testimonials</h3>
         <div className="w-full relative">
           <div className="absolute right-0 bottom-0 md:top-0 flex gap-1 text-[#1F1F1F66] z-10 h-max">
-            <button className="p-2.5 bg-[#D6D8CE] rounded-[4px] hover:opacity-85 cursor-pointer">
+            <button onClick={prev} className="p-2.5 bg-[#D6D8CE] rounded-[4px] hover:opacity-85 cursor-pointer">
               <ArrowLeftIcon className="size-4" />
             </button>
-            <button className="p-2.5 bg-[#D6D8CE] rounded-[4px]  hover:opacity-85  cursor-pointer">
+            <button onClick={next} className="p-2.5 bg-[#D6D8CE] rounded-[4px]  hover:opacity-85  cursor-pointer">
               <ArrowRightIcon className="size-4" />
             </button>
           </div>
-          <Slider {...settings}>
+          <Slider {...settings} ref={sliderRef}>
             {" "}
             <TestimonialItem /> <TestimonialItem />
           </Slider>
         </div>
       </div>
-      <h2 className="uppercase text-48 leading-[48px] mt-[120px] md:text-120 md:leading-[110px] font-['MonumentGrotesk-Bold'] tracking-[-2px]">
+      <h2 className="uppercase text-48 leading-[48px] mt-[120px] lg:text-120 lg:leading-[110px] font-['MonumentGrotesk-Bold'] tracking-[-2px]">
         Testimonials
       </h2>
     </div>
