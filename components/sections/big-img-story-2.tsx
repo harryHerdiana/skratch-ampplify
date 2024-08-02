@@ -1,21 +1,33 @@
 import Image from "next/image";
-const BigImageStory = (props: BigImageStoryProps) => {
+
+const BigImageStory2 = (props: BigImageStoryProps) => {
     return (
         <>
             <div className="text-black font-sans p-5">
                 <div id='wrap-image' className={`
-                    w-full max-w-full max-h-full
+                    w-full max-w-full max-h-full my-[40px]
                     relative rounded-[4px] overflow-hidden
                     flex items-center justify-center`}>
-                    <div className={` relative w-full h-0
-                        ${'pb-[56.25%]'} // Default to 16:9 aspect ratio
-                    `} style={{ width: props.width, height: props.height }}>
-                        <Image
-                            layout="fill"
-                            src={props.imgUrl}
-                            alt=""
-                            className="object-contain"
-                        />
+                    <div className=
+                        {props.add ? 
+                            `h-[379px] w-[334px] md:h-[900px] md:w-[1196px] mb-0` :
+                            `h-[379px] w-[334px] md:h-[1360px] md:w-[1196px]` 
+                        }>
+                        {props.add ? 
+                            <Image
+                                src={props.imgUrl}
+                                alt=""
+                                className="object-contain"
+                                width={1000}
+                                height={960}
+                            /> :
+                            <Image
+                                layout="fill"
+                                src={props.imgUrl}
+                                alt=""
+                                className="object-contain"
+                            />
+                        }
                     </div>
                 </div>
                 <div className="border-t border-[#1F1F1F] mt-8 opacity-15"></div>
@@ -39,4 +51,5 @@ const BigImageStory = (props: BigImageStoryProps) => {
         </>
     );
 }
-export default BigImageStory;
+
+export default BigImageStory2;

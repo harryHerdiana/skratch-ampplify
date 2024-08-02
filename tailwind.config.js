@@ -10,6 +10,9 @@ module.exports = {
   theme: {
 
     extend: {
+      fontFamily: {
+        'monument': ['Monument Grotesk', 'sans-serif'],
+      },
       colors: {
         transparent: "transparent",
         current: "currentColor",

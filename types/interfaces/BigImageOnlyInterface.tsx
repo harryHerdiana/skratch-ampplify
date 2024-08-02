@@ -1,0 +1,3 @@
+interface BigImageOnlyProps {
+    imgUrl: string;
+}

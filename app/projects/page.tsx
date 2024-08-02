@@ -1,4 +1,4 @@
-import CasesPage from "@/components/pages/casepage";
+import ProjectPage from "@/components/pages/projectpage";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,5 +7,5 @@ export const metadata: Metadata = {
   }
   
 export default function Index() {
-    return <CasesPage/>
+    return <ProjectPage/>
 }
