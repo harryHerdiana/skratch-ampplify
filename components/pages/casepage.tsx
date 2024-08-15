@@ -19,11 +19,14 @@ export default function CasesPage() {
             </Head>
 
             <div className="relative bg-black">
-                <HeroTitle title="SPEAKEASY" subtitle="Spirits Brands' Best Friend" />
-                <div className="bg-white rounded-[20px]">
-                    <BigTitleStory 
+                <HeroTitle
+                    title="SPEAKEASY"
+                    subtitle="Spirits Brands' Best Friend"
+                />
+                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono]">
+                    <BigTitleStory
                         title={`INTEGRATED 
-                            DIRECT-TO-CONSUMER 
+                            DIRECT - TO - CONSUMER 
                             SOLUTIONS FOR BEVERAGE 
                             ALCOHOL BRANDS`}
                         titleLeft={`Services`}
@@ -33,9 +36,11 @@ export default function CasesPage() {
                             4. APP INTEGRATION
                             5. CUSTOM APP DEVELOPMENT`}
                         titleRight={`About`}
-                        textRight="Speakeasy Co. offers a complete solution for beverage alcohol brands, including technology, warehousing, and order fulfillment. We joined forces with Speakeasy Co. as they sought a modern eCommerce solution for their clients."/>
+                        textRight="Speakeasy Co. offers a complete solution for beverage alcohol brands, including technology, warehousing, and order fulfillment. We joined forces with Speakeasy Co. as they sought a modern eCommerce solution for their clients."
+                    />
 
                     <BigImageStory
+                        imageClassname="aspect-square  md:aspect-video lg:mb-16"
                         imgUrl={`/img/new-layout/item-1.png`}
                         width={`90%`}
                         height={`60%`}
@@ -46,6 +51,7 @@ export default function CasesPage() {
 
                 <div className="bg-[#D6D8CE] rounded-[20px]">
                     <BigImageStory
+                        imageClassname="aspect-video max-w-[1080px] m-auto lg:mb-[120px] lg:mt-[160px] my-[112px]"
                         imgUrl={`/img/new-layout/item-2.png`}
                         width={`65%`}
                         height={`100%`}
@@ -57,8 +63,7 @@ export default function CasesPage() {
                 <div className="">
                     <BigImageStory2
                         imgUrl={`/img/new-layout/item-3.png`}
-                        width={`1196px`}
-                        height={`1360px`}
+                        imageClassname="aspect-[15/17]"
                         title={`Challenge`}
                         story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
                         textColor={`text-white`}
@@ -68,8 +73,7 @@ export default function CasesPage() {
                 <div className="bg-[#D6D8CE] rounded-[20px]">
                     <BigImageStory2
                         imgUrl={`/img/new-layout/item-4.png`}
-                        width={`1196px`}
-                        height={`1360px`}
+                            imageClassname="aspect-[530/637]"
                         title={`Challenge`}
                         story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
                     />
@@ -78,8 +82,7 @@ export default function CasesPage() {
                 <div className="">
                     <BigImageStory2
                         imgUrl={`/img/new-layout/item-5.png`}
-                        width={`1000px`}
-                        height={`1280px`}
+                        imageClassname="aspect-[38/25] max-w-[912px]"
                         title={`Challenge`}
                         story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
                         textColor={`text-white`}
@@ -89,16 +92,13 @@ export default function CasesPage() {
                 <div className="bg-[#D6D8CE] rounded-[20px]">
                     <BigImageStory2
                         imgUrl={`/img/new-layout/item-6.png`}
-                        width={`75%`}
-                        height={`100%`}
+                            imageClassname="aspect-[46/31] max-w-[926px]"
                         title={`Challenge`}
                         story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
                     />
                 </div>
-                <div className="rounded-[20px]">
-                    <BigImageOnly
-                        imgUrl={`/img/new-layout/item-7.png`}
-                    />
+                <div className="rounded-[20px] overflow-hidden">
+                    <BigImageOnly imgUrl={`/img/new-layout/item-7.png`} />
                 </div>
             </div>
         </>

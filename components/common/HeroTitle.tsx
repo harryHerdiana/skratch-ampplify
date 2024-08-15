@@ -1,20 +1,18 @@
-import heroImage from "@/public/img/new-layout/hero2.png";
 import Image from "next/image";
 
 const HeroTitle = (props: HeroTitleProps) => {
     return (
         <div className="h-screen bg-white">
             <div className="relative h-full w-full flex  text-white justify-between   bg-black">
-                <div className="z-10 text-20 h-full w-full flex flex-col justify-between p-2.5 ">
+                <div className="z-10  h-full w-full flex flex-col justify-between p-2.5">
                     <div></div>
                     <div>
-                        <div>
-                            <div className="flex justify-between md:grid grid-cols-2">
-                                <div className="lg:text-[120px] font-[700] text-[52px]">
+                            <div className="flex justify-between h-max">
+                                <div className="lg:text-[120px] font-['MonumentGrotesk-Bold'] text-[52px] leading-[48px] lg:leading-[100px]">
                                     {props.title}
                                 </div>
                             </div>
-                        </div>
+                        
                         <div className="flex justify-between">
                             <div className="text-[15px] mt-[17px]">{props.subtitle}</div>
                             <div className="text-[15px] mt-[17px] opacity-50">{ props.year ?? 2023}</div>
