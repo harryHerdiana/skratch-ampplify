@@ -56,8 +56,8 @@ export default function ProjectPage() {
   return (
     <div className="sm:px-6 lg:px-8 
         pt-12 bg-[#FDFCF3] text-[#1F1F1F] rounded-[20px]">
-      <main className='mt-[90px] md:mt-[175px] mx-auto px-4' >
-        <h1 className="md:text-[120px] text-[52px]  font-bold mb-[60px] md:mb-[120px]">PROJECTS</h1>
+      <main className='mt-[60px] md:mt-[175px] mx-auto px-4' >
+        <h1 className="md:text-[120px] text-[52px]  font-bold mb-[60px] md:mb-[120px]  font-['MonumentGrotesk-Bold']">PROJECTS</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
