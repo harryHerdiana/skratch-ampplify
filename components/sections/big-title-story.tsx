@@ -3,7 +3,7 @@ const BigTitleStory = (props: BigTitleProps) => {
         <div className="text-black  md:p-5 font-['MonumentGrotesk-Bold']">
             <div className="mb-12">
                 <p
-                    className="whitespace-pre-line pt-12 px-1 text-[52px] 
+                    className="whitespace-pre-line pt-[60px] px-[9px] lg:px-[19px]  text-[52px] 
                         md:text-[80px] font-bold leading-[48px] md:leading-[72px] 
                         tracking-tighter"
                 >
@@ -18,7 +18,7 @@ const BigTitleStory = (props: BigTitleProps) => {
                     <h2 className="text-[12px] mb-4 text-[#1F1F1F]">
                         {props.titleLeft}
                     </h2>
-                    <p className="whitespace-pre-line text-[12px] text-[#1F1F1F66]">
+                    <p className="whitespace-pre-line text-[12px] text-[#1F1F1F66]  font-['MonumentGrotesk-Semi-Mono']">
                         {props.textLeft}
                     </p>
                 </div>

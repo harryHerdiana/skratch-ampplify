@@ -3,7 +3,7 @@ import Image from "next/image";
 const BigImageStory = (props: BigImageStoryProps) => {
     return (
     
-            <div className="text-black font-sans p-5">
+            <div className="text-black font-sans p-[9px] lg:px-[19px] ">
          
                 <div className={classNames(props.imageClassname,'w-full relative top-0 left-0 h-full  overflow-hidden')}>
                     <Image

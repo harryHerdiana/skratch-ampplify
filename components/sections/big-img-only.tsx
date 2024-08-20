@@ -4,7 +4,7 @@ const BigImageOnly = (props: BigImageOnlyProps) => {
     return (
        
            
-                <div className={` relative w-full aspect-video
+                <div className={` relative w-full aspect-square md:aspect-video 
                    
                 `}>
                     <Image
