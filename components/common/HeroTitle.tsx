@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const HeroTitle = (props: HeroTitleProps) => {
     return (
-        <div className="h-screen bg-white">
+        <div className="aspect-[9/16] sm:aspect-video bg-white">
             <div className="relative h-full w-full flex  text-white justify-between   bg-black">
                 <div className="z-10  h-full w-full flex flex-col justify-between lg:px-[19px] px-[9px] py-4">
                     <div></div>
@@ -19,7 +19,7 @@ const HeroTitle = (props: HeroTitleProps) => {
                         </div>
                     </div>
                 </div>
-                <div className="hidden md:block aspect-[9/16] md:aspect-video w-full absolute top-0 left-0 h-full rounded-[20px] overflow-hidden">
+                <div className="hidden sm:block aspect-[9/16] md:aspect-video w-full absolute top-0 left-0 h-full rounded-[20px] overflow-hidden">
                     <Image
                         layout="fill"
                         src={"/img/new-layout/hero2.png"}
@@ -27,7 +27,7 @@ const HeroTitle = (props: HeroTitleProps) => {
                         className="h-full object-cover"
                     />
                 </div>
-                <div className=" md:hidden aspect-[9/16] md:aspect-video w-full absolute top-0 left-0 h-full rounded-[20px] overflow-hidden">
+                <div className=" sm:hidden aspect-[9/16] md:aspect-video w-full absolute top-0 left-0 h-full rounded-[20px] overflow-hidden">
                     <Image
                         layout="fill"
                         src={"/img/new-layout/mobileHero.png"}

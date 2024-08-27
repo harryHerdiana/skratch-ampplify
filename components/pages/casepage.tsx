@@ -40,7 +40,7 @@ export default function CasesPage() {
                     />
 
                     <BigImageStory
-                        imageClassname="aspect-square  md:aspect-video lg:mb-16"
+                        imageClassname="aspect-square md:aspect-video lg:mb-16 "
                         imgUrl={`/img/new-layout/item-1.png`}
                         width={`90%`}
                         height={`60%`}
@@ -51,7 +51,7 @@ export default function CasesPage() {
 
                 <div className="bg-[#D6D8CE] rounded-[20px]">
                     <BigImageStory
-                        imageClassname="aspect-video max-w-[1080px] m-auto lg:mb-[120px] lg:mt-[160px] my-[112px]"
+                        imageClassname="aspect-video max-w-[1080px] m-auto lg:mb-[120px] lg:mt-[160px] my-[112px] "
                         imgUrl={`/img/new-layout/item-2.png`}
                         width={`65%`}
                         height={`100%`}

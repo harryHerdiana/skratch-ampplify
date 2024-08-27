@@ -5,13 +5,13 @@ import Slider from "react-slick";
 
 const TestimonialItem: React.FC = () => {
   return (
-    <div className="flex flex-col gap-[120px]">
+    <div className="flex flex-col gap-[120px] lg:gap-[199px]">
       <p className=" text-[30px] leading-[34px] md:max-w-[510px]">
         “Lorem ipsum dolor sit amet, deus consectetur adipiscing elit, sed do
         eiusmod et tempor incididunt ut labores et dolore magna aliqua. Ut enim
         ad minim veniam, quis nostrud exercitation ullamco laboris.”
       </p>
-      <div className="text-[#1F1F1F66] uppercase">
+      <div className="text-[#1F1F1F66] uppercase font-['MonumentGrotesk-Semi-Mono']">
         <p>April Osmanof</p>
         <p>CEO @ Amazon & Hubspot</p>
       </div>

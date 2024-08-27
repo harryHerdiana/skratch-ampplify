@@ -1,7 +1,7 @@
 const BigTitleStory = (props: BigTitleProps) => {
     return (
-        <div className="text-black  md:p-5 font-['MonumentGrotesk-Bold']">
-            <div className="mb-12">
+        <div className="text-[#1f1f1f] md:p-5 font-['MonumentGrotesk-Bold']">
+            <div className="mb-[60px] md:mb-[92px]">
                 <p
                     className="whitespace-pre-line pt-[60px] px-[9px] lg:px-[19px]  text-[52px] 
                         md:text-[80px] font-bold leading-[48px] md:leading-[72px] 
@@ -11,11 +11,10 @@ const BigTitleStory = (props: BigTitleProps) => {
                 </p>
             </div>
 
-            <div className="border-t border-gray-300 mx-2 mb-1"></div>
-
-            <div className="flex flex-col md:flex-row p-2 font-['MonumentGrotesk-Regular']">
+            <div className="flex flex-col md:flex-row p-[9px] font-['MonumentGrotesk-Regular'] md:border-t border-[#1F1F1F] border-opacity-15">
+                <div className="border-t border-gray-300 lg:border-none mb-1"></div>
                 <div className="mb-[60px] md:w-2/4">
-                    <h2 className="text-[12px] mb-4 text-[#1F1F1F]">
+                    <h2 className="text-12 md:text-15 mb-5 mt-2.5 lg:mb-[28px] text-[#1F1F1F]">
                         {props.titleLeft}
                     </h2>
                     <p className="whitespace-pre-line text-[12px] text-[#1F1F1F66]  font-['MonumentGrotesk-Semi-Mono']">
@@ -23,14 +22,16 @@ const BigTitleStory = (props: BigTitleProps) => {
                     </p>
                 </div>
 
-                <div className="mt-2 md:mt-0 mb-16 md:w-2/4">
-                    <div className="border-t border-gray-300 mx-2 mb-1 md:hidden"></div>
-                    <h2 className="text-[12px] mb-4 text-[#1F1F1F]">
+                <div className=" md:mt-0 mb-16 md:w-2/4">
+                    <div className="border-t border-gray-300 mb-1 md:hidden"></div>
+                    <h2 className="text-12 md:text-15  mt-2.5 mb-5 lg:mb-[28px] text-[#1F1F1F]">
                         {props.titleRight}
                     </h2>
-                    <p className="text-[18px] md:text-[24px] leading-[24px] md:leading-[30px]">
-                        {props.textRight}
-                    </p>
+                    <div className=" md:mt-0 mb-16 max-w-[510px] md:mr-[17%]">
+                        <p className="text-[18px] md:text-[24px] leading-[24px] md:leading-[30px]">
+                            {props.textRight}
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

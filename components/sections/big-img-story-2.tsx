@@ -23,8 +23,8 @@ const BigImageStory2 = (props: BigImageStoryProps) => {
             </div>
             <div className="border-t border-[#1F1F1F] mt-8 opacity-15"></div>
 
-            <div className="flex flex-col md:flex-row font-['MonumentGrotesk-Regular']">
-                <div className=" md:w-2/4">
+            <div className="flex flex-col md:flex-row p-2  font-['MonumentGrotesk-Regular'] mt-5 ">
+            <div className="  w-full">
                     <h2
                         className={`text-[12px] mb-4 
                             ${props.textColor ?? "text-[#1F1F1F]"}`}
@@ -33,8 +33,8 @@ const BigImageStory2 = (props: BigImageStoryProps) => {
                     </h2>
                 </div>
 
-                <div className="md:mt-0 mb-16 md:w-2/4">
-                    <p
+                <div className=" md:mt-0 mb-16 max-w-[453px] md:mr-[17%]">
+                <p
                         className={`text-[18px] md:text-[24px] leading-[24px] 
                             md:leading-[30px] ${
                                 props.textColor ?? "text-[#1F1F1F]"
