@@ -11,7 +11,7 @@ const TestimonialItem: React.FC = () => {
         eiusmod et tempor incididunt ut labores et dolore magna aliqua. Ut enim
         ad minim veniam, quis nostrud exercitation ullamco laboris.”
       </p>
-      <div className="text-[#1F1F1F66] uppercase font-['MonumentGrotesk-Semi-Mono']">
+      <div className="text-[#1F1F1F66] uppercase font-['MonumentGrotesk-Semi-Mono'] text-12 ">
         <p>April Osmanof</p>
         <p>CEO @ Amazon & Hubspot</p>
       </div>
@@ -35,7 +35,7 @@ const TestimonialsSection: React.FC = () => {
   const next = ()=>sliderRef.current.slickNext()
   const prev = ()=>sliderRef.current.slickPrev()
   return (
-    <div className="bg-white pt-[60px] px-2.5 pb-4 rounded-[20px] text-12 md:text-15 text-[#1f1f1f]">
+    <div className="bg-white pt-[60px] lg:pt-[120px] px-2.5 pb-5 lg:pb-[30px] rounded-[20px] text-12 md:text-15 text-[#1f1f1f]">
       <div className="md:grid md:grid-cols-2 border-t-[1px] border-t-[#1F1F1F26] md:pt-5">
         <h3 className=" pt-2.5 md:pt-0 mb-16 ">Testimonials</h3>
         <div className="w-full relative">
@@ -53,7 +53,7 @@ const TestimonialsSection: React.FC = () => {
           </Slider>
         </div>
       </div>
-      <h2 className="uppercase text-48 leading-[48px] mt-[120px] lg:text-120 lg:leading-[110px] font-['MonumentGrotesk-Bold'] tracking-[-2px]">
+      <h2 className="uppercase text-48 leading-[48px] mt-[120px] lg:text-120 lg:leading-[110px] font-['MonumentGrotesk-Bold'] tracking-[-4px]">
         Testimonials
       </h2>
     </div>

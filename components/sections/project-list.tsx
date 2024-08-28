@@ -1,61 +1,45 @@
-import CertorProduct from "@/public/img/products/certor/certorproduct.png";
 import Image from "next/image";
 import Link from "next/link";
 import Slider from "react-slick";
+import { projectsData } from "./projectdata";
 
-const ProjectItem: React.FC = () => {
-    const services = [
-        "UX/UI design",
-        "custom theme development",
-        "store set-up",
-        "app integration",
-        "custom app development",
-    ];
-
+const ProjectItem = (props: IProjectList) => {
     return (
-        <div className="max-w-[327px] md:max-w-full w-auto px-5">
-            <p className="text-20 md:text-32 w-max mb-2.5">
-                <span className="text-[#1F1F1F80]">2023</span>
-                <br />
-                Certor
-            </p>
+        <div className="max-w-[327px] md:max-w-full px-5 w-full">
+            <Link
+                href={`/projects/${props.title
+                    .toLowerCase()
+                    .replace(/ /g, "-")}`}
+            >
+                <p className="text-20 md:text-32 w-max mb-2.5">
+                    <span className="text-[#1F1F1F80]">{props.year}</span>
+                    <br />
+                    {props.title}
+                </p>
+            </Link>
+
             <div className="relative aspect-video">
-                <Image src={CertorProduct} alt="" fill className="h-full" />
+                <Image
+                    src={props.image}
+                    alt="Certor product"
+                    fill
+                    className="h-full object-cover"
+                />
             </div>
-            <div className="mt-3 ">
-                <p className="mb-2">Services</p>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8">
-                    <div className="">
-                        {services.slice(0, 3).map((service, index) => (
-                            <div
-                                key={index}
-                                className={`text-[#1F1F1F] text-opacity-40 flex         items-center border-b border-gray-200 ${
-                                    index == 0 && "border-t"
-                                } px-2 py-0.5 leading-[20px]`}
-                            >
-                                <span className="text-12 font-medium mr-8">
-                                    {service ? index + 1 : ""}
-                                </span>
-                                <span className="text-12">{service}</span>
-                            </div>
-                        ))}
-                    </div>
-                    <div className="">
-                        {services.slice(3).map((service, index) => (
-                            <div
-                                key={index + 3}
-                                className={`text-[#1F1F1F] text-opacity-40 flex    font-['MonumentGrotesk-Semi-Mono']     items-center border-b border-gray-200 ${
-                                    index == 0 && "md:border-t"
-                                } px-2 py-0.5 leading-[20px]`}
-                            >
-                                <span className="text-12 font-medium mr-8 min-h-4">
-                                    {service ? index + 4 : ""}
-                                </span>
-                                <span className="text-12">{service}</span>
-                            </div>
-                        ))}
-                    </div>
-                </div>
+
+            <div className="mt-3 text-left">
+                <p className="mb-2 text-18">Services</p>
+                <ul className="grid grid-cols-1 lg:grid-cols-2 gap-x-8">
+                    {props.services.map((service, index) => (
+                        <li
+                            key={service}
+                            className="text-[#1F1F1F66] border-y border-gray-200 py-0.5 uppercase font-['MonumentGrotesk-Semi-Mono'] text-12 leading-[20px]"
+                        >
+                            <span className="mr-2">{index + 1}.</span>
+                            {service}
+                        </li>
+                    ))}
+                </ul>
             </div>
         </div>
     );
@@ -99,13 +83,20 @@ const ProjectList: React.FC = () => {
 
             <div className="mb-32 w-full lg:w-auto">
                 <Slider {...settings}>
-                    <ProjectItem /> <ProjectItem /> <ProjectItem />
-                    <ProjectItem />
+                    {projectsData.map((project, index) => (
+                        <ProjectItem
+                            key={project.title}
+                            services={project.services}
+                            image={project.image}
+                            title={project.title}
+                            year={project.year}
+                        />
+                    ))}
                 </Slider>
             </div>
             <Link
                 href="/projects"
-                className="text-20 lg:text-[34px] text-[#1f1f1f] underline" 
+                className="text-20 lg:text-[34px] text-[#1f1f1f] underline"
             >
                 View All Projects
             </Link>
