@@ -6,7 +6,7 @@ import BigImageStory2 from "@/components/sections/big-img-story-2";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
 
-export default function CasesPage() {
+export default function ProprioPage() {
     return (
         <>
             <Head>
@@ -19,9 +19,11 @@ export default function CasesPage() {
             </Head>
 
             <div className="relative bg-black">
-                <HeroTitle
-                    title="SPEAKEASY"
-                    subtitle="Spirits Brands' Best Friend"
+                <HeroTitle 
+                    title="PROPRIO"
+                    subtitle="The New Way Of Seeing"
+                    desktopImgUrl="/img/products/proprioproduct.png"
+                    mobileImgUrl="/img/products/mobile/proprioproduct-mobile.png"
                 />
                 <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono]">
                     <BigTitleStory

@@ -3,4 +3,6 @@ interface HeroTitleProps {
     subtitle: string;
     year?: string;
     imgUrl?: string;
+    desktopImgUrl: string;
+    mobileImgUrl: string;
 }

@@ -8,21 +8,21 @@ const HeroTitle = (props: HeroTitleProps) => {
                     <div></div>
                     <div>
                             <div className="flex justify-between h-max">
-                                <div className="lg:text-[120px] font-['MonumentGrotesk-Bold'] text-[48px] leading-[48px] lg:leading-[100px]">
+                                <div className="lg:text-[120px] font-['MonumentGrotesk-Bold'] text-[48px] leading-[48px] lg:leading-[106px] tracking-tight">
                                     {props.title}
                                 </div>
                             </div>
                         
                         <div className="flex justify-between">
-                            <div className="text-[15px] mt-[17px]">{props.subtitle}</div>
-                            <div className="text-[15px] mt-[17px] opacity-50">{ props.year ?? 2023}</div>
+                            <div className="text-[15px] mt-[12px]">{props.subtitle}</div>
+                            <div className="text-[15px] mt-[12px] opacity-50">{ props.year ?? 2023}</div>
                         </div>
                     </div>
                 </div>
                 <div className="hidden sm:block aspect-[9/16] md:aspect-video w-full absolute top-0 left-0 h-full rounded-[20px] overflow-hidden">
                     <Image
                         layout="fill"
-                        src={"/img/new-layout/hero2.png"}
+                        src={props.desktopImgUrl}
                         alt=""
                         className="h-full object-cover"
                     />
@@ -30,7 +30,7 @@ const HeroTitle = (props: HeroTitleProps) => {
                 <div className=" sm:hidden aspect-[9/16] md:aspect-video w-full absolute top-0 left-0 h-full rounded-[20px] overflow-hidden">
                     <Image
                         layout="fill"
-                        src={"/img/new-layout/mobileHero.png"}
+                        src={props.mobileImgUrl}
                         alt=""
                         className="h-full object-cover"
                     />
