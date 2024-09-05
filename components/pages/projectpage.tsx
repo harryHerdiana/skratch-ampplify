@@ -47,7 +47,7 @@ export default function ProjectPage() {
                                                 .map((service, index) => (
                                                     <div
                                                         key={project.title}
-                                                        className={`text-[#1F1F1F] text-opacity-40 flex         items-center border-b border-gray-200 ${
+                                                        className={`text-black text-opacity-40 flex   items-center border-b border-gray-200 ${
                                                             index == 0 &&
                                                             "border-t"
                                                         } px-2 py-0.5 leading-[20px]`}
@@ -69,7 +69,7 @@ export default function ProjectPage() {
                                                 .map((service, index) => (
                                                     <div
                                                         key={index + 3}
-                                                        className={`text-[#1F1F1F] text-opacity-40 flex         items-center border-b border-gray-200 ${
+                                                        className={`text-black text-opacity-40 flex         items-center border-b border-gray-200 ${
                                                             index == 0 &&
                                                             "md:border-t"
                                                         } px-2 py-0.5 leading-[20px]`}

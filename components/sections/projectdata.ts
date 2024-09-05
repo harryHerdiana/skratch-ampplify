@@ -12,4 +12,7 @@ export const projectsData = [
     { image: "/img/products/blueprintproduct.png", title: "Blueprint", year: "2023", services: ["UX/UI design", "Frontend development", "Backend development", "DevOps", "SEO optimization"] },
     { image: "/img/products/aftcoproduct.png", title: "Aftco", year: "2023", services: ["E-commerce solutions", "CMS implementation", "Performance tuning"] },
     { image: "/img/products/diceproduct.png", title: "Dice Barbers", year: "2023", services: ["UX/UI design", "Frontend development", "Mobile app development"] },
+    { image: "/img/products/mioneproduct.png", title: "Mione", year: "2023", services: ["UX/UI design", "Frontend development", "Mobile app development"] },
+    { image: "/img/products/tdeproduct.png", title: "TDE Apparel", year: "2023", services: ["UX/UI design", "Frontend development", "Mobile app development"] },
+
 ];

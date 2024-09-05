@@ -11,7 +11,7 @@ const ProjectItem = (props: IProjectList) => {
                     .toLowerCase()
                     .replace(/ /g, "-")}`}
             >
-                <p className="text-20 md:text-32 w-max mb-2.5">
+                <p className="text-20 md:text-32 w-max mb-2.5 text-[#1F1F1F]">
                     <span className="text-[#1F1F1F80]">{props.year}</span>
                     <br />
                     {props.title}
@@ -28,7 +28,7 @@ const ProjectItem = (props: IProjectList) => {
             </div>
 
             <div className="mt-3 text-left">
-                <p className="mb-2 text-18">Services</p>
+                <p className="mb-2 text-18 text-[#1f1f1f]">Services</p>
                 <ul className="grid grid-cols-1 lg:grid-cols-2 gap-x-8">
                     {props.services.map((service, index) => (
                         <li
@@ -75,7 +75,7 @@ const ProjectList: React.FC = () => {
             </h3>
             <div className="flex my-[60px] lg:my-[105px]">
                 <h4 className="w-full">Our Work</h4>
-                <p className="uppercase max-w-[282px] lg:mr-[18%] font-['MonumentGrotesk-Semi-Mono']">
+                <p className="uppercase max-w-[282px] lg:mr-[18%] font-['MonumentGrotesk-Semi-Mono'] text-[#1f1f1f]">
                     is a digital studio focused on developing experiences to
                     help brands stay ahead of the game.
                 </p>
