@@ -8,5 +8,6 @@ interface BigImageStoryProps {
     height?: string;
     textColor?: string;
     add?: string;
-    imageClassname?:string;
+    imageContainerClassname?: string;
+    imageClassname?: string;
 }

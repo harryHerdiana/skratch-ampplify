@@ -5,15 +5,15 @@ const BigImageStory = (props: BigImageStoryProps) => {
     <div className="text-black font-sans ">
       <div
         className={classNames(
-          props.imageClassname,
-          "w-full relative top-0 left-0 h-full  overflow-hidden rounded-[4px]"
+          props.imageContainerClassname,
+          "w-full relative top-0 left-0 h-full  overflow-hidden rounded-[4px] "
         )}
       >
         <Image
           layout="fill"
           src={props.imgUrl}
           alt=""
-          className="h-full object-cover"
+          className={classNames("h-full object-cover ", props.imageClassname)}
         />
       </div>
       <div className="border-t border-[#1F1F1F] mt-8 opacity-15"></div>

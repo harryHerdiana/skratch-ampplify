@@ -19,8 +19,8 @@ export default function MionePage() {
             </Head>
 
             <div className="relative bg-black">
-                <HeroTitle 
-                    title="Mione"
+                <HeroTitle
+                    title="MIONE"
                     subtitle="Here To Contend"
                     desktopImgUrl="/img/products/mioneproduct.png"
                     mobileImgUrl="/img/products/mobile/mioneproduct-mobile.png"
@@ -41,65 +41,63 @@ export default function MionePage() {
                     />
 
                     <BigImageStory
-                        imageClassname="aspect-square md:aspect-video lg:mb-16 "
-                        imgUrl={`/img/new-layout/item-1.png`}
+                        imageContainerClassname="aspect-square md:aspect-video lg:mb-16"
+                        imgUrl={`/img/products/mione/mione-1.png`}
+                        imageClassname="px-[19px]"
                         width={`90%`}
                         height={`60%`}
                         title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
+                        story={`One main purpose of the site was to showcase job opportunities and attract potential employees. We developed a custom integration of their current hiring platform that was required to display current openings.`}
                     />
                 </div>
 
-                <div className="bg-[#D6D8CE] rounded-[20px]">
+                <div className="bg-[#1F1F1F] rounded-[20px]  pt-[160px]">
                     <BigImageStory
-                        imageClassname="aspect-video max-w-[1080px] m-auto lg:mb-[120px] lg:mt-[160px] my-[112px] "
-                        imgUrl={`/img/new-layout/item-2.png`}
+                        imageContainerClassname="aspect-[84/37] m-auto lg:mb-[120px] mb-[112px]"
+                        imgUrl={`/img/products/mione/mione-2.png`}
                         width={`65%`}
                         height={`100%`}
                         title={`Challenge`}
+                        textColor="text-white"
                         story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
-                    />
-                </div>
-
-                <div className="">
-                    <BigImageStory2
-                        imgUrl={`/img/new-layout/item-3.png`}
-                        imageClassname="aspect-[15/17] max-w-[1196px] m-auto"
-                        title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
-                        textColor={`text-white`}
                     />
                 </div>
 
                 <div className="bg-[#D6D8CE] rounded-[20px]">
                     <BigImageStory2
-                        imgUrl={`/img/new-layout/item-4.png`}
-                            imageClassname="aspect-[530/637] max-w-[1060px] m-auto"
+                        imgUrl={`/img/products/mione/mione-3.png`}
+                        imageContainerClassname="aspect-[26/17] max-w-[1196px] m-auto"
+                        title={`Challenge`}
+                        story={`One main purpose of the site was to showcase job opportunities and attract potential employees. We developed a custom integration of their current hiring platform that was required to display current openings.`}
+                        textColor="text-black"
+                    />
+                </div>
+                <div className="rounded-[20px] overflow-hidden min-h-[900px] h-full bg-[url('/img/products/mione/mione-4-bg.png')] bg-auto lg:bg-cover bg-no-repeat bg-center  flex py-[94px] px-[19px]">
+                    <BigImageOnly
+                        contain
+                        imgUrl={`/img/products/mione/mione-4.png`}
+                        />
+                </div>
+                <div className="bg-[#1F1F1F] rounded-[20px] font-[MonumentGrotesk-Semi-Mono]">
+                <BigImageOnly
+                        contain imageClassname="px-[19px] lg:px-[150px] lg:pt-[240px]"
+                        imgUrl={`/img/products/mione/mione-5.png`}
+                        />
+                    <BigImageStory
+                        imageContainerClassname="aspect-[48/43] lg:mb-16 mt-[240px] max-w-[1148px] m-auto"
+                        imgUrl={`/img/products/mione/mione-6.png`}
+                        imageClassname=""
+                        width={`90%`}
+                        height={`60%`}
+                        textColor="text-white"
                         title={`Challenge`}
                         story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
                     />
                 </div>
-
-                <div className="">
-                    <BigImageStory2
-                        imgUrl={`/img/new-layout/item-5.png`}
-                        imageClassname="aspect-[38/25] max-w-[912px]"
-                        title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
-                        textColor={`text-white`}
-                    />
-                </div>
-
-                <div className="bg-[#D6D8CE] rounded-[20px]">
-                    <BigImageStory2
-                        imgUrl={`/img/new-layout/item-6.png`}
-                            imageClassname="aspect-[46/31] max-w-[926px]"
-                        title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
-                    />
-                </div>
+              
                 <div className="rounded-[20px] overflow-hidden">
-                    <BigImageOnly imgUrl={`/img/new-layout/item-7.png`} />
+                    <BigImageOnly                        imgUrl={`/img/products/mione/mione-7.png`}
+                    />
                 </div>
             </div>
         </>

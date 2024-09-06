@@ -30,7 +30,7 @@ export default function CertortPage() {
           />
 
           <BigImageStory
-            imageClassname="aspect-square md:aspect-video lg:mb-16 "
+            imageContainerClassname="aspect-square md:aspect-video lg:mb-16 "
             imgUrl={`/img/products/certor/certor-1.png`}
             width={`90%`}
             height={`60%`}
@@ -39,7 +39,7 @@ export default function CertortPage() {
         <div className="">
           <BigImageStory2
             imgUrl={`/img/products/certor/certor-2.png`}
-            imageClassname="aspect-[15/17] max-w-[1196px] m-auto"
+            imageContainerClassname="aspect-[15/17] max-w-[1196px] m-auto"
             title={`Schutt`}
             story={`One main purpose of the site was to showcase job opportunities and attract potential employees. We developed a custom integration of their current hiring platform that was required to display current openings.`}
             textColor={`text-white`}

@@ -30,7 +30,7 @@ export default function VicisPage() {
           />
 
           <BigImageStory
-            imageClassname="aspect-square md:aspect-video lg:mb-16 "
+            imageContainerClassname="aspect-square md:aspect-video lg:mb-16 "
             imgUrl={`/img/products/vicis/vicis-1.png`}
             width={`90%`}
             height={`60%`}
@@ -41,7 +41,7 @@ export default function VicisPage() {
         <div className="">
           <BigImageStory2
             imgUrl={`/img/products/vicis/vicis-2.png`}
-            imageClassname="aspect-[19/18] max-w-[1196px] m-auto"
+            imageContainerClassname="aspect-[19/18] max-w-[1196px] m-auto"
             title={`Approach`}
             story={`With a clear understanding of the prerequisites and a keen awareness of API capabilities and limitations of Shopify Plus, we embarked on the creation of a bespoke app designed to fit seamlessly into this collaborative shopping concept.`}
             textColor={`text-white`}
@@ -51,7 +51,7 @@ export default function VicisPage() {
         <div className="bg-[#FDFCF3] ">
           <BigImageStory2
             imgUrl={`/img/products/vicis/vicis-3.png`}
-            imageClassname="aspect-[40/41]  m-auto"
+            imageContainerClassname="aspect-[40/41]  m-auto"
             title={`Approach`}
             story={`Each brand's store operates through its individual Shopify instance, displaying the custom themes we developed in partnership with MUTO.`}
           />
@@ -59,7 +59,7 @@ export default function VicisPage() {
         <div className="">
           <BigImageStory2
             imgUrl={`/img/products/vicis/vicis-4.png`}
-            imageClassname="aspect-[20/9] m-auto"
+            imageContainerClassname="aspect-[20/9] m-auto"
             title={`Approach`}
             story={`The synchronization of cart drawers across all sites ensures a consistent shopping experience, leading to a unified checkout process.`}
             textColor={`text-white`}
@@ -68,7 +68,7 @@ export default function VicisPage() {
         <div className="bg-[#FDFCF3] ">
           <BigImageStory2
             imgUrl={`/img/products/vicis/vicis-5.png`}
-            imageClassname="aspect-video  m-auto"
+            imageContainerClassname="aspect-video  m-auto"
             title={`Vicis`}
             story={`Vicis is a sports equipment company that specializes in developing advanced football helmets designed to reduce the risk of head injuries for players.`}
             story2={`The company uses innovative technology and materials to create helmets that are both effective and comfortable to wear, with a focus on improving the safety of the sport.`}

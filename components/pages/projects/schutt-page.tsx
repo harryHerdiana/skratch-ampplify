@@ -33,7 +33,7 @@ export default function SchuttPage() {
           />
 
           <BigImageStory
-            imageClassname="aspect-square md:aspect-video lg:mb-16 "
+            imageContainerClassname="aspect-square md:aspect-video lg:mb-16 "
             imgUrl={`/img/products/schutt/schutt-1.png`}
             width={`90%`}
             height={`60%`}
@@ -44,7 +44,7 @@ export default function SchuttPage() {
         <div className="">
           <BigImageStory2
             imgUrl={`/img/products/schutt/schutt-2.png`}
-            imageClassname="aspect-[59/54] max-w-[1196px] m-auto"
+            imageContainerClassname="aspect-[59/54] max-w-[1196px] m-auto"
             title={` `}
             story={`With a clear understanding of the prerequisites and a deep awareness of API capabilities and limitations of Shopify Plus, we embarked on the creation of a bespoke app designed to fit seamlessly into this collaborative shopping model.`}
             textColor={`text-white`}
@@ -54,7 +54,7 @@ export default function SchuttPage() {
         <div className="bg-[#FDFCF3] ">
           <BigImageStory2
             imgUrl={`/img/products/schutt/schutt-3.png`}
-            imageClassname="aspect-[74/123]  m-auto"
+            imageContainerClassname="aspect-[74/123]  m-auto"
             title={` `}
             story={`Each brand's store operates through its individual Shopify instance, displaying the custom themes we developed in partnership with MUTO.`}
           />
@@ -62,7 +62,7 @@ export default function SchuttPage() {
         <div className="">
           <BigImageStory2
             imgUrl={`/img/products/schutt/schutt-4.png`}
-            imageClassname="aspect-[47/28] m-auto"
+            imageContainerClassname="aspect-[47/28] m-auto"
             title={` `}
             story={`The synchronization of cart drawers across all sites ensures a consistent shopping experience, leading to a unified checkout process.`}
             textColor={`text-white`}
@@ -70,7 +70,7 @@ export default function SchuttPage() {
         </div>
         
         <div className="rounded-[20px] mt-10 px-5 pb-20 lg:px-40 lg:pb-[200px]">
-          <BigImageOnly imgUrl={`/img/products/schutt/schutt-5.png`} contain/>
+          <BigImageOnly imgUrl={`/img/products/schutt/schutt-5.png`} />
         </div>
             </div>
         </>
