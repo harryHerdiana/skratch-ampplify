@@ -1,5 +1,5 @@
 interface BigImageStoryProps {
-    imgUrl: string;
+    imgUrl?: string;
     title?: string;
     story?: string;
     story2?: string;
@@ -10,4 +10,6 @@ interface BigImageStoryProps {
     add?: string;
     imageContainerClassname?: string;
     imageClassname?: string;
+    imageOuterContainerClassname?:string;
+    
 }
