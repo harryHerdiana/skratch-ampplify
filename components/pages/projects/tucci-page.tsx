@@ -41,7 +41,8 @@ export default function TucciPage() {
         <div className="">
           <BigImageStory2
             imgUrl={`/img/products/tucci/tucci-2.png`}
-            imageContainerClassname="aspect-video m-auto"
+            imageOuterContainerClassname="m-auto " 
+            imageContainerClassname="aspect-[55/18] m-auto w-full"
             title={`Approach`}
             story={`With a clear understanding of the prerequisites and a deep awareness of API capabilities and limitations of Shopify Plus, we embarked on the creation of a bespoke app designed to fit seamlessly into this collaborative shopping model.`}
             textColor={`text-white`}
@@ -50,7 +51,7 @@ export default function TucciPage() {
 
         <div className="bg-[#FDFCF3]">
           <BigImageStory2
-            imageOuterContainerClassname=" px-[9px] lg:px-[19px]"
+            imageClassname=" px-[9px] lg:px-[19px]"
             imgUrl={`/img/products/tucci/tucci-3.png`}
             imageContainerClassname="aspect-[5/4]  m-auto"
             title={`Approach`}
@@ -59,7 +60,7 @@ export default function TucciPage() {
         </div>
         <div className="">
           <BigImageStory2
-            imageOuterContainerClassname=" px-[9px] lg:px-[19px]"
+            imageClassname=" px-[9px] lg:px-[19px]"
             imgUrl={`/img/products/tucci/tucci-4.png`}
             imageContainerClassname="aspect-[47/28] m-auto"
             title={`Approach`}

@@ -3,22 +3,18 @@ import Image from "next/image";
 
 const BigImageStory2 = (props: BigImageStoryProps) => {
   return (
-    <div className="text-black font-['MonumentGrotesk-Regular'] ">
+    <div className="text-black font-['MonumentGrotesk-Regular']">
       {props.imgUrl && (
         <div
-          id="wrap-image"
           className={classNames(
-            `
-                w-full max-w-full max-h-full py-[40px]
-                relative rounded-[4px] overflow-hidden
-                flex items-center justify-center lg:py-[128px] `,
+            `py-[40px] relative rounded-[4px] flex items-center justify-center lg:py-[128px]`,
             props.imageOuterContainerClassname
           )}
         >
           <div
             className={classNames(
+              "relative h-full w-full ",
               props.imageContainerClassname,
-              "relative h-full w-full"
             )}
           >
             <Image

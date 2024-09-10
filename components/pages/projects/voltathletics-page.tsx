@@ -19,7 +19,7 @@ export default function VoltAthleticsPage() {
             </Head>
 
             <div className="relative bg-black">
-                <HeroTitle 
+                <HeroTitle
                     title="VOLT ATHLETICS"
                     subtitle="Maximize Your Coaching Impact"
                     desktopImgUrl="/img/products/voltproduct.png"
@@ -36,64 +36,54 @@ export default function VoltAthleticsPage() {
 
                     <BigImageStory
                         imageContainerClassname="aspect-square md:aspect-video lg:mb-16 "
-                        imgUrl={`/img/new-layout/item-1.png`}
+                        imgUrl={"/img/products/volt/volt-1.png"}
                         width={`90%`}
                         height={`60%`}
                         title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
+                        story={`As Volt Athletics was undertaking a digital revamp, we were brought in to seamlessly blend design and functionality to enhance Volt Athletics' online presence. This required creating a high-performing front-end that prioritized speed, SEO, and accessibility while still aligning with the website's redesign.  `}
                     />
                 </div>
-
-                <div className="bg-[#D6D8CE] rounded-[20px]">
-                    <BigImageStory
-                        imageContainerClassname="aspect-video max-w-[1080px] m-auto lg:mb-[120px] lg:mt-[160px] my-[112px] "
-                        imgUrl={`/img/new-layout/item-2.png`}
-                        width={`65%`}
-                        height={`100%`}
-                        title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
-                    />
-                </div>
-
                 <div className="">
                     <BigImageStory2
-                        imgUrl={`/img/new-layout/item-3.png`}
-                        imageContainerClassname="aspect-[15/17] max-w-[1196px] m-auto"
-                        title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
+                        imageClassname=" px-[9px] lg:px-[19px]"
+                        imgUrl={"/img/products/volt/volt-2.png"}
+                        imageContainerClassname="aspect-[92/59] m-auto"
+                        title={`Approach`}
+                        story={`Following our initial discussions with the Volt team, a mutual decision was made to employ a more modern react-based framework for their front-end.`}
                         textColor={`text-white`}
                     />
                 </div>
-
-                <div className="bg-[#D6D8CE] rounded-[20px]">
+                <div className="bg-[#FDFCF3]  translate-y-10 no-scrollbar overflow-x-scroll flex">
                     <BigImageStory2
-                        imgUrl={`/img/new-layout/item-4.png`}
-                            imageContainerClassname="aspect-[530/637] max-w-[1060px] m-auto"
-                        title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
+                        imgUrl={"/img/products/volt/volt-3.png"}
+                        imageContainerClassname="aspect-[45/7] m-auto h-full w-full lg:h-[536px] lg:w-[3588px]"
                     />
                 </div>
-
+                <div className="bg-[#FDFCF3]">
+                    <BigImageStory2
+                            imgUrl={"/img/products/volt/volt-3.png"}
+                            imageContainerClassname="aspect-[45/7] m-auto h-full w-full lg:hidden"
+                       
+                        title={`Approach`}
+                        story={`Following our initial discussions with the Volt team, a mutual decision was made to employ a more modern react-based framework for their front-end.`}
+                    />
+                </div>
                 <div className="">
                     <BigImageStory2
-                        imgUrl={`/img/new-layout/item-5.png`}
-                        imageContainerClassname="aspect-[38/25] max-w-[912px]"
-                        title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
+                        imageClassname=" px-[9px] lg:px-[19px]"
+                        imgUrl={"/img/products/volt/volt-4.png"}
+                        imageContainerClassname="aspect-[92/59] m-auto"
+                        title={`Approach`}
+                        story={`Post comprehensive quality assurance conducted by all stakeholders, necessary modifications were implemented before launching the new website, meeting all requirements and expectations. `}
                         textColor={`text-white`}
                     />
                 </div>
-
-                <div className="bg-[#D6D8CE] rounded-[20px]">
-                    <BigImageStory2
-                        imgUrl={`/img/new-layout/item-6.png`}
-                            imageContainerClassname="aspect-[46/31] max-w-[926px]"
-                        title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
+                <div className="rounded-[20px] mt-[120px] lg:mt-[200px] pb-20 lg:px-40 lg:pb-[200px] ">
+                    <BigImageOnly
+                        imgUrl={"/img/products/volt/volt-5.png"}
+                        imageClassname=" lg:object-cover"
+                        className="aspect-[41/42]"
                     />
-                </div>
-                <div className="rounded-[20px] overflow-hidden">
-                    <BigImageOnly imgUrl={`/img/new-layout/item-7.png`} />
                 </div>
             </div>
         </>

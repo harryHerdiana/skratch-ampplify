@@ -5,9 +5,9 @@ const BigImageOnly = (props: BigImageOnlyProps) => {
     return (
         <div
             className={classNames(
-                ` relative w-full aspect-square md:aspect-video 
+                ` relative w-full 
                 `,
-                props.className
+                props.className, props.className?.includes("aspect") ?? "aspect-square md:aspect-video "
             )}
         >
             <Image
