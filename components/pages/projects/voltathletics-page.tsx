@@ -27,18 +27,11 @@ export default function VoltAthleticsPage() {
                 />
                 <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono]">
                     <BigTitleStory
-                        title={`INTEGRATED 
-                            DIRECT - TO - CONSUMER 
-                            SOLUTIONS FOR BEVERAGE 
-                            ALCOHOL BRANDS`}
+                        title={`Expert fitness guidance, whether you are training as an individual or part of a group`}
                         titleLeft={`Services`}
-                        textLeft={`1. UX/UI DESIGN
-                            2. CUSTOM THEME DEVELOPMENT
-                            3. STORE SET-UP
-                            4. APP INTEGRATION
-                            5. CUSTOM APP DEVELOPMENT`}
+                        textLeft={`Front-end Development`}
                         titleRight={`About`}
-                        textRight="Speakeasy Co. offers a complete solution for beverage alcohol brands, including technology, warehousing, and order fulfillment. We joined forces with Speakeasy Co. as they sought a modern eCommerce solution for their clients."
+                        textRight="Volt Athletics specializes in providing strength and conditioning solutions for athletes. Their training app combines cutting-edge technology with expert coaching to create individualized training plans that cater to each athlete's goals and needs."
                     />
 
                     <BigImageStory
