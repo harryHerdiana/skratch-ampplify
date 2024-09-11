@@ -19,7 +19,7 @@ export default function TryitPage() {
             </Head>
 
             <div className="relative bg-black">
-                <HeroTitle 
+                <HeroTitle
                     title="TRYIT"
                     subtitle="Stick To The Plan"
                     desktopImgUrl="/img/products/tryitproduct.png"
@@ -27,80 +27,60 @@ export default function TryitPage() {
                 />
                 <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono]">
                     <BigTitleStory
-                        title={`INTEGRATED 
-                            DIRECT - TO - CONSUMER 
-                            SOLUTIONS FOR BEVERAGE 
-                            ALCOHOL BRANDS`}
+                        title={`Fun project where I can share my design process and release random products`}
                         titleLeft={`Services`}
                         textLeft={`1. UX/UI DESIGN
-                            2. CUSTOM THEME DEVELOPMENT
-                            3. STORE SET-UP
-                            4. APP INTEGRATION
-                            5. CUSTOM APP DEVELOPMENT`}
+                            2. SHOPIFY THEME DEVELOPMENT
+                           `}
                         titleRight={`About`}
-                        textRight="Speakeasy Co. offers a complete solution for beverage alcohol brands, including technology, warehousing, and order fulfillment. We joined forces with Speakeasy Co. as they sought a modern eCommerce solution for their clients."
+                        textRight="Try It Studios is a design studio situated in Los Angeles. They curate unique partnerships with up-and-coming brands and special events, infusing their collection with an exclusive and varied appeal."
                     />
 
                     <BigImageStory
                         imageContainerClassname="aspect-square md:aspect-video lg:mb-16 "
-                        imgUrl={`/img/new-layout/item-1.png`}
-                        width={`90%`}
-                        height={`60%`}
+                        imgUrl={`/img/products/tryit/tryit-1.png`}
+                     
                         title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
-                    />
-                </div>
-
-                <div className="bg-[#D6D8CE] rounded-[20px]">
-                    <BigImageStory
-                        imageContainerClassname="aspect-video max-w-[1080px] m-auto lg:mb-[120px] lg:mt-[160px] my-[112px] "
-                        imgUrl={`/img/new-layout/item-2.png`}
-                        width={`65%`}
-                        height={`100%`}
-                        title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
+                        story={`Having collaborated on a previous eCommerce project, we approached them about revamping their site and creating a new custom theme for their Shopify store. `}
                     />
                 </div>
 
                 <div className="">
                     <BigImageStory2
-                        imgUrl={`/img/new-layout/item-3.png`}
-                        imageContainerClassname="aspect-[15/17] max-w-[1196px] m-auto"
+                        imgUrl={`/img/products/tryit/tryit-2.png`}
+                        imageContainerClassname="aspect-[39/49] m-auto max-w-[1572px]"
                         title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
+                        story={`As they were gearing up to unveil a new collection for the upcoming season, they saw the opportunity to synchronize the launch with a fresh new website. Despite a tight timeline, we wasted no time on the project and immediately initiated the process.`}
+                        textColor={`text-white`}
+                    />
+                </div>
+                <div className="bg-[#FDFCF3] rounded-[20px] ">
+                    <BigImageStory2
+                        imgUrl={`/img/products/tryit/tryit-3.png`}
+                        imageContainerClassname="aspect-[82/47] m-auto max-w-[1304px]"
+                        title={`Challenge`}
+                        story={`Their trust in our design approach was evident as we created a new UI style guide with minimal revisions. The process flowed smoothly, enabling us to meet the deadline for their new collection launch successfully and without any complications.`}
+                        
+                    />
+                </div>
+                <div className="rounded-[20px]  bg-[url(/img/products/tryit/tryit-4-bg.png)] bg-cover bg-center bg-no-repeat overflow-hidden">
+                    <BigImageStory2
+                              imgUrl={`/img/products/tryit/tryit-4.png`}
+                              imageContainerClassname="aspect-[92/44] m-auto max-w-[920px]"
+                       
+                    />
+                    <BigImageStory2
+                        title={`Approach`}
+                        story={`A significant aspect of The Home Edit's online sales hinges on their tailor-made labels. Ensuring a user-friendly shopping experience, as well as creating a reliable fulfillment solution for their printing vendor, was our focal point to boost conversions and efficiency.`}
                         textColor={`text-white`}
                     />
                 </div>
 
-                <div className="bg-[#D6D8CE] rounded-[20px]">
-                    <BigImageStory2
-                        imgUrl={`/img/new-layout/item-4.png`}
-                            imageContainerClassname="aspect-[530/637] max-w-[1060px] m-auto"
-                        title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
+                <div className="rounded-[20px] mt-[120px] lg:mt-[200px] pb-20 px-[19px] lg:px-40 lg:pb-[200px] ">
+                    <BigImageOnly
+                              imgUrl={`/img/products/tryit/tryit-5.png`}
+                              className="aspect-[58/53] md:aspect-[52/59] h-full"
                     />
-                </div>
-
-                <div className="">
-                    <BigImageStory2
-                        imgUrl={`/img/new-layout/item-5.png`}
-                        imageContainerClassname="aspect-[38/25] max-w-[912px]"
-                        title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
-                        textColor={`text-white`}
-                    />
-                </div>
-
-                <div className="bg-[#D6D8CE] rounded-[20px]">
-                    <BigImageStory2
-                        imgUrl={`/img/new-layout/item-6.png`}
-                            imageContainerClassname="aspect-[46/31] max-w-[926px]"
-                        title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
-                    />
-                </div>
-                <div className="rounded-[20px] overflow-hidden">
-                    <BigImageOnly imgUrl={`/img/new-layout/item-7.png`} />
                 </div>
             </div>
         </>

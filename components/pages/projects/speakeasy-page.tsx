@@ -51,9 +51,10 @@ export default function SpeakeasyPage() {
                     />
                 </div>
 
-                <div className="bg-[#D6D8CE] rounded-[20px]">
+                <div className="bg-[#D6D8CE] rounded-[20px] pb-[80px] lg:pb-[200px]">
                     <BigImageStory
-                        imageContainerClassname="aspect-video max-w-[1080px] m-auto lg:mb-[120px] lg:mt-[160px] my-[112px] "
+                        imageOuterContainerClassname="px-10 lg:px-[160px]"
+                        imageContainerClassname="aspect-video m-auto lg:pb-[120px] lg:pt-[160px] py-[112px] "
                         imgUrl={`/img/new-layout/item-2.png`}
                         width={`65%`}
                         height={`100%`}
@@ -62,7 +63,7 @@ export default function SpeakeasyPage() {
                     />
                 </div>
 
-                <div className="">
+                <div className="pb-[80px] lg:pb-[200px]">
                     <BigImageStory2
                         imgUrl={`/img/new-layout/item-3.png`}
                         imageContainerClassname="aspect-[15/17] max-w-[1196px] m-auto"
@@ -72,7 +73,7 @@ export default function SpeakeasyPage() {
                     />
                 </div>
 
-                <div className="bg-[#D6D8CE] rounded-[20px]">
+                <div className="bg-[#D6D8CE] rounded-[20px] pb-[80px] lg:pb-[200px]">
                     <BigImageStory2
                         imgUrl={`/img/new-layout/item-4.png`}
                             imageContainerClassname="aspect-[530/637] max-w-[1060px] m-auto"
@@ -81,7 +82,7 @@ export default function SpeakeasyPage() {
                     />
                 </div>
 
-                <div className="">
+                <div className="pb-[80px] lg:pb-[200px]">
                     <BigImageStory2
                         imgUrl={`/img/new-layout/item-5.png`}
                         imageContainerClassname="aspect-[38/25] max-w-[912px]"
@@ -91,7 +92,7 @@ export default function SpeakeasyPage() {
                     />
                 </div>
 
-                <div className="bg-[#D6D8CE] rounded-[20px]">
+                <div className="bg-[#D6D8CE] rounded-[20px] pb-[80px] lg:pb-[200px]">
                     <BigImageStory2
                         imgUrl={`/img/new-layout/item-6.png`}
                             imageContainerClassname="aspect-[46/31] max-w-[926px]"

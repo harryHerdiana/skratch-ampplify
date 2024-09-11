@@ -4,22 +4,26 @@ const BigImageStory = (props: BigImageStoryProps) => {
     return (
         <div className="text-black font-sans ">
             {props.imgUrl && (
-                <div
-                    className={classNames(
-                        props.imageContainerClassname,
-                        "w-full relative top-0 left-0 h-full  overflow-hidden rounded-[4px] "
-                    )}
-                >
-                    <Image
-                        layout="fill"
-                        src={props.imgUrl}
-                        alt=""
-                        className={classNames(
-                            "h-full object-cover ",
-                            props.imageClassname
-                        )}
-                    />
-                </div>
+              <div
+              className={classNames(
+                `py-[40px] relative rounded-[4px] flex items-center justify-center lg:py-[128px]`,
+                props.imageOuterContainerClassname
+              )}
+            >
+              <div
+                className={classNames(
+                  "relative h-full w-full ",
+                  props.imageContainerClassname,
+                )}
+              >
+                <Image
+                  src={props.imgUrl}
+                  alt=""
+                  className={classNames("object-cover ", props.imageClassname)}
+                  fill
+                />
+              </div>
+            </div>
             )}
             <div className="border-t border-[#1F1F1F] mt-8 opacity-15"></div>
             {props.title && props.story && (
