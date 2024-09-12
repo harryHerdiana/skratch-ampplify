@@ -1,7 +1,6 @@
 "use client";
 import HeroTitle from "@/components/common/HeroTitle";
 import BigImageOnly from "@/components/sections/big-img-only";
-import BigImageStory from "@/components/sections/big-img-story";
 import BigImageStory2 from "@/components/sections/big-img-story-2";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
@@ -19,7 +18,7 @@ export default function ProprioPage() {
             </Head>
 
             <div className="relative bg-black">
-                <HeroTitle 
+                <HeroTitle
                     title="PROPRIO"
                     subtitle="The New Way Of Seeing"
                     desktopImgUrl="/img/products/proprioproduct.png"
@@ -27,80 +26,58 @@ export default function ProprioPage() {
                 />
                 <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono]">
                     <BigTitleStory
-                        title={`INTEGRATED 
-                            DIRECT - TO - CONSUMER 
-                            SOLUTIONS FOR BEVERAGE 
-                            ALCOHOL BRANDS`}
+                        title={`Modernizing the way we predict, perform, and perfect surgery`}
                         titleLeft={`Services`}
-                        textLeft={`1. UX/UI DESIGN
-                            2. CUSTOM THEME DEVELOPMENT
-                            3. STORE SET-UP
-                            4. APP INTEGRATION
-                            5. CUSTOM APP DEVELOPMENT`}
+                        textLeft={`1. webflow development
+                            2. APP INTEGRATION
+                           `}
                         titleRight={`About`}
-                        textRight="Speakeasy Co. offers a complete solution for beverage alcohol brands, including technology, warehousing, and order fulfillment. We joined forces with Speakeasy Co. as they sought a modern eCommerce solution for their clients."
+                        textRight="Proprio is a tech company revolutionizing surgery with a blend of expert knowledge and immersive technology. This platform equips surgeons with crucial insights for informed decisions during surgeries."
                     />
 
-                    <BigImageStory
-                        imageContainerClassname="aspect-square md:aspect-video lg:mb-16 "
-                        imgUrl={`/img/new-layout/item-1.png`}
-                        width={`90%`}
-                        height={`60%`}
-                        title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
-                    />
+                    <div className="  bg-[url(/img/products/proprio/proprio-1-bg.png)] bg-cover bg-center bg-no-repeat overflow-hidden">
+                        <BigImageStory2
+                            imgUrl={`/img/products/proprio/proprio-1.png`}
+                            imageContainerClassname="aspect-[13/8] m-auto max-w-[1040px]"
+                        />
+                        <BigImageStory2
+                            title={`Approach`}
+                            story={`As Proprio geared up for a new fundraising round, they set out to improve their digital presence. The current site appeared templated, outdated, and didn't mirror the innovative image of the company. Additionally, some sections  posed management challenges and hindered scalability for future upgrades.`}
+                            textColor={`text-white`}
+                        />
+                    </div>
                 </div>
-
-                <div className="bg-[#D6D8CE] rounded-[20px]">
-                    <BigImageStory
-                        imageContainerClassname="aspect-video max-w-[1080px] m-auto lg:mb-[120px] lg:mt-[160px] my-[112px] "
-                        imgUrl={`/img/new-layout/item-2.png`}
-                        width={`65%`}
-                        height={`100%`}
-                        title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
-                    />
-                </div>
-
-                <div className="">
+                <div className="bg-[#FDFCF3] rounded-b-[20px]">
                     <BigImageStory2
-                        imgUrl={`/img/new-layout/item-3.png`}
-                        imageContainerClassname="aspect-[15/17] max-w-[1196px] m-auto"
+                            imgUrl={`/img/products/proprio/proprio-2.png`}
+                            imageContainerClassname="aspect-[57/31] m-auto max-w-[1132px]"
                         title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
+                        story={`Collaborating with our partners at MUTO, our goal was to create a more engaging and interactive user experience. We achieved this by incorporating elements for motion and video. `}
+                    />
+                </div>
+                <div className=" ">
+                    <BigImageStory2
+                            imgUrl={`/img/products/proprio/proprio-3.png`}
+                            imageContainerClassname="aspect-[54/39] m-auto max-w-[1128px]"
+                        title={`Challenge`}
                         textColor={`text-white`}
+
+                        story={`TThese enhancements enriched the website experience while maintaining a balanced design that emphasizes content without overwhelming it. `}
+                    />
+                </div>
+                <div className="bg-[#FDFCF3] rounded-b-[20px]">
+                    <BigImageStory2
+                            imgUrl={`/img/products/proprio/proprio-4.png`}
+                            imageContainerClassname="aspect-[263/187] m-auto max-w-[1048px]"
+                        title={`Challenge`}
+                        story={`Since we continued using Webflow, Proprio's preferred platform, development was rapid and efficient, and transferring CMS content was seamless, eliminating the need for platform migration. `}
                     />
                 </div>
 
-                <div className="bg-[#D6D8CE] rounded-[20px]">
-                    <BigImageStory2
-                        imgUrl={`/img/new-layout/item-4.png`}
-                            imageContainerClassname="aspect-[530/637] max-w-[1060px] m-auto"
-                        title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
-                    />
-                </div>
-
-                <div className="">
-                    <BigImageStory2
-                        imgUrl={`/img/new-layout/item-5.png`}
-                        imageContainerClassname="aspect-[38/25] max-w-[912px]"
-                        title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
-                        textColor={`text-white`}
-                    />
-                </div>
-
-                <div className="bg-[#D6D8CE] rounded-[20px]">
-                    <BigImageStory2
-                        imgUrl={`/img/new-layout/item-6.png`}
-                            imageContainerClassname="aspect-[46/31] max-w-[926px]"
-                        title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
-                    />
-                </div>
-                <div className="rounded-[20px] overflow-hidden">
-                    <BigImageOnly imgUrl={`/img/new-layout/item-7.png`} />
+                <div className="rounded-[20px] mt-[120px] lg:mt-[200px] p-5 lg:p-10 ">
+                    <BigImageOnly
+                            imgUrl={`/img/products/proprio/proprio-5.png`}
+                            />
                 </div>
             </div>
         </>

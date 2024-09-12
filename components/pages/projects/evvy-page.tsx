@@ -19,7 +19,7 @@ export default function EvvyPage() {
             </Head>
 
             <div className="relative bg-black">
-                <HeroTitle 
+                <HeroTitle
                     title="EVVY"
                     subtitle="Know What’s Up Down There"
                     desktopImgUrl="/img/products/evvyproduct.png"
@@ -27,80 +27,65 @@ export default function EvvyPage() {
                 />
                 <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono]">
                     <BigTitleStory
-                        title={`INTEGRATED 
-                            DIRECT - TO - CONSUMER 
-                            SOLUTIONS FOR BEVERAGE 
-                            ALCOHOL BRANDS`}
+                        title={`The female body shouldn’t be a medical mystery`}
                         titleLeft={`Services`}
-                        textLeft={`1. UX/UI DESIGN
-                            2. CUSTOM THEME DEVELOPMENT
-                            3. STORE SET-UP
-                            4. APP INTEGRATION
-                            5. CUSTOM APP DEVELOPMENT`}
+                        textLeft={`1. Shopify Theme Development
+                            2. Custom App Development
+                            3. App Integration`}
                         titleRight={`About`}
-                        textRight="Speakeasy Co. offers a complete solution for beverage alcohol brands, including technology, warehousing, and order fulfillment. We joined forces with Speakeasy Co. as they sought a modern eCommerce solution for their clients."
+                        textRight="Evvy is a health and wellness company that provides customers with science-backed insights to improve their overall well-being. Evvy approached us to develop their eCommerce platform and enhance their marketing website."
                     />
 
                     <BigImageStory
                         imageContainerClassname="aspect-square md:aspect-video lg:mb-16 "
-                        imgUrl={`/img/new-layout/item-1.png`}
+                        imgUrl={`/img/products/evvy/evvy-1.png`}
                         width={`90%`}
                         height={`60%`}
                         title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
-                    />
-                </div>
-
-                <div className="bg-[#D6D8CE] rounded-[20px]">
-                    <BigImageStory
-                        imageContainerClassname="aspect-video max-w-[1080px] m-auto lg:mb-[120px] lg:mt-[160px] my-[112px] "
-                        imgUrl={`/img/new-layout/item-2.png`}
-                        width={`65%`}
-                        height={`100%`}
-                        title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
+                        story={`They were intrigued by our prior project for a health and wellness client that employed the same web stack they intended to use, including Shopify, ReCharge, and Webflow.`}
                     />
                 </div>
 
                 <div className="">
                     <BigImageStory2
-                        imgUrl={`/img/new-layout/item-3.png`}
-                        imageContainerClassname="aspect-[15/17] max-w-[1196px] m-auto"
+                        imgUrl={`/img/products/evvy/evvy-2.png`}
+                        imageContainerClassname="aspect-[53/40] m-auto max-w-[1066px]"
                         title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
+                        story={`Synchronization was crucial as time was limited before their official launch, giving them confidence in our ability to recreate the desired experience swiftly.`}
                         textColor={`text-white`}
                     />
                 </div>
-
-                <div className="bg-[#D6D8CE] rounded-[20px]">
+                <div className="bg-[#FDFCF3] rounded-[20px] ">
                     <BigImageStory2
-                        imgUrl={`/img/new-layout/item-4.png`}
-                            imageContainerClassname="aspect-[530/637] max-w-[1060px] m-auto"
+                        imgUrl={`/img/products/evvy/evvy-3.png`}
+                        imageContainerClassname="aspect-[17/12] m-auto max-w-[1224px]"
                         title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
+                        story={`Utilizing their existing product page on Webflow, we synced the product availability with Shopify and maintained a fluid transition to checkout to ensure a seamless user experience. `}
                     />
                 </div>
-
-                <div className="">
+                <div className="rounded-[20px]  bg-[url(/img/products/evvy/evvy-4-bg.png)] bg-cover bg-center bg-no-repeat overflow-hidden">
                     <BigImageStory2
-                        imgUrl={`/img/new-layout/item-5.png`}
-                        imageContainerClassname="aspect-[38/25] max-w-[912px]"
-                        title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
+                        imgUrl={`/img/products/evvy/evvy-4.png`}
+                        imageContainerClassname="aspect-[18/11] m-auto max-w-[920px]"
+                    />
+                    <BigImageStory2
+                        title={`Approach`}
+                        story={`The integration of ReCharge facilitated smooth management of their subscription-based healthcare service and recurring billing. `}
                         textColor={`text-white`}
                     />
                 </div>
-
-                <div className="bg-[#D6D8CE] rounded-[20px]">
+                <div className="bg-[#FDFCF3] rounded-[20px] ">
                     <BigImageStory2
-                        imgUrl={`/img/new-layout/item-6.png`}
-                            imageContainerClassname="aspect-[46/31] max-w-[926px]"
+                        imgUrl={`/img/products/evvy/evvy-5.png`}
+                        imageContainerClassname="aspect-[95/83] m-auto max-w-[908px]"
                         title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
+                        story={`This eCommerce stack created a strong foundation, enabling Evvy to offer top-notch virtual healthcare services while delivering a seamless online journey for their customers. `}
                     />
                 </div>
-                <div className="rounded-[20px] overflow-hidden">
-                    <BigImageOnly imgUrl={`/img/new-layout/item-7.png`} />
+                <div className="rounded-[20px] mt-[120px] lg:mt-[200px] p-5 lg:p-10 ">
+                    <BigImageOnly
+                        imgUrl={`/img/products/evvy/evvy-6.png`}
+                    />
                 </div>
             </div>
         </>
