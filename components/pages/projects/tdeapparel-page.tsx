@@ -19,7 +19,7 @@ export default function TDEApparel() {
             </Head>
 
             <div className="relative bg-black">
-                <HeroTitle 
+                <HeroTitle
                     title="TDE Apparel"
                     subtitle="Here To Contend"
                     desktopImgUrl="/img/products/tdeproduct.png"
@@ -27,10 +27,9 @@ export default function TDEApparel() {
                 />
                 <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono]">
                     <BigTitleStory
-                        title={`INTEGRATED 
-                            DIRECT - TO - CONSUMER 
-                            SOLUTIONS FOR BEVERAGE 
-                            ALCOHOL BRANDS`}
+                        title={`We’re leaders in 
+                            technology, innovation 
+                            design,  and sport`}
                         titleLeft={`Services`}
                         textLeft={`1. UX/UI DESIGN
                             2. CUSTOM THEME DEVELOPMENT
@@ -38,69 +37,37 @@ export default function TDEApparel() {
                             4. APP INTEGRATION
                             5. CUSTOM APP DEVELOPMENT`}
                         titleRight={`About`}
-                        textRight="Speakeasy Co. offers a complete solution for beverage alcohol brands, including technology, warehousing, and order fulfillment. We joined forces with Speakeasy Co. as they sought a modern eCommerce solution for their clients."
+                        textRight="One main purpose of the site was to showcase job opportunities and attract potential employees. We developed a custom integration of their current hiring platform that was required to display current openings."
                     />
 
                     <BigImageStory
-                        imageContainerClassname="aspect-square md:aspect-video lg:mb-16 "
-                        imgUrl={`/img/new-layout/item-1.png`}
+                        imageContainerClassname="aspect-square md:aspect-[1410/940] "
+                        imgUrl={`/img/products/tde/tde-1.png`}
                         width={`90%`}
                         height={`60%`}
                         title={`Challenge`}
                         story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
                     />
                 </div>
-
                 <div className="bg-[#D6D8CE] rounded-[20px]">
+                    <BigImageStory2
+                        imgUrl={`/img/products/tde/tde-2.png`}
+                        imageContainerClassname="aspect-[1601/1715]  max-w-[1601px] m-auto"
+                        title={`Challenge`}
+                        story={`One main purpose of the site was to showcase job opportunities and attract potential employees. We developed a custom integration of their current hiring platform that was required to display current openings.`}
+                        textColor="text-black"
+                    />
+                </div>
+                <div className="bg-[#1F1F1F] rounded-[20px]  ">
                     <BigImageStory
-                        imageContainerClassname="aspect-video max-w-[1080px] m-auto lg:mb-[120px] lg:mt-[160px] my-[112px] "
-                        imgUrl={`/img/new-layout/item-2.png`}
-                        width={`65%`}
-                        height={`100%`}
-                        title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
-                    />
+                        imageContainerClassname="aspect-[1025/581] m-auto max-w-[1025px]"
+                        imgUrl={`/img/products/tde/tde-3.png`}
+                  
+                   />
                 </div>
 
-                <div className="">
-                    <BigImageStory2
-                        imgUrl={`/img/new-layout/item-3.png`}
-                        imageContainerClassname="aspect-[15/17] max-w-[1196px] m-auto"
-                        title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
-                        textColor={`text-white`}
-                    />
-                </div>
-
-                <div className="bg-[#D6D8CE] rounded-[20px]">
-                    <BigImageStory2
-                        imgUrl={`/img/new-layout/item-4.png`}
-                            imageContainerClassname="aspect-[530/637] max-w-[1060px] m-auto"
-                        title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
-                    />
-                </div>
-
-                <div className="">
-                    <BigImageStory2
-                        imgUrl={`/img/new-layout/item-5.png`}
-                        imageContainerClassname="aspect-[38/25] max-w-[912px]"
-                        title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
-                        textColor={`text-white`}
-                    />
-                </div>
-
-                <div className="bg-[#D6D8CE] rounded-[20px]">
-                    <BigImageStory2
-                        imgUrl={`/img/new-layout/item-6.png`}
-                            imageContainerClassname="aspect-[46/31] max-w-[926px]"
-                        title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
-                    />
-                </div>
                 <div className="rounded-[20px] overflow-hidden">
-                    <BigImageOnly imgUrl={`/img/new-layout/item-7.png`} />
+                    <BigImageOnly imgUrl={`/img/products/tde/tde-4.png`} />
                 </div>
             </div>
         </>

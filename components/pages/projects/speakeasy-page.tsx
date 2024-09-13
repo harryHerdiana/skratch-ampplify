@@ -42,7 +42,7 @@ export default function SpeakeasyPage() {
                     />
 
                     <BigImageStory
-                        imageContainerClassname="aspect-square md:aspect-video lg:mb-16 "
+                        imageContainerClassname="aspect-square md:aspect-video"
                         imgUrl={`/img/new-layout/item-1.png`}
                         width={`90%`}
                         height={`60%`}

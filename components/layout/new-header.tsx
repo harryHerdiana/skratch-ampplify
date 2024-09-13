@@ -7,7 +7,7 @@ const NewHeader = () => {
                 Skratch®
             </Link>
             <div className="flex gap-5 md:gap-8">
-                <Link href="/">Projects²⁴</Link>
+                <Link href="/projects">Projects²⁴</Link>
                 <Link href="/">Get in Touch</Link>
             </div>
         </header>

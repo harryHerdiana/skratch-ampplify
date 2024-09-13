@@ -19,7 +19,7 @@ export default function AftcoPage() {
             </Head>
 
             <div className="relative bg-black">
-                <HeroTitle 
+                <HeroTitle
                     title="AFTCO"
                     subtitle="American Fishing Tackle Company"
                     desktopImgUrl="/img/products/aftcoproduct.png"
@@ -27,80 +27,84 @@ export default function AftcoPage() {
                 />
                 <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono]">
                     <BigTitleStory
-                        title={`INTEGRATED 
-                            DIRECT - TO - CONSUMER 
-                            SOLUTIONS FOR BEVERAGE 
-                            ALCOHOL BRANDS`}
+                        title={`Unparalleled quality, performance, and reliability when it counts most`}
                         titleLeft={`Services`}
-                        textLeft={`1. UX/UI DESIGN
-                            2. CUSTOM THEME DEVELOPMENT
-                            3. STORE SET-UP
-                            4. APP INTEGRATION
-                            5. CUSTOM APP DEVELOPMENT`}
+                        textLeft={`1. FRONT-END DEVELOPMENT
+                            2. SHOPIFY DEVELOPMENT
+                            3. HEADLESS DEVELOPMENT
+                            4. APP INTEGRATION`}
                         titleRight={`About`}
-                        textRight="Speakeasy Co. offers a complete solution for beverage alcohol brands, including technology, warehousing, and order fulfillment. We joined forces with Speakeasy Co. as they sought a modern eCommerce solution for their clients."
+                        textRight="AFTCO, the American Fishing Tackle Company, is renowned for its top-quality fishing apparel and accessories. With a rich history and dedication to quality, innovation, and conservation, AFTCO stands as a trusted name in the fishing community."
                     />
 
                     <BigImageStory
-                        imageContainerClassname="aspect-square md:aspect-video lg:mb-16 "
-                        imgUrl={`/img/new-layout/item-1.png`}
+                        imageContainerClassname="aspect-square md:aspect-video"
+                        imgUrl={`/img/products/aftco/aftco-1.png`}
                         width={`90%`}
                         height={`60%`}
                         title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
+                        story={`In line with its ongoing evolution and commitment to innovation, Aftco identified the necessity to overhaul its eCommerce experience. After considering various options, they embraced a headless eCommerce approach, decoupling the front-end while retaining Shopify Plus for checkout. `}
                     />
                 </div>
-
-                <div className="bg-[#D6D8CE] rounded-[20px]">
+                <div className="rounded-[20px] mt-[120px] lg:mt-[200px] p-5 lg:p-10 ">
+                    <BigImageOnly
+                        imgUrl={`/img/products/aftco/aftco-2.png`}
+                        className="aspect-[200/129] max-w-[1200px] m-auto"
+                    />
+                </div>
+                <div className="rounded-[20px] p-5 lg:p-10 ">
                     <BigImageStory
-                        imageContainerClassname="aspect-video max-w-[1080px] m-auto lg:mb-[120px] lg:mt-[160px] my-[112px] "
-                        imgUrl={`/img/new-layout/item-2.png`}
-                        width={`65%`}
-                        height={`100%`}
+                        imgUrl={`/img/products/aftco/aftco-3.png`}
+                        imageContainerClassname="aspect-[227/159] m-auto max-w-[908px]"
                         title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
+                        story={`Our challenge was to develop a customized commerce experience that not only prioritizes speed and performance but also achieves outstanding lighthouse scores.  `}
+                        textColor="text-white"
                     />
                 </div>
-
-                <div className="">
+                <div className="  bg-[url(/img/products/aftco/aftco-4-bg.png)] bg-cover bg-center bg-no-repeat overflow-hidden">
                     <BigImageStory2
-                        imgUrl={`/img/new-layout/item-3.png`}
-                        imageContainerClassname="aspect-[15/17] max-w-[1196px] m-auto"
-                        title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
+                        imgUrl={`/img/products/aftco/aftco-4.png`}
+                        imageClassname="rounded-[8px]"
+                        imageContainerClassname="aspect-[160/183] m-auto max-w-[908px]"
+                    />
+                    <BigImageStory2
+                        title={`Approach`}
+                        story={`Utilizing the new user interface contributed by AFTCO, we kicked off the project by building an MVP as proof of concept to ensure they chose the right approach.`}
                         textColor={`text-white`}
                     />
                 </div>
-
-                <div className="bg-[#D6D8CE] rounded-[20px]">
+                <div className="bg-[#FDFCF3] rounded-[20px] ">
                     <BigImageStory2
-                        imgUrl={`/img/new-layout/item-4.png`}
-                            imageContainerClassname="aspect-[530/637] max-w-[1060px] m-auto"
+                        imgUrl={`/img/products/aftco/aftco-5.png`}
+                        imageContainerClassname="aspect-[235/189] m-auto max-w-[1177px]"
                         title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
+                        story={`The integration of diverse third-party services such as accessibility, search, and personalization played a pivotal role in the complexity of the new build. `}
                     />
                 </div>
-
-                <div className="">
-                    <BigImageStory2
-                        imgUrl={`/img/new-layout/item-5.png`}
-                        imageContainerClassname="aspect-[38/25] max-w-[912px]"
+                <div className="rounded-[20px] p-5 lg:p-10 ">
+                    <BigImageStory
+                        imgUrl={`/img/products/aftco/aftco-6.png`}
+                        imageContainerClassname="aspect-[45/26] m-auto max-w-[1080px]"
                         title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
-                        textColor={`text-white`}
+                        story={`We dedicated extensive hours to quality assurance and accessibility audits to ensure exceptional website experience and adherence to web compliance.`}
+                        textColor="text-white"
                     />
                 </div>
-
-                <div className="bg-[#D6D8CE] rounded-[20px]">
-                    <BigImageStory2
-                        imgUrl={`/img/new-layout/item-6.png`}
-                            imageContainerClassname="aspect-[46/31] max-w-[926px]"
+                <div className="bg-[#FDFCF3] rounded-[20px] ">
+                    <BigImageStory
+                        imageContainerClassname="aspect-square md:aspect-video lg:mb-16 "
+                        imgUrl={`/img/products/aftco/aftco-7.png`}
+                        width={`90%`}
+                        height={`60%`}
                         title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
+                        story={`In line with its ongoing evolution and commitment to innovation, Aftco identified the necessity to overhaul its eCommerce experience. After considering various options, they embraced a headless eCommerce approach, decoupling the front-end while retaining Shopify Plus for checkout. `}
                     />
                 </div>
-                <div className="rounded-[20px] overflow-hidden">
-                    <BigImageOnly imgUrl={`/img/new-layout/item-7.png`} />
+                <div className=" mt-[120px] lg:mt-[200px] p-5 lg:p-10 ">
+                    <BigImageOnly
+                        imgUrl={`/img/products/aftco/aftco-8.png`}
+                        className="aspect-[68/47]"
+                    />
                 </div>
             </div>
         </>

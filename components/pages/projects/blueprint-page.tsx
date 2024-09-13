@@ -19,7 +19,7 @@ export default function BlueprintPage() {
             </Head>
 
             <div className="relative bg-black">
-                <HeroTitle 
+                <HeroTitle
                     title="BLUEPRINT"
                     subtitle="Services To Empower Your Success"
                     desktopImgUrl="/img/products/blueprintproduct.png"
@@ -27,80 +27,46 @@ export default function BlueprintPage() {
                 />
                 <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono]">
                     <BigTitleStory
-                        title={`INTEGRATED 
-                            DIRECT - TO - CONSUMER 
-                            SOLUTIONS FOR BEVERAGE 
-                            ALCOHOL BRANDS`}
+                        title={`Success in real estate requires more than just luck and hard work`}
                         titleLeft={`Services`}
-                        textLeft={`1. UX/UI DESIGN
-                            2. CUSTOM THEME DEVELOPMENT
-                            3. STORE SET-UP
-                            4. APP INTEGRATION
-                            5. CUSTOM APP DEVELOPMENT`}
+                        textLeft={`1. WEBFLOW DEVELOPMENT
+                            2. APP INTEGRATION`}
                         titleRight={`About`}
-                        textRight="Speakeasy Co. offers a complete solution for beverage alcohol brands, including technology, warehousing, and order fulfillment. We joined forces with Speakeasy Co. as they sought a modern eCommerce solution for their clients."
+                        textRight="Blueprint Capital provides construction financing to small-scale builders and develops income producing property for long-term value. As part of a new marketing initiative, Blueprint came to us looking for a development partner to rebuild their website."
                     />
 
                     <BigImageStory
-                        imageContainerClassname="aspect-square md:aspect-video lg:mb-16 "
-                        imgUrl={`/img/new-layout/item-1.png`}
+                        imageContainerClassname="aspect-square md:aspect-video"
+                        imgUrl={`/img/products/blueprint/blueprint-1.png`}
                         width={`90%`}
                         height={`60%`}
                         title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
+                        story={`Using the designs provided by their marketing team in Figma, we started the building process in Webflow. This was their preferred platform to easily manage the site within the designer view and native CMS.`}
                     />
                 </div>
 
-                <div className="bg-[#D6D8CE] rounded-[20px]">
-                    <BigImageStory
-                        imageContainerClassname="aspect-video max-w-[1080px] m-auto lg:mb-[120px] lg:mt-[160px] my-[112px] "
-                        imgUrl={`/img/new-layout/item-2.png`}
-                        width={`65%`}
-                        height={`100%`}
-                        title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
-                    />
-                </div>
-
-                <div className="">
+                <div className="  bg-[url(/img/products/blueprint/blueprint-2-bg.png)] bg-cover bg-center bg-no-repeat overflow-hidden">
                     <BigImageStory2
-                        imgUrl={`/img/new-layout/item-3.png`}
-                        imageContainerClassname="aspect-[15/17] max-w-[1196px] m-auto"
-                        title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
+                        imgUrl={`/img/products/blueprint/blueprint-2.png`}
+                        imageClassname="rounded-[8px]"
+                        imageContainerClassname="aspect-[13/8] m-auto max-w-[1040px]"
+                    />
+                    <BigImageStory2
+                        title={`Approach`}
+                        story={`The second phase of development required us to rebuild a new Home Search experience, while still utilizing their current backend to manage property listings.`}
                         textColor={`text-white`}
                     />
                 </div>
-
-                <div className="bg-[#D6D8CE] rounded-[20px]">
-                    <BigImageStory2
-                        imgUrl={`/img/new-layout/item-4.png`}
-                            imageContainerClassname="aspect-[530/637] max-w-[1060px] m-auto"
-                        title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
-                    />
+                <div className="rounded-[20px] mt-[120px] lg:mt-[200px] p-5 lg:p-10 ">
+                    <BigImageOnly
+                        imgUrl={`/img/products/blueprint/blueprint-3.png`}
+                        className="aspect-[990/612] max-w-[990px] m-auto"
+                        />
                 </div>
-
-                <div className="">
-                    <BigImageStory2
-                        imgUrl={`/img/new-layout/item-5.png`}
-                        imageContainerClassname="aspect-[38/25] max-w-[912px]"
-                        title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
-                        textColor={`text-white`}
-                    />
-                </div>
-
-                <div className="bg-[#D6D8CE] rounded-[20px]">
-                    <BigImageStory2
-                        imgUrl={`/img/new-layout/item-6.png`}
-                            imageContainerClassname="aspect-[46/31] max-w-[926px]"
-                        title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
-                    />
-                </div>
-                <div className="rounded-[20px] overflow-hidden">
-                    <BigImageOnly imgUrl={`/img/new-layout/item-7.png`} />
+                <div className="rounded-[20px] mt-[120px] lg:mt-[200px] p-5 lg:p-10 ">
+                    <BigImageOnly
+                        imgUrl={`/img/products/blueprint/blueprint-4.png`}
+                        />
                 </div>
             </div>
         </>

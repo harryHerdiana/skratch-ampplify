@@ -30,7 +30,7 @@ export default function CertortPage() {
           />
 
           <BigImageStory
-            imageContainerClassname="aspect-square md:aspect-video lg:mb-16 "
+            imageContainerClassname="aspect-square md:aspect-video"
             imgUrl={`/img/products/certor/certor-1.png`}
             width={`90%`}
             height={`60%`}

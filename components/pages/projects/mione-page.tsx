@@ -41,7 +41,7 @@ export default function MionePage() {
                     />
 
                     <BigImageStory
-                        imageContainerClassname="aspect-square md:aspect-video lg:mb-16"
+                        imageContainerClassname="aspect-square md:aspect-video"
                         imgUrl={`/img/products/mione/mione-1.png`}
                         imageClassname="px-[19px]"
                         width={`90%`}
