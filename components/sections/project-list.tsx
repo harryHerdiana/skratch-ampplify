@@ -1,58 +1,105 @@
 import Image from "next/image";
-
-import CertorProduct from "@/public/img/products/certor/certorproduct.png";
 import Link from "next/link";
+import Slider from "react-slick";
+import { projectsData } from "./projectdata";
 
-const ProjectItem = () => {
-    const services = [
-        "UX/UI design",
-        "custom theme development",
-        "store set-up",
-        "app integration",
-        "custom app development",
-    ];
-
+const ProjectItem = (props: IProjectList) => {
     return (
-        <div className="max-w-[327px] md:max-w-[808px] w-full ">
-            <p className="text-20 md:text-32 w-max mb-2.5">
-                <span className="text-[#1F1F1F80]">2023</span>
-                <br />
-                Certor
-            </p>
+        <div className="max-w-[327px] md:max-w-full px-5 w-full">
+            <Link
+                href={`/projects/${props.title
+                    .toLowerCase()
+                    .replace(/ /g, "-")}`}
+            >
+                <p className="text-20 md:text-32 w-max mb-2.5 text-[#1F1F1F]">
+                    <span className="text-[#1F1F1F80]">{props.year}</span>
+                    <br />
+                    {props.title}
+                </p>
+            </Link>
+
             <div className="relative aspect-video">
-                <Image src={CertorProduct} alt="" fill className="h-full" />
+                <Image
+                    src={props.image}
+                    alt="Certor product"
+                    fill
+                    className="h-full object-cover"
+                />
             </div>
-            <div className="mt-3 ">
-                <p className="mb-2">Services</p>
-                {services.map((item: string, index: number) => (
-                    <div
-                        key={item}
-                        className="items-center flex my-1 gap-8 text-[#1F1F1F66] border-t border-[#1F1F1F26]"
-                    >
-                        <p className="w-2">{index + 1}</p>
-                        <p className="uppercase">{item}</p>
-                    </div>
-                ))}
+
+            <div className="mt-3 text-left">
+                <p className="mb-2 text-18 text-[#1f1f1f]">Services</p>
+                <ul className="grid grid-cols-1 lg:grid-cols-2 gap-x-8">
+                    {props.services.map((service, index) => (
+                        <li
+                            key={service}
+                            className="text-[#1F1F1F66] border-y border-gray-200 py-0.5 uppercase font-['MonumentGrotesk-Semi-Mono'] text-12 leading-[20px]"
+                        >
+                            <span className="mr-2">{index + 1}.</span>
+                            {service}
+                        </li>
+                    ))}
+                </ul>
             </div>
         </div>
     );
 };
 
-const ProjectList = () => {
+const ProjectList: React.FC = () => {
+    const settings = {
+        infinite: true,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        centerMode: true,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 550,
+                settings: {
+                    slidesToShow: 1.2,
+                },
+            },
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+        ],
+    };
     return (
-        <div className="bg-white pt-[60px] px-2.5 pb-4 rounded-[20px] text-12 md:text-15">
-            <h3 className="uppercase font-bold text-52 md:text-120">projects</h3>
-            <div className="flex my-[60px]">
+        <div className="bg-white pt-[60px] lg:py-[120px] px-[9px] lg:px-[19px] pb-4 rounded-[20px] text-12 md:text-15">
+            <h3 className="uppercase text-52 md:text-120 font-['MonumentGrotesk-Bold'] tracking-[-2px] text-[#1f1f1f]">
+                projects
+            </h3>
+            <div className="flex my-[60px] lg:my-[105px]">
                 <h4 className="w-full">Our Work</h4>
-                <p className="uppercase">
+                <p className="uppercase max-w-[282px] lg:mr-[18%] font-['MonumentGrotesk-Semi-Mono'] text-[#1f1f1f]">
                     is a digital studio focused on developing experiences to
                     help brands stay ahead of the game.
                 </p>
             </div>
-            <div className="mb-32">
-                <ProjectItem />
+
+            <div className="mb-32 w-full lg:w-auto">
+                <Slider {...settings}>
+                    {projectsData.map((project, index) => (
+                        <ProjectItem
+                            key={project.title}
+                            services={project.services}
+                            image={project.image}
+                            title={project.title}
+                            year={project.year}
+                        />
+                    ))}
+                </Slider>
             </div>
-            <Link href="/projects" className="text-20 md:text-32">View All Projects</Link>
+            <Link
+                href="/projects"
+                className="text-20 lg:text-[34px] text-[#1f1f1f] underline"
+            >
+                View All Projects
+            </Link>
         </div>
     );
 };
