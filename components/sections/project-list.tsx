@@ -1,11 +1,13 @@
+import classNames from "classnames";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import { projectsData } from "./projectdata";
 
 const ProjectItem = (props: IProjectList) => {
     return (
-        <div className="max-w-[327px] md:max-w-full px-5 w-full">
+        <div className="md:max-w-full px-2.5 w-full translate-x-1/2">
             <Link
                 href={`/projects/${props.title
                     .toLowerCase()
@@ -33,9 +35,8 @@ const ProjectItem = (props: IProjectList) => {
                     {props.services.map((service, index) => (
                         <li
                             key={service}
-                            className="text-[#1F1F1F66] border-y border-gray-200 py-0.5 uppercase font-['MonumentGrotesk-Semi-Mono'] text-12 leading-[20px]"
+                            className="text-[#1F1F1F66] [&:nth-child(2)]:border-t [&:nth-child(1)]:border-t border-b py-0.5 uppercase font-['MonumentGrotesk-Semi-Mono'] text-12 leading-[20px]"
                         >
-                            <span className="mr-2">{index + 1}.</span>
                             {service}
                         </li>
                     ))}
@@ -46,42 +47,55 @@ const ProjectItem = (props: IProjectList) => {
 };
 
 const ProjectList: React.FC = () => {
+    const ref = useRef<HTMLDivElement>(null);
+    const [width, setWidth] = useState<number>(0);
+
+    useEffect(() => {
+        if (ref.current) {
+            setWidth(ref.current.offsetWidth);
+        }
+    }, [ref]);
     const settings = {
         infinite: true,
         speed: 500,
-        slidesToShow: 2,
+        slidesToShow: 1.5,
         slidesToScroll: 1,
-        centerMode: true,
+        centerMode: false,
         arrows: false,
+        className: "",
+        centerPadding: "0px",
+
         responsive: [
             {
                 breakpoint: 550,
                 settings: {
-                    slidesToShow: 1.2,
-                },
-            },
-            {
-                breakpoint: 1280,
-                settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1.5,
                 },
             },
         ],
     };
+
     return (
         <div className="bg-white pt-[60px] lg:py-[120px] px-[9px] lg:px-[19px] pb-4 rounded-[20px] text-12 md:text-15">
             <h3 className="uppercase text-52 md:text-120 font-['MonumentGrotesk-Bold'] tracking-[-2px] text-[#1f1f1f]">
                 projects
             </h3>
-            <div className="flex my-[60px] lg:my-[105px]">
-                <h4 className="w-full">Our Work</h4>
-                <p className="uppercase max-w-[282px] lg:mr-[18%] font-['MonumentGrotesk-Semi-Mono'] text-[#1f1f1f]">
-                    is a digital studio focused on developing experiences to
-                    help brands stay ahead of the game.
-                </p>
+            <div className="flex my-[60px] lg:my-[105px] ">
+                <h4 className="w-max text-[#1F1F1F]">Our Work</h4>
+                {width && (
+                    <p
+                        style={{ marginLeft: width / 1.55 }}
+                        className={classNames(
+                            "uppercase w-[282px] font-['MonumentGrotesk-Semi-Mono'] text-18 text-[#1f1f1f]"
+                        )}
+                    >
+                        is a digital studio focused on developing experiences to
+                        help brands stay ahead of the game.
+                    </p>
+                )}
             </div>
 
-            <div className="mb-32 w-full lg:w-auto">
+            <div ref={ref} className="mb-32 w-full lg:w-auto">
                 <Slider {...settings}>
                     {projectsData.map((project, index) => (
                         <ProjectItem

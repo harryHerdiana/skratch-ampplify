@@ -3,5 +3,4 @@ interface IProjectList {
     title:string;
     year:string;
     image:string
-
 }
