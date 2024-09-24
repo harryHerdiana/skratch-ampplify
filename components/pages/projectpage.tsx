@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { projectsData } from "../sections/projectdata";
+import { projectsData2 } from "../sections/projectdata";
 export default function ProjectPage() {
     return (
         <div
@@ -13,7 +13,7 @@ export default function ProjectPage() {
                 </h1>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-5">
-                    {projectsData.map((project, index) => (
+                    {projectsData2.map((project, index) => (
                         <div
                             key={project.title}
                             className="space-y-4 mb-[60px] lg:mb-[120px]"
@@ -40,7 +40,7 @@ export default function ProjectPage() {
                                     <h3 className="text-12 mb-2 md:text[18px] lg:text-18">
                                         Services
                                     </h3>
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8">
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 font-['MonumentGrotesk-Semi-Mono']">
                                         <div className="">
                                             {project.services
                                                 .slice(0, 3)
@@ -52,18 +52,18 @@ export default function ProjectPage() {
                                                             "border-t"
                                                         } px-2 py-0.5 leading-[20px]`}
                                                     >
-                                                        <span className="text-12 font-medium mr-8">
+                                                        <span className="text-12 font-medium mr-8 uppercase">
                                                             {service
                                                                 ? index + 1
                                                                 : ""}
                                                         </span>
-                                                        <span className="text-12">
+                                                        <span className="text-12 uppercase">
                                                             {service}
                                                         </span>
                                                     </div>
                                                 ))}
                                         </div>
-                                        <div className="">
+                                        <div className="uppercase">
                                             {project.services
                                                 .slice(3)
                                                 .map((service, index) => (

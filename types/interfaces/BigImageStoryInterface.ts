@@ -11,5 +11,5 @@ interface BigImageStoryProps {
     imageContainerClassname?: string;
     imageClassname?: string;
     imageOuterContainerClassname?:string;
-    
+    textContainerClassname?:string;
 }
