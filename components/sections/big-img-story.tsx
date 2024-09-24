@@ -12,7 +12,7 @@ const BigImageStory = (props: BigImageStoryProps) => {
             >
               <div
                 className={classNames(
-                  "relative h-full w-full ",
+                  "relative h-full w-full",
                   props.imageContainerClassname,
                 )}
               >
@@ -27,8 +27,8 @@ const BigImageStory = (props: BigImageStoryProps) => {
             )}
             <div className="border-t border-[#1F1F1F] mt-8 opacity-15"></div>
             {props.title && props.story && (
-                <div className="flex flex-col md:flex-row p-2  font-['MonumentGrotesk-Regular'] mt-5 px-2.5  lg:px-[19px]">
-                    <div className=" w-full">
+                <div className="flex flex-col md:flex-row p-2  font-['MonumentGrotesk-Regular'] mt-5 px-2.5  lg:px-[0]">
+                    <div className=" w-1/2">
                         <h2
                             className={`text-12 md:text-15  mt-2.5 mb-5 lg:mb-[28px] 
                             ${props.textColor ?? "text-[#1F1F1F]"}`}
@@ -37,7 +37,7 @@ const BigImageStory = (props: BigImageStoryProps) => {
                         </h2>
                     </div>
 
-                    <div className=" md:mt-0 mb-16 max-w-[453px] md:mr-[17%]">
+                    <div className=" md:mt-0 mb-16 max-w-[453px]  w-1/2">
                         <p
                             className={`text-[18px] md:text-[24px] leading-[24px] 
                             md:leading-[30px] ${
