@@ -38,7 +38,7 @@ const BigImageStory = (props: BigImageStoryProps) => {
                 {props.title && props.story && (
                     <div
                         className={classNames(
-                            "flex flex-col md:flex-row p-2  font-['MonumentGrotesk-Regular'] mt-5 px-2.5  lg:px-[0]"
+                            "flex flex-col md:flex-row  font-['MonumentGrotesk-Regular'] mt-5  lg:px-[0]"
                             
                         )}
                     >
@@ -51,7 +51,7 @@ const BigImageStory = (props: BigImageStoryProps) => {
                             </h2>
                         </div>
 
-                        <div className=" md:mt-0 mb-16 max-w-[453px]  w-1/2">
+                        <div className=" md:mt-0 mb-16 max-w-[453px]  md:w-1/2">
                             <p
                                 className={`text-[18px] md:text-[24px] leading-[24px] 
                             md:leading-[30px] ${
