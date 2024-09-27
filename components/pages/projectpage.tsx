@@ -27,6 +27,7 @@ export default function ProjectPage() {
                                 </div>
                             </Link>
                             <div className="rounded-xl relative w-full md:w-full  aspect-[79/55]">
+                            <Link href={`/projects/${project.title.toLowerCase().replace(/ /g, "-")}`}>
                                 <Image
                                     src={project.image}
                                     alt={project.title}
@@ -34,6 +35,7 @@ export default function ProjectPage() {
                                     objectFit="cover"
                                     style={{ borderRadius: "4px" }}
                                 />
+                            </Link>
                             </div>
                             <div className="space-y-4 md:w-full">
                                 <div className="mt-3">

@@ -42,11 +42,13 @@ export default function SpeakeasyPage() {
                     />
 
                     <BigImageStory
-                        imageContainerClassname="aspect-square md:aspect-video"
+                        imageContainerClassname="aspect-square md:aspect-video rounded-[4px] overflow-hidden"
                         imgUrl={`/img/new-layout/item-1.png`}
                         width={`90%`}
                         height={`60%`}
                         title={`Challenge`}
+                        imageOuterContainerClassname="px-[9px] lg:px-[19px]"
+                        textContainerClassname="px-[9px] lg:px-[19px]"
                         story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
                     />
                 </div>
@@ -59,6 +61,7 @@ export default function SpeakeasyPage() {
                         width={`65%`}
                         height={`100%`}
                         title={`Challenge`}
+                           textContainerClassname="px-[9px] lg:px-[19px]"
                         story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
                     />
                 </div>
@@ -66,16 +69,21 @@ export default function SpeakeasyPage() {
                 <div className="pb-[80px] lg:pb-[200px]">
                     <BigImageStory2
                         imgUrl={`/img/new-layout/item-3.png`}
-                        imageContainerClassname="aspect-[15/17] max-w-[1196px] m-auto"
-                        title={`Challenge`}
+                        textContainerClassname="px-[9px] lg:px-[19px]"
+                        imageOuterContainerClassname="px-10 lg:px-0"
+                        imageContainerClassname="aspect-[15/17] max-w-[1196px] m-auto "
+                        title={`Challenges`}
                         story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
                         textColor={`text-white`}
+                        
                     />
                 </div>
 
                 <div className="bg-[#D6D8CE] rounded-[20px] pb-[80px] lg:pb-[200px]">
                     <BigImageStory2
                         imgUrl={`/img/new-layout/item-4.png`}
+                          textContainerClassname="px-[9px] lg:px-[19px]"
+                        imageOuterContainerClassname="px-10 lg:px-0"
                             imageContainerClassname="aspect-[530/637] max-w-[1060px] m-auto"
                         title={`Challenge`}
                         story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
@@ -85,6 +93,8 @@ export default function SpeakeasyPage() {
                 <div className="pb-[80px] lg:pb-[200px]">
                     <BigImageStory2
                         imgUrl={`/img/new-layout/item-5.png`}
+                          textContainerClassname="px-[9px] lg:px-[19px]"
+                        imageOuterContainerClassname="px-10 lg:px-0"
                         imageContainerClassname="aspect-[38/25] max-w-[912px]"
                         title={`Challenge`}
                         story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
