@@ -3,11 +3,11 @@ import Image from "next/image";
 
 const BigImageStory2 = (props: BigImageStoryProps) => {
     return (
-        <div className="text-black font-['MonumentGrotesk-Regular']">
+        <div className="text-black font-['MonumentGrotesk-Regular'] lg:pb-[169px] pb-[60px]">
             {props.imgUrl && (
                 <div
                     className={classNames(
-                        `py-[40px] relative rounded-[4px] flex items-center justify-center lg:py-[128px]`,
+                        `pt-[40px] relative rounded-[4px] flex items-center justify-center lg:pt-[169px]`,
                         props.imageOuterContainerClassname
                     )}
                 >
@@ -43,7 +43,7 @@ const BigImageStory2 = (props: BigImageStoryProps) => {
                             </h2>
                         </div>
 
-                        <div className=" md:mt-0 mb-16 max-w-[453px] md:mr-[17%]">
+                        <div className=" md:mt-0 md:max-w-[453px] ">
                             <p
                                 className={`text-[18px] md:text-[24px] leading-[24px] 
                          md:leading-[30px] ${

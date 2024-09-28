@@ -7,7 +7,7 @@ import { projectsData } from "./projectdata";
 
 const ProjectItem = (props: IProjectList) => {
     return (
-        <div className="md:max-w-full px-[5px] lg:px-2.5 w-full lg:translate-x-1/2 translate-x-[10%]">
+        <div className="md:max-w-full px-[5px] lg:px-2.5 w-full sm:translate-x-1/2 translate-x-[18%]">
             <Link
                 href={`/projects/${props.title
                     .toLowerCase()
@@ -37,11 +37,12 @@ const ProjectItem = (props: IProjectList) => {
                 <p className="mb-2 text-18 text-[#1f1f1f]">Services</p>
                 <ul className="grid grid-cols-1 lg:grid-cols-2 gap-x-8">
                     {props.services.map((service, index) => (
+                        service.length > 0 && 
                         <li
                             key={service}
                             className="text-[#1F1F1F66] [&:nth-child(2)]:border-t [&:nth-child(1)]:border-t border-b py-0.5 uppercase font-['MonumentGrotesk-Semi-Mono'] text-12 leading-[20px]"
                         >
-                            {service}
+                           { <span className="mr-8">{index + 1}</span> }{service}
                         </li>
                     ))}
                 </ul>
@@ -73,7 +74,7 @@ const ProjectList: React.FC = () => {
             {
                 breakpoint: 550,
                 settings: {
-                    slidesToShow: 1.1,
+                    slidesToShow: 1.2,
                 },
             },
         ],
@@ -84,7 +85,7 @@ const ProjectList: React.FC = () => {
             <h3 className="uppercase text-52 md:text-120 font-['MonumentGrotesk-Bold'] tracking-[-2px] text-[#1f1f1f]">
                 projects
             </h3>
-            <div className="flex my-[60px] lg:my-[105px] justify-between lg:justify-normal">
+            <div className="flex my-[60px] lg:my-[105px] justify-between lg:justify-normal gap-[86px]">
                 <h4 className="w-max text-[#1F1F1F]">Our Work</h4>
                 {width && (
                     <p
@@ -99,7 +100,7 @@ const ProjectList: React.FC = () => {
                 )}
                     <p
                         className={classNames(
-                            "lg:hidden uppercase w-[282px] font-['MonumentGrotesk-Semi-Mono'] text-18 text-[#1f1f1f]"
+                            "lg:hidden uppercase w-[282px] font-['MonumentGrotesk-Semi-Mono'] text-12 md:text-18 text-[#1f1f1f]"
                         )}
                     >
                         is a digital studio focused on developing experiences to

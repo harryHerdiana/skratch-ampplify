@@ -22,7 +22,7 @@ export default function CertortPage() {
           desktopImgUrl="/img/products/certorproduct.png"
           mobileImgUrl="/img/products/mobile/certorproduct-mobile.png"
         />
-        <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono]">
+        <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px]">
           <BigTitleStory
             title={`We’re leaders in technology, innovation, design, and sport`}
             titleLeft={`Schutt`}
@@ -36,7 +36,7 @@ export default function CertortPage() {
             height={`60%`}
           />
         </div>
-        <div className="">
+        <div className="px-[9px] lg:px-[19px]">
           <BigImageStory2
             imgUrl={`/img/products/certor/certor-2.png`}
             imageContainerClassname="aspect-[15/17] max-w-[1196px] m-auto"
@@ -46,8 +46,8 @@ export default function CertortPage() {
           />
         </div>
 
-        <div className="rounded-[20px] overflow-hidden mb-[60px] lg:mb-[120px] bg-[#FDFCF3] py-[50px] px-[60px]">
-          <BigImageOnly imgUrl={`/img/products/certor/certor-3.png`} />
+        <div className="rounded-[20px] overflow-hidden mb-[60px] lg:mb-[120px] bg-[#FDFCF3] md:py-[50px] md:px-[60px] p-[40px]">
+          <BigImageOnly imgUrl={`/img/products/certor/certor-3.png`} contain/>
         </div>
         <div className="rounded-[20px] overflow-hidden">
           <BigImageOnly imgUrl={`/img/products/certor/certor-4.png`} />
