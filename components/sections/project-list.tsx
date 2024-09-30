@@ -7,7 +7,7 @@ import { projectsData } from "./projectdata";
 
 const ProjectItem = (props: IProjectList) => {
     return (
-        <div className="md:max-w-full px-[5px] lg:px-2.5 w-full sm:translate-x-1/2 translate-x-[18%]">
+        <div className="md:max-w-full px-[5px] w-full sm:translate-x-1/2 translate-x-[18%]">
             <Link
                 href={`/projects/${props.title
                     .toLowerCase()
@@ -29,7 +29,7 @@ const ProjectItem = (props: IProjectList) => {
                     src={props.image}
                     alt="Certor product"
                     fill
-                    className="h-full object-cover"
+                    className="rounded-[4px] h-full object-cover"
                 />
             </div>
             </Link>
@@ -81,26 +81,15 @@ const ProjectList: React.FC = () => {
     };
 
     return (
-        <div className="bg-white pt-[60px] lg:py-[120px] px-[9px] lg:px-[19px] pb-4 rounded-[20px] text-12 md:text-15">
-            <h3 className="uppercase text-52 md:text-120 font-['MonumentGrotesk-Bold'] tracking-[-2px] text-[#1f1f1f]">
+        <div className="bg-white pt-[60px] lg:py-[120px] pb-4 rounded-[20px] text-12 md:text-15">
+            <h3 className="pl-2 md:pl-4 uppercase text-52 md:text-120 font-['MonumentGrotesk-Bold'] tracking-[-2px] text-[#1f1f1f]">
                 projects
             </h3>
-            <div className="flex my-[60px] lg:my-[105px] justify-between lg:justify-normal gap-[86px]">
-                <h4 className="w-max text-[#1F1F1F]">Our Work</h4>
-                {width && (
-                    <p
-                        style={{ marginLeft: width / 1.75 }}
-                        className={classNames(
-                            "hidden lg:block uppercase w-[282px] font-['MonumentGrotesk-Semi-Mono'] text-18 text-[#1f1f1f]"
-                        )}
-                    >
-                        is a digital studio focused on developing experiences to
-                        help brands stay ahead of the game.
-                    </p>
-                )}
+            <div className="flex pl-3 md:pl-5 my-[60px] lg:my-[105px] justify-between md:grid grid-cols-2">
+                <h4 className="w-max text-[#1F1F1F]">( Our Work )</h4>
                     <p
                         className={classNames(
-                            "lg:hidden uppercase w-[282px] font-['MonumentGrotesk-Semi-Mono'] text-12 md:text-18 text-[#1f1f1f]"
+                            "uppercase w-[282px] font-['MonumentGrotesk-Semi-Mono'] text-12 md:text-12 text-[#1f1f1f]"
                         )}
                     >
                         is a digital studio focused on developing experiences to
@@ -108,7 +97,7 @@ const ProjectList: React.FC = () => {
                     </p>
             </div>
 
-            <div ref={ref} className="mb-32 w-full lg:w-auto">
+            <div ref={ref} className="pl-2 md:pl-4 mb-32 w-full lg:w-auto">
                 <Slider {...settings}>
                     {projectsData.map((project, index) => (
                         <ProjectItem
@@ -123,7 +112,7 @@ const ProjectList: React.FC = () => {
             </div>
             <Link
                 href="/projects"
-                className="text-20 lg:text-[34px] text-[#1f1f1f] underline"
+                className="text-20 pl-3 md:pl-5 lg:text-[34px] text-[#1f1f1f] underline"
             >
                 View All Projects
             </Link>

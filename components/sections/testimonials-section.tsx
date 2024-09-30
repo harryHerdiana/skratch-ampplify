@@ -35,9 +35,9 @@ const TestimonialsSection: React.FC = () => {
   const next = ()=>sliderRef.current.slickNext()
   const prev = ()=>sliderRef.current.slickPrev()
   return (
-    <div className="bg-white pt-[60px] lg:pt-[120px] px-2.5 pb-5 lg:pb-[30px] rounded-[20px] text-12 md:text-15 text-[#1f1f1f]">
+    <div className="bg-white pt-[60px] lg:pt-[120px] px-2.5 md:px-5 pb-5 lg:pb-[30px] rounded-[20px] text-12 md:text-15 text-[#1f1f1f]">
       <div className="md:grid md:grid-cols-2 border-t-[1px] border-t-[#1F1F1F26] md:pt-5">
-        <h3 className=" pt-2.5 md:pt-0 mb-16 ">Testimonials</h3>
+        <h3 className=" pt-2.5 md:pt-0 mb-16 ">( Testimonials )</h3>
         <div className="w-full relative">
           <div className="absolute right-0 bottom-0 md:top-0 flex gap-1 text-[#1F1F1F66] z-10 h-max">
             <button onClick={prev} className="p-2.5 bg-[#D6D8CE] rounded-[4px] hover:opacity-85 cursor-pointer">
