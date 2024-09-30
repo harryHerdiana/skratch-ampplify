@@ -25,8 +25,8 @@ export default function TryitPage() {
                     desktopImgUrl="/img/products/tryitproduct.png"
                     mobileImgUrl="/img/products/mobile/tryitproduct-mobile.png"
                 />
-                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono]">
-                    <BigTitleStory
+                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[210px]">
+                <BigTitleStory
                         title={`Fun project where I can share my design process and release random products`}
                         titleLeft={`Services`}
                         textLeft={`1. UX/UI DESIGN
@@ -52,6 +52,7 @@ export default function TryitPage() {
                         title={`Challenge`}
                         story={`As they were gearing up to unveil a new collection for the upcoming season, they saw the opportunity to synchronize the launch with a fresh new website. Despite a tight timeline, we wasted no time on the project and immediately initiated the process.`}
                         textColor={`text-white`}
+                        textContainerClassname="px-[9px] lg:px-[19px]"
                     />
                 </div>
                 <div className="bg-[#FDFCF3] rounded-[20px] ">
@@ -59,6 +60,7 @@ export default function TryitPage() {
                         imgUrl={`/img/products/tryit/tryit-3.png`}
                         imageContainerClassname="aspect-[82/47] m-auto max-w-[1304px]"
                         title={`Challenge`}
+                        textContainerClassname="px-[9px] lg:px-[19px]"
                         story={`Their trust in our design approach was evident as we created a new UI style guide with minimal revisions. The process flowed smoothly, enabling us to meet the deadline for their new collection launch successfully and without any complications.`}
                         
                     />
@@ -73,6 +75,8 @@ export default function TryitPage() {
                         title={`Approach`}
                         story={`A significant aspect of The Home Edit's online sales hinges on their tailor-made labels. Ensuring a user-friendly shopping experience, as well as creating a reliable fulfillment solution for their printing vendor, was our focal point to boost conversions and efficiency.`}
                         textColor={`text-white`}
+                        textContainerClassname="px-[9px] lg:px-[19px]"
+
                     />
                 </div>
 

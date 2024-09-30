@@ -25,8 +25,8 @@ export default function BlueprintPage() {
                     desktopImgUrl="/img/products/blueprintproduct.png"
                     mobileImgUrl="/img/products/mobile/blueprintproduct-mobile.png"
                 />
-                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono]">
-                    <BigTitleStory
+                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[210px]">
+                <BigTitleStory
                         title={`Success in real estate requires more than just luck and hard work`}
                         titleLeft={`Services`}
                         textLeft={`1. WEBFLOW DEVELOPMENT
@@ -51,7 +51,8 @@ export default function BlueprintPage() {
                         imageClassname="rounded-[8px]"
                         imageContainerClassname="aspect-[13/8] m-auto max-w-[1040px]"
                     />
-                    <BigImageStory2
+                    <BigImageStory2                         textContainerClassname="px-[9px] lg:px-[19px]"
+
                         title={`Approach`}
                         story={`The second phase of development required us to rebuild a new Home Search experience, while still utilizing their current backend to manage property listings.`}
                         textColor={`text-white`}

@@ -1,33 +1,8 @@
 import classNames from "classnames";
 import Image from "next/image";
-const BigImageStory = (props: BigImageStoryProps) => {
+const TextOnly = (props: BigImageStoryProps) => {
     return (
         <>
-            {props.imgUrl && (
-                <div
-                    className={classNames(
-                        `py-[40px] relative rounded-[4px] flex items-center justify-center lg:py-[169px]`,
-                        props.imageOuterContainerClassname
-                    )}
-                >
-                    <div
-                        className={classNames(
-                            "relative h-full w-full rounded-[4px] overflow-hidden",
-                            props.imageContainerClassname
-                        )}
-                    >
-                        <Image
-                            src={props.imgUrl}
-                            alt=""
-                            className={classNames(
-                                "object-cover ",
-                                props.imageClassname
-                            )}
-                            fill
-                        />
-                    </div>
-                </div>
-            )}
             <div
                 className={classNames(
                   "text-black font-sans ",
@@ -67,4 +42,4 @@ const BigImageStory = (props: BigImageStoryProps) => {
         </>
     );
 };
-export default BigImageStory;
+export default TextOnly;

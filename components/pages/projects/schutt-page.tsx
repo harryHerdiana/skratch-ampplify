@@ -25,8 +25,8 @@ export default function SchuttPage() {
                     desktopImgUrl="/img/products/schuttproduct.png"
                     mobileImgUrl="/img/products/mobile/schuttproduct-mobile.png"
                 />
-                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono]">
-                    <BigTitleStory
+                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[210px]">
+                <BigTitleStory
                         title={`Optimized impact performance, increased athlete comfort, and improved fit flexibility`}
                         titleLeft={` `}
                         textRight="Schutt Sports is a leading manufacturer of athletic equipment, particularly renowned for its football gear, emphasizing player safety and innovation. After being acquired by Certor, they approached us with a request to create a unified shopping experience across their range of brands. "
@@ -48,6 +48,8 @@ export default function SchuttPage() {
                         title={` `}
                         story={`With a clear understanding of the prerequisites and a deep awareness of API capabilities and limitations of Shopify Plus, we embarked on the creation of a bespoke app designed to fit seamlessly into this collaborative shopping model.`}
                         textColor={`text-white`}
+                        textContainerClassname="px-[9px] lg:px-[19px]"
+
                     />
                 </div>
 
@@ -56,16 +58,17 @@ export default function SchuttPage() {
                         imgUrl={`/img/products/schutt/schutt-3.png`}
                         imageContainerClassname="aspect-[74/123]  m-auto"
                         title={` `}
+                        textContainerClassname="px-[9px] lg:px-[19px]"
                         story={`Each brand's store operates through its individual Shopify instance, displaying the custom themes we developed in partnership with MUTO.`}
                     />
                 </div>
-                <div className="">
+                <div className="bg-[#FDFCF3]">
                     <BigImageStory2
                         imgUrl={`/img/products/schutt/schutt-4.png`}
                         imageContainerClassname="aspect-[47/28] m-auto"
                         title={` `}
                         story={`The synchronization of cart drawers across all sites ensures a consistent shopping experience, leading to a unified checkout process.`}
-                        textColor={`text-white`}
+                        
                     />
                 </div>
 

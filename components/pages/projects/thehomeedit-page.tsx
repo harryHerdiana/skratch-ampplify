@@ -25,8 +25,8 @@ export default function TheHomeEditPage() {
                     desktopImgUrl="/img/products/thehomeeditproduct.png"
                     mobileImgUrl="/img/products/mobile/thehomeeditproduct-mobile.png"
                 />
-                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono]">
-                    <BigTitleStory
+                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[210px]">
+                <BigTitleStory
                         title={`Improving the everyday with a unique blend of form, function, and fun`}
                         titleLeft={`Services`}
                         textLeft={`1. UX/UI DESIGN
@@ -52,6 +52,7 @@ export default function TheHomeEditPage() {
                     <BigImageStory2
                         imgUrl={`/img/products/thehomeedit/thehomeedit-2.png`}
                         imageContainerClassname="aspect-video m-auto"
+                        textContainerClassname="px-[9px] lg:px-[19px]"
                         title={` `}
                         story={`While we initiated the migration and started configuring the backend, Outfit took the lead in crafting the new UI style guide and designing the homepage. These served as our foundation for designing the remaining eCommerce templates within the new custom Shopify theme.`}
                         textColor={`text-white`}
@@ -68,6 +69,7 @@ export default function TheHomeEditPage() {
                         title={` `}
                         story={`A significant aspect of The Home Edit's online sales hinges on their tailor-made labels. Ensuring a user-friendly shopping experience, as well as creating a reliable fulfillment solution for their printing vendor, was our focal point to boost conversions and efficiency.`}
                         textColor={`text-white`}
+                        textContainerClassname="px-[9px] lg:px-[19px]"
                     />
                 </div>
 

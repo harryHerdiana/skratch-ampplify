@@ -53,7 +53,7 @@ const TestimonialsSection: React.FC = () => {
           </Slider>
         </div>
       </div>
-      <h2 className="uppercase text-48 leading-[48px] mt-[120px] lg:text-120 lg:leading-[110px] font-['MonumentGrotesk-Bold'] tracking-[-0.03em]">
+      <h2 className="uppercase text-48 leading-[48px] mt-[120px] lg:text-120 lg:leading-[110px] font-['MonumentGrotesk-Bold'] tracking-[-0.02em]">
         Testimonials
       </h2>
     </div>

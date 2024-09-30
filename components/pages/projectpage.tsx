@@ -1,19 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
-import { projectsData2 } from "../sections/projectdata";
+import { projectsData } from "../sections/projectdata";
 export default function ProjectPage() {
     return (
         <div
-            className="sm:px-6 lg:px-8 
+            className="px-[9px] lg:px-[19px]
         pt-12 bg-[#FDFCF3] text-[#1F1F1F] rounded-[20px]  font-['MonumentGrotesk-Regular']"
         >
-            <main className="mt-10 md:mt-[175px] mx-auto px-4">
-                <h1 className="md:text-[120px] text-[52px] leading-[48px] tracking-tighter  font-bold mb-[60px] md:mb-[120px]  font-['MonumentGrotesk-Bold']">
+            <main className="mt-10 md:mt-[175px] mx-auto ">
+                <h1 className="md:text-[120px] text-[52px] leading-[48px] tracking-[-0.02em]  mb-[60px] md:mb-[120px]  font-['MonumentGrotesk-Bold']">
                     PROJECTS
                 </h1>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-5">
-                    {projectsData2.map((project, index) => (
+                    {projectsData.map((project, index) => (
                         <div
                             key={project.title}
                             className="space-y-4 mb-[60px] lg:mb-[120px]"
@@ -42,7 +42,7 @@ export default function ProjectPage() {
                                     <h3 className="text-12 mb-2 md:text[18px] lg:text-18">
                                         Services
                                     </h3>
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 font-['MonumentGrotesk-Semi-Mono']">
+                                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8 font-['MonumentGrotesk-Semi-Mono']">
                                         <div className="">
                                             {project.services
                                                 .slice(0, 3)
@@ -65,7 +65,7 @@ export default function ProjectPage() {
                                                     </div>
                                                 ))}
                                         </div>
-                                        <div className="uppercase">
+                                        <div className="uppercase hidden lg:block">
                                             {project.services
                                                 .slice(3)
                                                 .map((service, index) => (

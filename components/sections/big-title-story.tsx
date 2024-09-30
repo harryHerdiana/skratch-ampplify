@@ -1,19 +1,19 @@
 const BigTitleStory = (props: BigTitleProps) => {
   return (
-    <div className="text-[#1f1f1f] md:p-5 font-['MonumentGrotesk-Bold']">
-      <div className="mb-[60px] md:mb-[92px] lg:mb-[164px]">
+    <div className="text-[#1f1f1f] pt-[60px] lg:pt-[120px] font-['MonumentGrotesk-Bold']">
+      <div className="mb-[60px] md:mb-[92px] ">
         <p
-          className="whitespace-pre-line pt-[60px] px-[9px] lg:px-[19px] text-[46px] sm:text-[52px] 
+          className="whitespace-pre-line text-[46px] sm:text-[52px] 
                         md:text-[80px] leading-[48px] md:leading-[72px] 
-                        tracking-[-0.025em] uppercase"
+                        tracking-[-0.02em] uppercase"
         >
           {props.title}
         </p>
       </div>
 
-      <div className="flex flex-col md:flex-row p-[9px] font-['MonumentGrotesk-Regular'] md:border-t border-[#1F1F1F] border-opacity-15">
+      <div className="flex flex-col md:flex-row  font-['MonumentGrotesk-Regular'] md:border-t border-[#1F1F1F] border-opacity-15">
         <div className="border-t border-gray-300 lg:border-none mb-1"></div>
-        <div className="mb-[60px] md:w-2/4">
+        <div className=" md:w-2/4">
           {props.titleLeft && (
             <h2 className="text-12 md:text-15 mb-5 mt-2.5 lg:mb-[28px] text-[#1F1F1F]">
               {props.titleLeft}
@@ -26,14 +26,14 @@ const BigTitleStory = (props: BigTitleProps) => {
           )}
         </div>
 
-        <div className=" md:mt-0 mb-16 md:w-2/4">
+        <div className=" md:mt-0 md:w-2/4">
           <div className="border-t border-gray-300 mb-1 md:hidden"></div>
           {props.titleRight && (
             <h2 className="text-12 md:text-15  mt-2.5 mb-5 lg:mb-[28px] text-[#1F1F1F]">
               {props.titleRight}
             </h2>
           )}
-          <div className=" md:mt-0 max-w-[510px] md:mr-[17%]">
+          <div className=" md:mt-0 md:max-w-[510px]">
             {props.textRight && (
               <p className="text-[18px] md:text-[24px] leading-[24px] md:leading-[30px]">
                 {props.textRight}
