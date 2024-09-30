@@ -4,10 +4,10 @@ import { projectsData } from "../sections/projectdata";
 export default function ProjectPage() {
     return (
         <div
-            className="sm:px-6 lg:px-8 
+            className="px-[9px] lg:px-[19px]
         pt-12 bg-[#FDFCF3] text-[#1F1F1F] rounded-[20px]  font-['MonumentGrotesk-Regular']"
         >
-            <main className="mt-10 md:mt-[175px] mx-auto px-[9px] lg:px-[19px]">
+            <main className="mt-10 md:mt-[175px] mx-auto ">
                 <h1 className="md:text-[120px] text-[52px] leading-[48px] tracking-[-0.02em]  mb-[60px] md:mb-[120px]  font-['MonumentGrotesk-Bold']">
                     PROJECTS
                 </h1>

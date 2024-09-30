@@ -1,11 +1,11 @@
 const BigTitleStory = (props: BigTitleProps) => {
   return (
-    <div className="text-[#1f1f1f] md:px-[19px] pt-[120px] font-['MonumentGrotesk-Bold']">
+    <div className="text-[#1f1f1f] pt-[60px] lg:pt-[120px] font-['MonumentGrotesk-Bold']">
       <div className="mb-[60px] md:mb-[92px] ">
         <p
           className="whitespace-pre-line text-[46px] sm:text-[52px] 
                         md:text-[80px] leading-[48px] md:leading-[72px] 
-                        tracking-[-0.025em] uppercase"
+                        tracking-[-0.02em] uppercase"
         >
           {props.title}
         </p>

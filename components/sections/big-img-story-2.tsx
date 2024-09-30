@@ -33,8 +33,8 @@ const BigImageStory2 = (props: BigImageStoryProps) => {
             {props.title && props.story && (
                 <div className={props.textContainerClassname}>
                     <div className="border-t border-[#D6D8CE] mt-8 opacity-15 mix-blend-difference "></div>
-                    <div className="flex flex-col md:flex-row font-['MonumentGrotesk-Regular'] mt-5 ">
-                        <div className="w-full">
+                    <div className="flex flex-col md:flex-row  font-['MonumentGrotesk-Regular'] mt-5  lg:px-[0]">
+                        <div className="w-1/2">
                             <h2
                                 className={`text-12 md:text-15  mt-2.5 mb-5 lg:mb-[28px] 
                          ${props.textColor ?? "text-black"}`}

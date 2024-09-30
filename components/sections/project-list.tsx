@@ -89,7 +89,7 @@ const ProjectList: React.FC = () => {
                 <h4 className="w-max text-[#1F1F1F]">Our Work</h4>
                 {width && (
                     <p
-                        style={{ marginLeft: width / 1.55 }}
+                        style={{ marginLeft: width / 1.75 }}
                         className={classNames(
                             "hidden lg:block uppercase w-[282px] font-['MonumentGrotesk-Semi-Mono'] text-18 text-[#1f1f1f]"
                         )}

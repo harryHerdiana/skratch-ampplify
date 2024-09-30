@@ -25,8 +25,8 @@ export default function DicebarbersPage() {
                     desktopImgUrl="/img/products/diceproduct.png"
                     mobileImgUrl="/img/products/mobile/diceproduct-mobile.png"
                 />
-                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono]">
-                    <BigTitleStory
+                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[210px]">
+                <BigTitleStory
                         title={`For those with busy lifestyles, getting a cut has never been so simple`}
                         titleLeft={`Services`}
                         textLeft={`1. WEBFLOW DEVELOPMENT
@@ -50,13 +50,16 @@ export default function DicebarbersPage() {
                         imgUrl={`/img/products/dice/dice-2.png`}
                         imageContainerClassname="aspect-[1664/2042] max-w-[1664px] m-auto"
                         title={` `}
+                        textContainerClassname="px-[9px] lg:px-[19px]"
+
                         story={`The second phase we produced content for their social media and new website.`}
                         textColor={`text-white`}
                     />
                 </div>
 
                 <div className="bg-[#FDFCF3] ">
-                    <BigImageStory2
+                    <BigImageStory2                         textContainerClassname="px-[9px] lg:px-[19px]"
+
                         imgUrl={`/img/products/dice/dice-3.png`}
                         imageContainerClassname="aspect-[1000/713] max-w-[1000px] m-auto"
                         title={` `}

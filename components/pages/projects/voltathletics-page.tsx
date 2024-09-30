@@ -4,6 +4,7 @@ import BigImageOnly from "@/components/sections/big-img-only";
 import BigImageStory from "@/components/sections/big-img-story";
 import BigImageStory2 from "@/components/sections/big-img-story-2";
 import BigTitleStory from "@/components/sections/big-title-story";
+import TextOnly from "@/components/sections/text-only";
 import Head from "next/head";
 
 export default function VoltAthleticsPage() {
@@ -25,7 +26,7 @@ export default function VoltAthleticsPage() {
                     desktopImgUrl="/img/products/voltproduct.png"
                     mobileImgUrl="/img/products/mobile/voltproduct-mobile.png"
                 />
-                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono]">
+                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[210px]">
                     <BigTitleStory
                         title={`Expert fitness guidance, whether you are training as an individual or part of a group`}
                         titleLeft={`Services`}
@@ -49,21 +50,28 @@ export default function VoltAthleticsPage() {
                         imgUrl={"/img/products/volt/volt-2.png"}
                         imageContainerClassname="aspect-[92/59] m-auto"
                         title={`Approach`}
+                        textContainerClassname="px-[9px] lg:px-[19px]"
                         story={`Following our initial discussions with the Volt team, a mutual decision was made to employ a more modern react-based framework for their front-end.`}
                         textColor={`text-white`}
                     />
                 </div>
-                <div className="bg-[#FDFCF3]  translate-y-10 no-scrollbar overflow-x-scroll flex">
+                <div className="bg-[#FDFCF3]  translate-y-10 no-scrollbar overflow-x-scroll flex-col hidden lg:flex">
                     <BigImageStory2
                         imgUrl={"/img/products/volt/volt-3.png"}
                         imageContainerClassname="aspect-[45/7] m-auto h-full w-full lg:h-[536px] lg:w-[3588px]"
                     />
                 </div>
-                <div className="bg-[#FDFCF3]">
+                <div className="bg-[#FDFCF3] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[210px] hidden lg:block">
+                    <TextOnly
+                        title={`Approach`}
+                        story={`Following our initial discussions with the Volt team, a mutual decision was made to employ a more modern react-based framework for their front-end.`}
+                    />
+                </div>
+                <div className="bg-[#FDFCF3] lg:hidden">
                     <BigImageStory2
-                            imgUrl={"/img/products/volt/volt-3.png"}
-                            imageContainerClassname="aspect-[45/7] m-auto h-full w-full lg:hidden"
-                       
+                        imgUrl={"/img/products/volt/volt-3.png"}
+                        imageContainerClassname="aspect-[45/7] m-auto h-full w-full lg:hidden"
+                        textContainerClassname="px-[9px] lg:px-[19px] "
                         title={`Approach`}
                         story={`Following our initial discussions with the Volt team, a mutual decision was made to employ a more modern react-based framework for their front-end.`}
                     />

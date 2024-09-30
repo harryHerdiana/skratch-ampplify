@@ -25,8 +25,8 @@ export default function MionePage() {
                     desktopImgUrl="/img/products/mioneproduct.png"
                     mobileImgUrl="/img/products/mobile/mioneproduct-mobile.png"
                 />
-                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono]">
-                    <BigTitleStory
+                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[210px]">
+                <BigTitleStory
                         title={`We’re leaders in
                         technology, innovation
                         design,  and sport`}
@@ -40,7 +40,7 @@ export default function MionePage() {
                         textRight="Certor Sports offers high-quality sports equipment with a focus on improving athletes' performance and safety. We helped develop Certor’s company website in Webflow, expanding off of the identity and UI work created by MUTO."
                     />
 
-                    <div className="px-[19px]">
+                    <div className="">
                         <BigImageStory
                             imageContainerClassname="aspect-square md:aspect-video"
                             imgUrl={`/img/products/mione/mione-1.png`}
@@ -53,15 +53,15 @@ export default function MionePage() {
                     </div>
                 </div>
 
-                <div className="bg-[#1F1F1F] rounded-[20px]  pt-[160px]">
+                <div className="bg-[#1F1F1F] rounded-[20px] pt-[160px]">
                     <BigImageStory
-                        imageContainerClassname="aspect-[84/37] m-auto lg:mb-[120px] mb-[112px]"
+                        imageContainerClassname="aspect-[84/37] m-auto lg:mb-[120px] mb-[112px] "
                         imgUrl={`/img/products/mione/mione-2.png`}
                         width={`65%`}
                         height={`100%`}
                         title={`Challenge`}
                         textColor="text-white"
-                        textContainerClassname="px-[19px] lg:px-[19px]"
+                        textContainerClassname="px-[19px] lg:px-[19px] lg:pb-[169px] pb-[60px]"
                         story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
                     />
                 </div>
@@ -97,7 +97,7 @@ export default function MionePage() {
                         textColor="text-white"
                         title={`Challenge`}
                         story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
-                        textContainerClassname="px-[19px] lg:px-[19px]"
+                        textContainerClassname="px-[19px] lg:px-[19px]  lg:pb-[169px] pb-[60px]"
                     />
                 </div>
 

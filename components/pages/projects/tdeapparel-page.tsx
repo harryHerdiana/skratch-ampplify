@@ -25,8 +25,8 @@ export default function TDEApparel() {
                     desktopImgUrl="/img/products/tdeproduct.png"
                     mobileImgUrl="/img/products/mobile/tdeproduct-mobile.png"
                 />
-                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono]">
-                    <BigTitleStory
+                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[210px]">
+                <BigTitleStory
                         title={`We’re leaders in 
                             technology, innovation 
                             design,  and sport`}
@@ -51,6 +51,8 @@ export default function TDEApparel() {
                 </div>
                 <div className="bg-[#D6D8CE] rounded-[20px]">
                     <BigImageStory2
+                                            textContainerClassname="px-[9px] lg:px-[19px]"
+
                         imgUrl={`/img/products/tde/tde-2.png`}
                         imageContainerClassname="aspect-[1601/1715]  max-w-[1601px] m-auto"
                         title={`Challenge`}

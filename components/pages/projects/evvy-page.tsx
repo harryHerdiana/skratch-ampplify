@@ -25,7 +25,7 @@ export default function EvvyPage() {
                     desktopImgUrl="/img/products/evvyproduct.png"
                     mobileImgUrl="/img/products/mobile/evvyproduct-mobile.png"
                 />
-                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono]">
+                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[210px]">
                     <BigTitleStory
                         title={`The female body shouldn’t be a medical mystery`}
                         titleLeft={`Services`}
@@ -48,6 +48,7 @@ export default function EvvyPage() {
 
                 <div className="">
                     <BigImageStory2
+                        textContainerClassname="px-[9px] lg:px-[19px] "
                         imgUrl={`/img/products/evvy/evvy-2.png`}
                         imageContainerClassname="aspect-[53/40] m-auto max-w-[1066px]"
                         title={`Challenge`}
@@ -57,6 +58,7 @@ export default function EvvyPage() {
                 </div>
                 <div className="bg-[#FDFCF3] rounded-[20px] ">
                     <BigImageStory2
+                        textContainerClassname="px-[9px] lg:px-[19px] "
                         imgUrl={`/img/products/evvy/evvy-3.png`}
                         imageContainerClassname="aspect-[17/12] m-auto max-w-[1224px]"
                         title={`Challenge`}
@@ -69,6 +71,7 @@ export default function EvvyPage() {
                         imageContainerClassname="aspect-[18/11] m-auto max-w-[920px]"
                     />
                     <BigImageStory2
+                        textContainerClassname="px-[9px] lg:px-[19px] "
                         title={`Approach`}
                         story={`The integration of ReCharge facilitated smooth management of their subscription-based healthcare service and recurring billing. `}
                         textColor={`text-white`}
@@ -76,6 +79,7 @@ export default function EvvyPage() {
                 </div>
                 <div className="bg-[#FDFCF3] rounded-[20px] ">
                     <BigImageStory2
+                        textContainerClassname="px-[9px] lg:px-[19px] "
                         imgUrl={`/img/products/evvy/evvy-5.png`}
                         imageContainerClassname="aspect-[95/83] m-auto max-w-[908px]"
                         title={`Challenge`}
@@ -83,9 +87,7 @@ export default function EvvyPage() {
                     />
                 </div>
                 <div className="rounded-[20px] mt-[120px] lg:mt-[200px] p-5 lg:p-10 ">
-                    <BigImageOnly
-                        imgUrl={`/img/products/evvy/evvy-6.png`}
-                    />
+                    <BigImageOnly imgUrl={`/img/products/evvy/evvy-6.png`} />
                 </div>
             </div>
         </>
