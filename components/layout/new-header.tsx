@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const NewHeader = () => {
     return (
-        <header className="font-monument fixed top-0 w-full text-15 px-2.5 py-4 flex mix-blend-difference text-white justify-between z-50 ">
+        <header className="font-monument fixed top-0 w-full text-15 md:text-18 px-2.5 md:px-5 py-4 flex mix-blend-difference text-white justify-between z-50 ">
             <Link href="/" className=" mix">
                 Skratch®
             </Link>
