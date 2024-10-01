@@ -18,7 +18,7 @@ export default function SpeakeasyPage() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div className="relative bg-black">
+            <div className="relative bg-dark">
                 <HeroTitle
                     title="SPEAKEASY"
                     subtitle="Spirits Brands' Best Friend"

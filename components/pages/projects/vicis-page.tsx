@@ -18,7 +18,7 @@ export default function VicisPage() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div className="relative bg-black">
+            <div className="relative bg-dark">
                 <HeroTitle
                     title="VICIS"
                     subtitle="Game-Changing Helmet Technology"
@@ -28,7 +28,13 @@ export default function VicisPage() {
                 <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[210px]">
                     <BigTitleStory
                         title={`Football’s most protective helmets for athletes at all ages and levels of competition`}
-                        titleLeft={`Schutt`}
+                        titleLeft={`Services`}
+                        textLeft={`1. UX/UI DESIGN
+                            2. CUSTOM THEME DEVELOPMENT
+                            3. STORE SET-UP
+                            4. APP INTEGRATION
+                            5. CUSTOM APP DEVELOPMENT`}
+                        titleRight={`About`}
                         textRight="VICIS produces advanced football helmets designed to enhance player safety through innovative technology and materials. After being acquired by Certor, they approached us with a request to create a unified shopping experience across their range of brands. "
                     />
 
@@ -44,7 +50,7 @@ export default function VicisPage() {
                 <div className="px-[9px] lg:px-[19px]">
                     <BigImageStory2
                         imgUrl={`/img/products/vicis/vicis-2.png`}
-                        imageContainerClassname="aspect-[19/18] max-w-[1196px] m-auto"
+                        imageContainerClassname="aspect-[19/18] max-w-[1280px] m-auto mb-[120px]"
                         title={`Approach`}
                         story={`With a clear understanding of the prerequisites and a keen awareness of API capabilities and limitations of Shopify Plus, we embarked on the creation of a bespoke app designed to fit seamlessly into this collaborative shopping concept.`}
                         textColor={`text-white`}
@@ -54,7 +60,7 @@ export default function VicisPage() {
                 <div className="bg-[#FDFCF3] ">
                     <BigImageStory2
                         imgUrl={`/img/products/vicis/vicis-3.png`}
-                        imageContainerClassname="aspect-[40/41]  m-auto"
+                        imageContainerClassname="aspect-[40/41] max-w-[1280px] m-auto mb-[120px]"
                         title={`Approach`}
                         textContainerClassname="px-[9px] lg:px-[19px]"
                         story={`Each brand's store operates through its individual Shopify instance, displaying the custom themes we developed in partnership with MUTO.`}
@@ -63,7 +69,7 @@ export default function VicisPage() {
                 <div className="">
                     <BigImageStory2
                         imgUrl={`/img/products/vicis/vicis-4.png`}
-                        imageContainerClassname="aspect-[20/9] m-auto"
+                        imageContainerClassname="aspect-[16/9] m-auto mb-[120px]"
                         title={`Approach`}
                         story={`The synchronization of cart drawers across all sites ensures a consistent shopping experience, leading to a unified checkout process.`}
                         textColor={`text-white`}
@@ -73,15 +79,13 @@ export default function VicisPage() {
                 <div className="bg-[#FDFCF3] ">
                     <BigImageStory2
                         imgUrl={`/img/products/vicis/vicis-5.png`}
-                        imageContainerClassname="aspect-video  m-auto"
+                        imageContainerClassname="aspect-video max-w-[1280px] m-auto mb-[120px]"
                         title={`Vicis`}
                         textContainerClassname="px-[9px] lg:px-[19px]"
-                        story={`Vicis is a sports equipment company that specializes in developing advanced football helmets designed to reduce the risk of head injuries for players.`}
-                        story2={`The company uses innovative technology and materials to create helmets that are both effective and comfortable to wear, with a focus on improving the safety of the sport.`}
-                        story3={` Vicis has gained recognition and partnerships with numerous NFL teams and players, as well as being awarded grants from the NFL Players Association and the US Department of Defense.`}
+                        story={`The synchronization of cart drawers across all sites ensures a consistent shopping experience, leading to a unified checkout process.`}
                     />
                 </div>
-                <div className="rounded-[20px] mt-10">
+                <div className="rounded-[20px] mt-[180px] pb-[180px]">
                     <BigImageOnly
                         imgUrl={`/img/products/vicis/vicis-6.png`}
                         contain

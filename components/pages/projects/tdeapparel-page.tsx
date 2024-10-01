@@ -18,7 +18,7 @@ export default function TDEApparel() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div className="relative bg-black">
+            <div className="relative bg-dark">
                 <HeroTitle
                     title="TDE Apparel"
                     subtitle="Here To Contend"

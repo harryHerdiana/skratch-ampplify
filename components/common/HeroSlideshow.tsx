@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const SliderItem = () => {
     return (
-        <div className="relative h-full w-full flex  text-white justify-between   bg-black">
+        <div className="relative h-full w-full flex  text-white justify-between   bg-dark">
             <div className="z-10 text-20 h-full w-full flex flex-col justify-between p-2.5 md:p-5 ">
                 <p></p>
                 <div className="grid md:grid-cols-2 grid-cols-1 w-full justify-between">

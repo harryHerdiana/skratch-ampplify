@@ -18,7 +18,7 @@ export default function EvvyPage() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div className="relative bg-black">
+            <div className="relative bg-dark">
                 <HeroTitle
                     title="EVVY"
                     subtitle="Know What’s Up Down There"

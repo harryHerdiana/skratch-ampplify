@@ -17,7 +17,7 @@ export default function ProprioPage() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div className="relative bg-black">
+            <div className="relative bg-dark">
                 <HeroTitle
                     title="PROPRIO"
                     subtitle="The New Way Of Seeing"

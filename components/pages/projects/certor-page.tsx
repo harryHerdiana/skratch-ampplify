@@ -15,38 +15,49 @@ export default function CertortPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="relative bg-black">
+      <div className="relative bg-dark">
         <HeroTitle
           title="CERTOR"
           subtitle="Here to contend"
           desktopImgUrl="/img/products/certorproduct.png"
           mobileImgUrl="/img/products/mobile/certorproduct-mobile.png"
         />
-        <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px]">
-          <BigTitleStory
-            title={`We’re leaders in technology, innovation, design, and sport`}
-            titleLeft={`Schutt`}
-            textRight="Certor Sports offers high-quality sports equipment with a focus on improving athletes' performance and safety. We helped develop Certor’s company website in Webflow, expanding off of the identity and UI work created by MUTO."
-          />
+        <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[210px]">
+        <BigTitleStory
+                        title={`We’re leaders in
+                        technology, innovation
+                        design,  and sport`}
+                        titleLeft={`Services`}
+                        textLeft={`1. UX/UI DESIGN
+                            2. CUSTOM THEME DEVELOPMENT
+                            3. STORE SET-UP
+                            4. APP INTEGRATION
+                            5. CUSTOM APP DEVELOPMENT`}
+                        titleRight={`About`}
+                        textRight="Certor Sports offers high-quality sports equipment with a focus on improving athletes' performance and safety. We helped develop Certor’s company website in Webflow, expanding off of the identity and UI work created by MUTO."
+                    />
+                    <div className="">
+                    <BigImageStory
+                      imageContainerClassname="aspect-square md:aspect-video"
+                      imgUrl={`/img/products/certor/certor-1.png`}
+                      width={`90%`}
+                      height={`60%`}
+                      imageClassname="rounded-[4px]"
+                      title={`Challenge`}
+                      story={`One main purpose of the site was to showcase job opportunities and attract potential employees. We developed a custom integration of their current hiring platform that was required to display current openings.`}
 
-          <BigImageStory
-            imageContainerClassname="aspect-square md:aspect-video"
-            imgUrl={`/img/products/certor/certor-1.png`}
-            width={`90%`}
-            height={`60%`}
-          />
+                    />
+                    </div>
         </div>
-        <div className="px-[9px] lg:px-[19px]">
+        <div className="rounded-[20px] bg-[#D6D8CE] px-[9px] lg:px-[19px]">
           <BigImageStory2
             imgUrl={`/img/products/certor/certor-2.png`}
-            imageContainerClassname="aspect-[15/17] max-w-[1196px] m-auto"
-            title={`Schutt`}
-            story={`One main purpose of the site was to showcase job opportunities and attract potential employees. We developed a custom integration of their current hiring platform that was required to display current openings.`}
-            textColor={`text-white`}
+            imageContainerClassname="aspect-[15/17] max-w-[1000px] m-auto"
+            imageClassname="py-40px"
           />
         </div>
 
-        <div className="rounded-[20px] overflow-hidden mb-[60px] lg:mb-[120px] bg-[#FDFCF3] md:py-[50px] md:px-[60px] p-[40px]">
+        <div className="overflow-hidden md:py-[120px] md:px-[60px] p-[40px]">
           <BigImageOnly imgUrl={`/img/products/certor/certor-3.png`} contain/>
         </div>
         <div className="rounded-[20px] overflow-hidden">

@@ -18,7 +18,7 @@ export default function TryitPage() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div className="relative bg-black">
+            <div className="relative bg-dark">
                 <HeroTitle
                     title="TRYIT"
                     subtitle="Stick To The Plan"

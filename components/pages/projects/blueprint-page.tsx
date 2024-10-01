@@ -18,7 +18,7 @@ export default function BlueprintPage() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div className="relative bg-black">
+            <div className="relative bg-dark">
                 <HeroTitle
                     title="BLUEPRINT"
                     subtitle="Services To Empower Your Success"

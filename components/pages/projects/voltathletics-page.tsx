@@ -19,7 +19,7 @@ export default function VoltAthleticsPage() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div className="relative bg-black">
+            <div className="relative bg-dark">
                 <HeroTitle
                     title="VOLT ATHLETICS"
                     subtitle="Maximize Your Coaching Impact"
@@ -44,27 +44,24 @@ export default function VoltAthleticsPage() {
                         story={`As Volt Athletics was undertaking a digital revamp, we were brought in to seamlessly blend design and functionality to enhance Volt Athletics' online presence. This required creating a high-performing front-end that prioritized speed, SEO, and accessibility while still aligning with the website's redesign.  `}
                     />
                 </div>
-                <div className="">
+                <div className="bg-[#D6D8CE] rounded-[20px]">
                     <BigImageStory2
                         imageClassname=" px-[9px] lg:px-[19px]"
                         imgUrl={"/img/products/volt/volt-2.png"}
-                        imageContainerClassname="aspect-[92/59] m-auto"
+                        imageContainerClassname="aspect-[92/59] max-w-[1440px] m-auto mb-[120px]"
                         title={`Approach`}
                         textContainerClassname="px-[9px] lg:px-[19px]"
                         story={`Following our initial discussions with the Volt team, a mutual decision was made to employ a more modern react-based framework for their front-end.`}
-                        textColor={`text-white`}
                     />
                 </div>
-                <div className="bg-[#FDFCF3]  translate-y-10 no-scrollbar overflow-x-scroll flex-col hidden lg:flex">
+                <div className="translate-y-10 no-scrollbar overflow-x-scroll flex-col hidden lg:flex">
                     <BigImageStory2
                         imgUrl={"/img/products/volt/volt-3.png"}
                         imageContainerClassname="aspect-[45/7] m-auto h-full w-full lg:h-[536px] lg:w-[3588px]"
-                    />
-                </div>
-                <div className="bg-[#FDFCF3] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[210px] hidden lg:block">
-                    <TextOnly
                         title={`Approach`}
                         story={`Following our initial discussions with the Volt team, a mutual decision was made to employ a more modern react-based framework for their front-end.`}
+                        textColor={`text-white`}
+                        textContainerClassname="px-[9px] lg:px-[19px]"
                     />
                 </div>
                 <div className="bg-[#FDFCF3] lg:hidden">
@@ -76,20 +73,20 @@ export default function VoltAthleticsPage() {
                         story={`Following our initial discussions with the Volt team, a mutual decision was made to employ a more modern react-based framework for their front-end.`}
                     />
                 </div>
-                <div className="">
+                <div className="bg-[#FDFCF3] rounded-[20px]">
                     <BigImageStory2
                         imageClassname=" px-[9px] lg:px-[19px]"
                         imgUrl={"/img/products/volt/volt-4.png"}
                         imageContainerClassname="aspect-[92/59] m-auto"
                         title={`Approach`}
                         story={`Post comprehensive quality assurance conducted by all stakeholders, necessary modifications were implemented before launching the new website, meeting all requirements and expectations. `}
-                        textColor={`text-white`}
-                    />
+                        textContainerClassname="px-[9px] lg:px-[19px]"
+                     />
                 </div>
                 <div className="rounded-[20px] mt-[120px] lg:mt-[200px] pb-20 lg:px-40 lg:pb-[200px] ">
                     <BigImageOnly
                         imgUrl={"/img/products/volt/volt-5.png"}
-                        imageClassname=" lg:object-cover"
+                        imageClassname=" lg:object-contain"
                         className="aspect-[41/42]"
                     />
                 </div>

@@ -3,7 +3,7 @@ import Image from "next/image";
 const HeroTitle = (props: HeroTitleProps) => {
     return (
         <div className="aspect-[9/16] sm:aspect-video bg-white">
-            <div className="relative h-full w-full flex  text-white justify-between   bg-black">
+            <div className="relative h-full w-full flex  text-white justify-between   bg-dark">
                 <div className="z-10  h-full w-full flex flex-col justify-between lg:px-[19px] px-[9px] py-4">
                     <div></div>
                     <div>

@@ -18,7 +18,7 @@ export default function MionePage() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div className="relative bg-black">
+            <div className="relative bg-dark">
                 <HeroTitle
                     title="MIONE"
                     subtitle="Here To Contend"
@@ -69,7 +69,7 @@ export default function MionePage() {
                 <div className="bg-[#D6D8CE] rounded-[20px]">
                     <BigImageStory2
                         imgUrl={`/img/products/mione/mione-3.png`}
-                        imageContainerClassname="aspect-[26/17] max-w-[1196px] m-auto"
+                        imageContainerClassname="aspect-[26/17] max-w-[1196px] m-auto mb-[112px] "
                         title={`Challenge`}
                         story={`One main purpose of the site was to showcase job opportunities and attract potential employees. We developed a custom integration of their current hiring platform that was required to display current openings.`}
                         textColor="text-black"
@@ -89,7 +89,7 @@ export default function MionePage() {
                         imgUrl={`/img/products/mione/mione-5.png`}
                     />
                     <BigImageStory
-                        imageContainerClassname="aspect-[48/43] lg:mb-16 mt-[240px] max-w-[1148px] m-auto"
+                        imageContainerClassname="aspect-[48/43] lg:mb-16 mt-[100px] max-w-[1148px] m-auto"
                         imgUrl={`/img/products/mione/mione-6.png`}
                         imageClassname=""
                         width={`90%`}
