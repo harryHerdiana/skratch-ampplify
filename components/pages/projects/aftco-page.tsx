@@ -18,7 +18,7 @@ export default function AftcoPage() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div className="relative bg-black">
+            <div className="relative bg-dark">
                 <HeroTitle
                     title="AFTCO"
                     subtitle="American Fishing Tackle Company"

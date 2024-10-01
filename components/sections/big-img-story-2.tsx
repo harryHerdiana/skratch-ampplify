@@ -21,7 +21,7 @@ const BigImageStory2 = (props: BigImageStoryProps) => {
                             src={props.imgUrl}
                             alt=""
                             className={classNames(
-                                "object-cover ",
+                                "object-contain ",
                                 props.imageClassname
                             )}
                             fill
@@ -36,7 +36,7 @@ const BigImageStory2 = (props: BigImageStoryProps) => {
                     <div className="flex flex-col md:flex-row  font-['MonumentGrotesk-Regular'] mt-5  lg:px-[0]">
                         <div className="w-1/2">
                             <h2
-                                className={`text-12 md:text-15  mt-2.5 mb-5 lg:mb-[28px] 
+                                className={`text-12 md:text-15  mb-5 lg:mb-[28px] 
                          ${props.textColor ?? "text-black"}`}
                             >
                                 {props.title}

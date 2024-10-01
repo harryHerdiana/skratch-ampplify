@@ -1,6 +1,6 @@
 const BigTitleStory = (props: BigTitleProps) => {
   return (
-    <div className="text-[#1f1f1f] pt-[60px] lg:pt-[120px] font-['MonumentGrotesk-Bold']">
+    <div className="text-[#1f1f1f66] pt-[60px] lg:pt-[120px] font-['MonumentGrotesk-Bold']">
       <div className="mb-[60px] md:mb-[92px] ">
         <p
           className="whitespace-pre-line text-[46px] sm:text-[52px] 
@@ -33,7 +33,7 @@ const BigTitleStory = (props: BigTitleProps) => {
               {props.titleRight}
             </h2>
           )}
-          <div className=" md:mt-0 md:max-w-[510px]">
+          <div className="text-[#1F1F1F] md:mt-0 md:max-w-[510px]">
             {props.textRight && (
               <p className="text-[18px] md:text-[24px] leading-[24px] md:leading-[30px]">
                 {props.textRight}

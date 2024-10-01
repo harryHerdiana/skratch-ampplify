@@ -18,7 +18,7 @@ export default function DicebarbersPage() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div className="relative bg-black">
+            <div className="relative bg-dark">
                 <HeroTitle 
                     title="DICE BARBERS"
                     subtitle="A New Era in the Barbers Trade"

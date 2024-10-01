@@ -17,7 +17,7 @@ export default function Homepage() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div className="relative bg-black">
+            <div className="relative bg-dark">
                 <HeroSlideShow />
                 <ProjectList />
                 <ProfileSection/>

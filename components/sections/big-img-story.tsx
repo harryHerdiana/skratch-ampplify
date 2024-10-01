@@ -6,7 +6,7 @@ const BigImageStory = (props: BigImageStoryProps) => {
             {props.imgUrl && (
                 <div
                     className={classNames(
-                        `py-[40px] relative rounded-[4px] flex items-center justify-center lg:py-[169px]`,
+                        `py-[40px] relative rounded-[4px] flex items-center justify-center lg:py-[120px]`,
                         props.imageOuterContainerClassname
                     )}
                 >
@@ -44,7 +44,7 @@ const BigImageStory = (props: BigImageStoryProps) => {
                 >
                     <div className=" w-1/2">
                         <h2
-                            className={`text-12 md:text-15  mt-2.5 mb-5 lg:mb-[28px] 
+                            className={`text-12 md:text-15 mb-5 lg:mb-[28px] 
                         ${props.textColor ?? "text-[#1F1F1F]"}`}
                         >
                             {props.title}

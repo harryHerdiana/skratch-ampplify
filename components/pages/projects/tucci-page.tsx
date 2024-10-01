@@ -18,17 +18,23 @@ export default function TucciPage() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div className="relative bg-black">
+            <div className="relative bg-dark">
                 <HeroTitle
                     title="TUCCI"
                     subtitle="Built For Battle"
                     desktopImgUrl="/img/products/tucciproduct.png"
                     mobileImgUrl="/img/products/mobile/tucciproduct-mobile.png"
                 />
-                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[210px">
+                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[210px]">
                     <BigTitleStory
                         title={`Optimized impact performance, increased athlete comfort, and improved fit flexibility`}
-                        titleLeft={`Schutt`}
+                        titleLeft={`Services`}
+                        textLeft={`1. UX/UI DESIGN
+                            2. CUSTOM THEME DEVELOPMENT
+                            3. STORE SET-UP
+                            4. APP INTEGRATION
+                            5. CUSTOM APP DEVELOPMENT`}
+                        titleRight={`About`}
                         textRight="Schutt Sports is a leading manufacturer of athletic equipment, particularly renowned for its football gear, emphasizing player safety and innovation. After being acquired by Certor, they approached us with a request to create a unified shopping experience across their range of brands. "
                     />
 
@@ -37,50 +43,50 @@ export default function TucciPage() {
                         imgUrl={`/img/products/tucci/tucci-1.png`}
                         width={`90%`}
                         height={`60%`}
-                        title=" "
+                        title="Approach"
                         story="The objective was to enable users to add products from any of Certor's brand stores and view them in a single shopping cart for a seamless checkout process. This approach aimed to enhance user convenience and streamline the shopping journey."
                     />
                 </div>
-                <div className="">
+                <div className="bg-[#D6D8CE] rounded-[20px]">
                     <BigImageStory2
                         imgUrl={`/img/products/tucci/tucci-2.png`}
                         imageOuterContainerClassname="m-auto "
-                        imageContainerClassname="aspect-[55/18] m-auto w-full"
+                        imageContainerClassname="aspect-[27/9] m-auto w-full mb-[120px]"
                         title={`Approach`}
                         textContainerClassname="px-[9px] lg:px-[19px]"
-
                         story={`With a clear understanding of the prerequisites and a deep awareness of API capabilities and limitations of Shopify Plus, we embarked on the creation of a bespoke app designed to fit seamlessly into this collaborative shopping model.`}
-                        textColor={`text-white`}
+                        
                     />
                 </div>
 
-                <div className="bg-[#FDFCF3]">
-                    <BigImageStory2
-                        imageClassname=" px-[9px] lg:px-[19px]"
-                        imgUrl={`/img/products/tucci/tucci-3.png`}
-                        imageContainerClassname="aspect-[5/4]  m-auto"
-                        title={`Approach`}
-                        textContainerClassname="px-[9px] lg:px-[19px]"
-                        story={`Each brand's store operates through its individual Shopify instance, displaying the custom themes we developed in partnership with MUTO.`}
-                    />
-                </div>
                 <div className="">
                     <BigImageStory2
                         imageClassname=" px-[9px] lg:px-[19px]"
+                        imgUrl={`/img/products/tucci/tucci-3.png`}
+                        imageContainerClassname="aspect-[5/4] max-w-[1440px] m-auto"
+                    />
+                </div>
+                <div className="bg-[#D6D8CE] rounded-[20px]">
+                    <BigImageStory2
+                        imageClassname=" px-[9px] lg:px-[19px]"
                         imgUrl={`/img/products/tucci/tucci-4.png`}
-                        imageContainerClassname="aspect-[47/28] m-auto"
+                        imageContainerClassname="aspect-[16/9] max-w-[1440px] m-auto mb-[120px]"
                         title={`Approach`}
-                        story={`The synchronization of cart drawers across all sites ensures a consistent shopping experience, leading to a unified checkout process.`}
-                        textColor={`text-white`}
+                        story={`Each brand's store operates through its individual Shopify instance, displaying the custom themes we developed in partnership with MUTO.`}
                         textContainerClassname="px-[9px] lg:px-[19px]"
                     />
                 </div>
 
-                <div className="rounded-[20px] mt-[120px] lg:mt-[200px] pb-20 lg:px-40 lg:pb-[200px] ">
-                    <BigImageOnly
+                <div className="">
+                <BigImageStory2
+                        imageClassname=" px-[9px] lg:px-[19px]"
                         imgUrl={`/img/products/tucci/tucci-5.png`}
-                        imageClassname=" lg:object-cover"
-                        className="aspect-[16/9]"
+                        imageContainerClassname="aspect-[16/9] max-w-[1440px] m-auto mb-[120px]"
+                        title={`Approach`}
+                        story={`The synchronization of cart drawers across all sites ensures a consistent shopping experience, leading to a unified checkout process.`}
+                        textContainerClassname="px-[9px] lg:px-[19px]"
+                        textColor={`text-white`}
+                        
                     />
                 </div>
             </div>

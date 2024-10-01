@@ -5,7 +5,7 @@ import React from "react";
 
 const Footer: React.FC = () => {
     return (
-        <footer className="bg-black">
+        <footer className="bg-dark">
             <div className=" bg-[#D6D8CE] text-[#1F1F1F66] uppercase pt-[40px] lg:pt-[20px] px-2.5 md:px-5 pb-5 rounded-[20px] text-12 font-['MonumentGrotesk-Semi-Mono'] leading-[16px]">
                 <div className="grid grid-cols-2 md:hidden">
                     <div className="flex flex-col">
