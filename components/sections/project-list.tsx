@@ -13,8 +13,8 @@ const ProjectItem = (props: IProjectList) => {
                     .toLowerCase()
                     .replace(/ /g, "-")}`}
             >
-                <p className="text-20 md:text-32 w-max mb-2.5 text-[#1F1F1F]">
-                    <span className="text-[#1F1F1F80]">{props.year}</span>
+                <p className="text-20 md:text-32 w-max mb-2.5 text-[#565652]">
+                    <span className="text-[#1F1F1F66]">{props.year}</span>
                     <br />
                     {props.title}
                 </p>
@@ -34,7 +34,7 @@ const ProjectItem = (props: IProjectList) => {
             </div>
             </Link>
             <div className="mt-3 text-left">
-                <p className="mb-2 text-18 text-[#1f1f1f]">Services</p>
+                <p className="mb-2 text-18 text-[#565652]">Services</p>
                 <ul className="grid grid-cols-1 lg:grid-cols-2 gap-x-8">
                     {props.services.map((service, index) => (
                         service.length > 0 && 
@@ -82,14 +82,14 @@ const ProjectList: React.FC = () => {
 
     return (
         <div className="bg-white pt-[60px] lg:py-[120px] pb-4 rounded-[20px] text-12 md:text-15">
-            <h3 className="pl-2 md:pl-4 uppercase text-52 md:text-120 font-['MonumentGrotesk-Bold'] tracking-[-2px] text-[#1f1f1f]">
+            <h3 className="pl-2 md:pl-4 uppercase text-52 md:text-120 font-['MonumentGrotesk-Bold'] tracking-[-2px] text-[#565652]">
                 projects
             </h3>
             <div className="flex pl-3 md:pl-5 my-[60px] lg:my-[105px] justify-between md:grid grid-cols-2">
-                <h4 className="w-max text-[#1F1F1F]">( Our Work )</h4>
+                <h4 className="w-max text-[#565652]">( Our Work )</h4>
                     <p
                         className={classNames(
-                            "uppercase w-[282px] font-['MonumentGrotesk-Semi-Mono'] text-12 md:text-12 text-[#1f1f1f]"
+                            "uppercase w-[282px] font-['MonumentGrotesk-Semi-Mono'] text-12 md:text-12 text-[#565652]"
                         )}
                     >
                         is a digital studio focused on developing experiences to
@@ -112,7 +112,7 @@ const ProjectList: React.FC = () => {
             </div>
             <Link
                 href="/projects"
-                className="text-20 pl-3 md:pl-5 lg:text-[34px] text-[#1f1f1f] underline"
+                className="text-20 pl-3 md:pl-5 lg:text-[34px] text-[#565652] underline"
             >
                 View All Projects
             </Link>

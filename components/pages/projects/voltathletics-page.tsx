@@ -77,7 +77,7 @@ export default function VoltAthleticsPage() {
                     <BigImageStory2
                         imageClassname=" px-[9px] lg:px-[19px]"
                         imgUrl={"/img/products/volt/volt-4.png"}
-                        imageContainerClassname="aspect-[92/59] m-auto"
+                        imageContainerClassname="aspect-[92/59] m-auto mb-[120px]"
                         title={`Approach`}
                         story={`Post comprehensive quality assurance conducted by all stakeholders, necessary modifications were implemented before launching the new website, meeting all requirements and expectations. `}
                         textContainerClassname="px-[9px] lg:px-[19px]"
