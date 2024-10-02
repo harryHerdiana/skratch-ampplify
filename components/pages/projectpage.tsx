@@ -8,7 +8,7 @@ export default function ProjectPage() {
         pt-12 bg-[#FDFCF3] text-[#1F1F1F] rounded-[20px]  font-['MonumentGrotesk-Regular']"
         >
             <main className="mt-10 md:mt-[175px] mx-auto ">
-                <h1 className="md:text-[120px] text-[52px] leading-[48px] tracking-[-0.02em]  mb-[60px] md:mb-[120px]  font-['MonumentGrotesk-Bold']">
+                <h1 className="text-[#565652] md:text-[120px] text-[52px] leading-[48px] tracking-[-0.02em]  mb-[60px] md:mb-[120px]  font-['MonumentGrotesk-Bold']">
                     PROJECTS
                 </h1>
 
@@ -20,10 +20,10 @@ export default function ProjectPage() {
                         >
                             <Link href={`/projects/${project.title.toLowerCase().replace(/ /g, "-")}`}>
                                 <div className="text-[20px] md:text-[30px] leading-[24px] md:leading-[34px]">
-                                    <p className="text-gray-500">
+                                    <p className="text-[#1F1F1F66]">
                                         {project.year}
                                     </p>
-                                    <h2 className="">{project.title}</h2>
+                                    <h2 className="text-[#565652]">{project.title}</h2>
                                 </div>
                             </Link>
                             <div className="rounded-xl relative w-full md:w-full  aspect-[79/55]">
@@ -39,7 +39,7 @@ export default function ProjectPage() {
                             </div>
                             <div className="space-y-4 md:w-full">
                                 <div className="mt-3">
-                                    <h3 className="text-12 mb-2 md:text[18px] lg:text-18">
+                                    <h3 className="text-[#565652] text-12 mb-2 md:text[18px] lg:text-18">
                                         Services
                                     </h3>
                                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8 font-['MonumentGrotesk-Semi-Mono']">

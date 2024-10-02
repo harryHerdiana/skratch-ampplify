@@ -9,7 +9,6 @@ const Footer: React.FC = () => {
             <div className=" bg-[#D6D8CE] text-[#1F1F1F66] uppercase pt-[40px] lg:pt-[20px] px-2.5 md:px-5 pb-5 rounded-[20px] text-12 font-['MonumentGrotesk-Semi-Mono'] leading-[16px]">
                 <div className="grid grid-cols-2 md:hidden">
                     <div className="flex flex-col">
-                        <Link href="">work</Link>
                         <Link href="">contact</Link>
                     </div>
                     <div />
@@ -29,9 +28,8 @@ const Footer: React.FC = () => {
                         <li>proprio</li>
                         <li>blueprint</li>
                         <li>aftco</li>
-                        <li>dice barbers</li>
-                        <li>skatex</li>
-                        <li>timbergames</li>
+                        <li>TDE</li>
+                        <li>Mione</li>
                     </ul>
                 </div>
                 <div className="grid grid-cols-2 mt-[60px] md:hidden">
@@ -68,7 +66,6 @@ const Footer: React.FC = () => {
                 </div>
                 <div className="hidden md:grid grid-cols-4">
                     <div className="flex flex-col">
-                        <Link href="">work</Link>
                         <Link href="">contact</Link>
                     </div>
 
@@ -86,9 +83,8 @@ const Footer: React.FC = () => {
                         <li>proprio</li>
                         <li>blueprint</li>
                         <li>aftco</li>
-                        <li>dice barbers</li>
-                        <li>skatex</li>
-                        <li>timbergames</li>
+                        <li>TDE</li>
+                        <li>Mione</li>
                     </ul>
                     <ul>
                         <li>

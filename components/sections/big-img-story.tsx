@@ -45,7 +45,7 @@ const BigImageStory = (props: BigImageStoryProps) => {
                     <div className=" w-1/2">
                         <h2
                             className={`text-12 md:text-15 mb-5 lg:mb-[28px] 
-                        ${props.textColor ?? "text-[#1F1F1F]"}`}
+                        ${props.textColor ?? "text-[#565652]"}`}
                         >
                             {props.title}
                         </h2>
@@ -55,7 +55,7 @@ const BigImageStory = (props: BigImageStoryProps) => {
                         <p
                             className={`text-[18px] md:text-[24px] leading-[24px] 
                         md:leading-[30px] ${
-                            props.textColor ?? "text-[#1F1F1F]"
+                            props.textColor ?? "text-[#565652]"
                         }`}
                         >
                             {props.story}

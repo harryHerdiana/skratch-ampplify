@@ -1,6 +1,6 @@
 const BigTitleStory = (props: BigTitleProps) => {
   return (
-    <div className="text-[#1f1f1f66] pt-[60px] lg:pt-[120px] font-['MonumentGrotesk-Bold']">
+    <div className="text-[#565652] pt-[60px] lg:pt-[120px] font-['MonumentGrotesk-Bold']">
       <div className="mb-[60px] md:mb-[92px] ">
         <p
           className="whitespace-pre-line text-[46px] sm:text-[52px] 
@@ -15,7 +15,7 @@ const BigTitleStory = (props: BigTitleProps) => {
         <div className="border-t border-gray-300 lg:border-none mb-1"></div>
         <div className=" md:w-2/4">
           {props.titleLeft && (
-            <h2 className="text-12 md:text-15 mb-5 mt-2.5 lg:mb-[28px] text-[#1F1F1F]">
+            <h2 className="text-12 md:text-15 mb-5 mt-2.5 lg:mb-[28px] text-[#565652]">
               {props.titleLeft}
             </h2>
           )}
@@ -27,15 +27,15 @@ const BigTitleStory = (props: BigTitleProps) => {
         </div>
 
         <div className=" md:mt-0 md:w-2/4">
-          <div className="border-t border-gray-300 mb-1 md:hidden"></div>
+          <div className="text-[#565652] border-t border-gray-300 mb-1 md:hidden"></div>
           {props.titleRight && (
-            <h2 className="text-12 md:text-15  mt-2.5 mb-5 lg:mb-[28px] text-[#1F1F1F]">
+            <h2 className="text-12 md:text-15  mt-2.5 mb-5 lg:mb-[28px] text-[#565652]">
               {props.titleRight}
             </h2>
           )}
-          <div className="text-[#1F1F1F] md:mt-0 md:max-w-[510px]">
+          <div className="text-[#565652] md:mt-0 md:max-w-[510px]">
             {props.textRight && (
-              <p className="text-[18px] md:text-[24px] leading-[24px] md:leading-[30px]">
+              <p className="text-[18px] text-[#565652] md:text-[24px] leading-[24px] md:leading-[30px]">
                 {props.textRight}
               </p>
             )}
