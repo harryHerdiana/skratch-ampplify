@@ -1,6 +1,5 @@
 "use client";
 import HeroTitle from "@/components/common/HeroTitle";
-import BigImageOnly from "@/components/sections/big-img-only";
 import BigImageStory from "@/components/sections/big-img-story";
 import BigImageStory2 from "@/components/sections/big-img-story-2";
 import BigTitleStory from "@/components/sections/big-title-story";
@@ -51,7 +50,7 @@ export default function TucciPage() {
                     <BigImageStory2
                         imgUrl={`/img/products/tucci/tucci-2.png`}
                         imageOuterContainerClassname="m-auto "
-                        imageContainerClassname="aspect-[27/9] m-auto w-full mb-[120px]"
+                        imageContainerClassname="aspect-[27/9] m-auto w-full md:mb-[120px]"
                         title={`Approach`}
                         textContainerClassname="px-[9px] lg:px-[19px]"
                         story={`With a clear understanding of the prerequisites and a deep awareness of API capabilities and limitations of Shopify Plus, we embarked on the creation of a bespoke app designed to fit seamlessly into this collaborative shopping model.`}
@@ -70,7 +69,7 @@ export default function TucciPage() {
                     <BigImageStory2
                         imageClassname=" px-[9px] lg:px-[19px]"
                         imgUrl={`/img/products/tucci/tucci-4.png`}
-                        imageContainerClassname="aspect-[16/9] max-w-[1440px] m-auto mb-[120px]"
+                        imageContainerClassname="aspect-[16/9] max-w-[1440px] m-auto md:mb-[120px]"
                         title={`Approach`}
                         story={`Each brand's store operates through its individual Shopify instance, displaying the custom themes we developed in partnership with MUTO.`}
                         textContainerClassname="px-[9px] lg:px-[19px]"
@@ -81,7 +80,7 @@ export default function TucciPage() {
                 <BigImageStory2
                         imageClassname=" px-[9px] lg:px-[19px]"
                         imgUrl={`/img/products/tucci/tucci-5.png`}
-                        imageContainerClassname="aspect-[16/9] max-w-[1440px] m-auto mb-[120px]"
+                        imageContainerClassname="aspect-[16/9] max-w-[1440px] m-auto md:mb-[120px]"
                         title={`Approach`}
                         story={`The synchronization of cart drawers across all sites ensures a consistent shopping experience, leading to a unified checkout process.`}
                         textContainerClassname="px-[9px] lg:px-[19px]"

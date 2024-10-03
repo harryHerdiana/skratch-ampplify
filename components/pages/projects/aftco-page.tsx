@@ -64,7 +64,7 @@ export default function AftcoPage() {
                 <div className="  bg-[url(/img/products/aftco/aftco-4-bg.png)] bg-cover bg-center bg-no-repeat overflow-hidden">
                     <BigImageStory2
                         imgUrl={`/img/products/aftco/aftco-4.png`}
-                        imageClassname="rounded-[8px]"
+                        imageClassname="rounded-[8px] px-[9px] lg:px-[19px]"
                         imageContainerClassname="aspect-[160/183] m-auto max-w-[908px]"
                     />
                     <BigImageStory2
@@ -74,12 +74,12 @@ export default function AftcoPage() {
                         textColor={`text-white`}
                     />
                 </div>
-                <div className="bg-[#FDFCF3] rounded-[20px] ">
+                <div className="bg-[#FDFCF3] rounded-[20px] px-[9px] lg:px-[19px]">
                     <BigImageStory2
                         imgUrl={`/img/products/aftco/aftco-5.png`}
                         imageContainerClassname="aspect-[235/189] m-auto max-w-[1177px]"
                         title={`Challenge`}
-                        textContainerClassname="px-[9px] lg:px-[19px]"
+                        textContainerClassname=""
                         story={`The integration of diverse third-party services such as accessibility, search, and personalization played a pivotal role in the complexity of the new build. `}
                     />
                 </div>
@@ -104,10 +104,11 @@ export default function AftcoPage() {
                         story={`In line with its ongoing evolution and commitment to innovation, Aftco identified the necessity to overhaul its eCommerce experience. After considering various options, they embraced a headless eCommerce approach, decoupling the front-end while retaining Shopify Plus for checkout. `}
                     />
                 </div>
-                <div className=" mt-[120px] lg:mt-[200px] p-5 lg:p-10 ">
+                <div className="rounded-[20px] mt-[120px] lg:mt-[200px] p-5 lg:p-10 pb-[120px] lg:pb-[200px]">
                     <BigImageOnly
                         imgUrl={`/img/products/aftco/aftco-8.png`}
-                        className="aspect-[68/47]"
+                        className="aspect-[68/47]" 
+                        imageClassname="rounded-lg"
                     />
                 </div>
             </div>

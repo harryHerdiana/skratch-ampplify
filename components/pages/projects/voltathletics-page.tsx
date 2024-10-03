@@ -4,7 +4,6 @@ import BigImageOnly from "@/components/sections/big-img-only";
 import BigImageStory from "@/components/sections/big-img-story";
 import BigImageStory2 from "@/components/sections/big-img-story-2";
 import BigTitleStory from "@/components/sections/big-title-story";
-import TextOnly from "@/components/sections/text-only";
 import Head from "next/head";
 
 export default function VoltAthleticsPage() {
@@ -48,7 +47,7 @@ export default function VoltAthleticsPage() {
                     <BigImageStory2
                         imageClassname=" px-[9px] lg:px-[19px]"
                         imgUrl={"/img/products/volt/volt-2.png"}
-                        imageContainerClassname="aspect-[92/59] max-w-[1440px] m-auto mb-[120px]"
+                        imageContainerClassname="aspect-[92/59] max-w-[1440px] m-auto md:mb-[120px]"
                         title={`Approach`}
                         textContainerClassname="px-[9px] lg:px-[19px]"
                         story={`Following our initial discussions with the Volt team, a mutual decision was made to employ a more modern react-based framework for their front-end.`}
@@ -77,7 +76,7 @@ export default function VoltAthleticsPage() {
                     <BigImageStory2
                         imageClassname=" px-[9px] lg:px-[19px]"
                         imgUrl={"/img/products/volt/volt-4.png"}
-                        imageContainerClassname="aspect-[92/59] m-auto mb-[120px]"
+                        imageContainerClassname="aspect-[92/59] m-auto md:mb-[120px]"
                         title={`Approach`}
                         story={`Post comprehensive quality assurance conducted by all stakeholders, necessary modifications were implemented before launching the new website, meeting all requirements and expectations. `}
                         textContainerClassname="px-[9px] lg:px-[19px]"

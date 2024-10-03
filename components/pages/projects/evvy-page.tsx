@@ -46,9 +46,9 @@ export default function EvvyPage() {
                     />
                 </div>
 
-                <div className="">
+                <div className="px-[9px] lg:px-[19px] ">
                     <BigImageStory2
-                        textContainerClassname="px-[9px] lg:px-[19px] "
+                        textContainerClassname=""
                         imgUrl={`/img/products/evvy/evvy-2.png`}
                         imageContainerClassname="aspect-[53/40] m-auto max-w-[1066px]"
                         title={`Challenge`}
@@ -69,6 +69,7 @@ export default function EvvyPage() {
                     <BigImageStory2
                         imgUrl={`/img/products/evvy/evvy-4.png`}
                         imageContainerClassname="aspect-[18/11] m-auto max-w-[920px]"
+                        imageClassname="px-[9px] lg:px-[19px] "
                     />
                     <BigImageStory2
                         textContainerClassname="px-[9px] lg:px-[19px] "
@@ -86,8 +87,8 @@ export default function EvvyPage() {
                         story={`This eCommerce stack created a strong foundation, enabling Evvy to offer top-notch virtual healthcare services while delivering a seamless online journey for their customers. `}
                     />
                 </div>
-                <div className="rounded-[20px] mt-[120px] lg:mt-[200px] p-5 lg:p-10 ">
-                    <BigImageOnly imgUrl={`/img/products/evvy/evvy-6.png`} />
+                <div className="rounded-[20px] mt-[120px] lg:mt-[200px] p-5 lg:p-10 pb-[120px] lg:pb-[200px]">
+                    <BigImageOnly imgUrl={`/img/products/evvy/evvy-6.png`}  imageClassname="rounded-lg"/>
                 </div>
             </div>
         </>

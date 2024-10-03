@@ -51,7 +51,7 @@ export default function TheHomeEditPage() {
                 <div className="">
                     <BigImageStory2
                         imgUrl={`/img/products/thehomeedit/thehomeedit-2.png`}
-                        imageContainerClassname="aspect-video m-auto mb-[120px]"
+                        imageContainerClassname="aspect-video m-auto md:mb-[120px]"
                         textContainerClassname="px-[9px] lg:px-[19px]"
                         title={`Approach`}
                         story={`While we initiated the migration and started configuring the backend, Outfit took the lead in crafting the new UI style guide and designing the homepage. These served as our foundation for designing the remaining eCommerce templates within the new custom Shopify theme.`}
