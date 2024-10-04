@@ -20,7 +20,7 @@ export default function ProjectPage() {
                         >
                             <Link href={`/projects/${project.title.toLowerCase().replace(/ /g, "-")}`}>
                                 <div className="text-[20px] md:text-[30px] leading-[24px] md:leading-[34px]">
-                                    <p className="text-[#1F1F1F66]">
+                                    <p className="text-[#1F1F1F66] text-12 mb-2 md:text[18px] lg:text-18">
                                         {project.year}
                                     </p>
                                     <h2 className="text-[#565652]">{project.title}</h2>
@@ -42,52 +42,17 @@ export default function ProjectPage() {
                                     <h3 className="text-[#565652] text-12 mb-2 md:text[18px] lg:text-18">
                                         Services
                                     </h3>
-                                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8 font-['MonumentGrotesk-Semi-Mono']">
-                                        <div className="">
-                                            {project.services
-                                                .slice(0, 3)
-                                                .map((service, index) => (
-                                                    <div
-                                                        key={project.title}
-                                                        className={`text-black text-opacity-40 flex   items-center border-b border-gray-200 ${
-                                                            index == 0 &&
-                                                            "border-t"
-                                                        } px-2 py-0.5 leading-[20px]`}
-                                                    >
-                                                        <span className="text-12 font-medium mr-8 uppercase">
-                                                            {service
-                                                                ? index + 1
-                                                                : ""}
-                                                        </span>
-                                                        <span className="text-12 uppercase">
-                                                            {service}
-                                                        </span>
-                                                    </div>
-                                                ))}
-                                        </div>
-                                        <div className="uppercase hidden lg:block">
-                                            {project.services
-                                                .slice(3)
-                                                .map((service, index) => (
-                                                    <div
-                                                        key={index + 3}
-                                                        className={`text-black text-opacity-40 flex         items-center border-b border-gray-200 ${
-                                                            index == 0 &&
-                                                            "md:border-t"
-                                                        } px-2 py-0.5 leading-[20px]`}
-                                                    >
-                                                        <span className="text-12 font-medium mr-8 min-h-4">
-                                                            {service
-                                                                ? index + 4
-                                                                : ""}
-                                                        </span>
-                                                        <span className="text-12">
-                                                            {service}
-                                                        </span>
-                                                    </div>
-                                                ))}
-                                        </div>
-                                    </div>
+                                    <ul className="grid grid-cols-1 lg:grid-cols-2 gap-x-8">
+                                        {project.services.map((service, index) => (
+                                            service.length > 0 && 
+                                            <li
+                                                key={service}
+                                                className="text-[#1F1F1F66] [&:nth-child(2)]:border-t [&:nth-child(1)]:border-t border-b py-0.5 uppercase font-['MonumentGrotesk-Semi-Mono'] text-12 leading-[20px]"
+                                            >
+                                            { <span className="mr-8">{index + 1}</span> }{service}
+                                            </li>
+                                        ))}
+                                    </ul>
                                 </div>
                             </div>
                         </div>
