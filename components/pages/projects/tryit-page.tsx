@@ -55,12 +55,12 @@ export default function TryitPage() {
                         textContainerClassname="px-[9px] lg:px-[19px]"
                     />
                 </div>
-                <div className="bg-[#FDFCF3] rounded-[20px] ">
+                <div className="bg-[#FDFCF3] rounded-[20px] px-[9px] lg:px-[19px]">
                     <BigImageStory2
                         imgUrl={`/img/products/tryit/tryit-3.png`}
                         imageContainerClassname="aspect-[82/47] m-auto max-w-[1304px]"
                         title={`Challenge`}
-                        textContainerClassname="px-[9px] lg:px-[19px]"
+                        textContainerClassname=""
                         story={`Their trust in our design approach was evident as we created a new UI style guide with minimal revisions. The process flowed smoothly, enabling us to meet the deadline for their new collection launch successfully and without any complications.`}
                         
                     />

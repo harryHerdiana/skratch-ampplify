@@ -45,8 +45,7 @@ export default function MionePage() {
                             imageContainerClassname="aspect-square md:aspect-video"
                             imgUrl={`/img/products/mione/mione-1.png`}
                             imageClassname="rounded-[4px]"
-                            width={`90%`}
-                            height={`60%`}
+                            
                             title={`Challenge`}
                             story={`One main purpose of the site was to showcase job opportunities and attract potential employees. We developed a custom integration of their current hiring platform that was required to display current openings.`}
                         />
@@ -61,28 +60,27 @@ export default function MionePage() {
                         height={`100%`}
                         title={`Challenge`}
                         textColor="text-white"
-                        textContainerClassname="px-[19px] lg:px-[19px] lg:pb-[169px] pb-[60px]"
+                        textContainerClassname="px-[9px] lg:px-[19px] lg:pb-[169px] pb-[60px]"
                         story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
                     />
                 </div>
 
-                <div className="bg-[#D6D8CE] rounded-[20px]">
+                <div className="bg-[#D6D8CE] rounded-[20px] px-[9px] lg:px-[19px]">
                     <BigImageStory2
                         imgUrl={`/img/products/mione/mione-3.png`}
                         imageContainerClassname="aspect-[26/17] max-w-[1196px] m-auto mb-[112px] "
                         title={`Challenge`}
                         story={`One main purpose of the site was to showcase job opportunities and attract potential employees. We developed a custom integration of their current hiring platform that was required to display current openings.`}
                         textColor="text-black"
-                        textContainerClassname="px-[19px] lg:px-[19px]"
                     />
                 </div>
-                <div className="rounded-[20px] overflow-hidden min-h-[900px] h-full bg-[url('/img/products/mione/mione-4-bg.png')] bg-auto lg:bg-cover bg-no-repeat bg-center  flex py-[94px] px-[19px]">
+                <div className="rounded-[20px] overflow-hidden min-h-[900px] h-full bg-[url('/img/products/mione/mione-4-bg.png')] bg-auto lg:bg-cover bg-no-repeat bg-center  flex py-[94px] px-[9px] lg:px-[19px]">
                     <BigImageOnly
                         contain
                         imgUrl={`/img/products/mione/mione-4.png`}
                     />
                 </div>
-                <div className="bg-[#1F1F1F] rounded-[20px] font-[MonumentGrotesk-Semi-Mono]">
+                <div className="bg-[#1F1F1F] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px]">
                     <BigImageOnly
                         contain
                         imageClassname="px-[19px] lg:px-[150px] lg:pt-[240px]"
@@ -97,7 +95,7 @@ export default function MionePage() {
                         textColor="text-white"
                         title={`Challenge`}
                         story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
-                        textContainerClassname="px-[19px] lg:px-[19px]  lg:pb-[169px] pb-[60px]"
+                        textContainerClassname="  lg:pb-[169px] pb-[60px]"
                     />
                 </div>
 

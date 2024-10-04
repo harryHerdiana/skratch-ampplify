@@ -19,14 +19,14 @@ export default function DicebarbersPage() {
             </Head>
 
             <div className="relative bg-dark">
-                <HeroTitle 
+                <HeroTitle
                     title="DICE BARBERS"
                     subtitle="A New Era in the Barbers Trade"
                     desktopImgUrl="/img/products/diceproduct.png"
                     mobileImgUrl="/img/products/mobile/diceproduct-mobile.png"
                 />
                 <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[210px]">
-                <BigTitleStory
+                    <BigTitleStory
                         title={`For those with busy lifestyles, getting a cut has never been so simple`}
                         titleLeft={`Services`}
                         textLeft={`1. WEBFLOW DEVELOPMENT
@@ -51,28 +51,26 @@ export default function DicebarbersPage() {
                         imageContainerClassname="aspect-[1664/2042] max-w-[1664px] m-auto"
                         title={` `}
                         textContainerClassname="px-[9px] lg:px-[19px]"
-
                         story={`The second phase we produced content for their social media and new website.`}
                         textColor={`text-white`}
                     />
                 </div>
 
-                <div className="bg-[#FDFCF3] ">
-                    <BigImageStory2                         textContainerClassname="px-[9px] lg:px-[19px]"
-
+                <div className="bg-[#FDFCF3] px-[9px] lg:px-[19px]">
+                    <BigImageStory2
+                        textContainerClassname=""
                         imgUrl={`/img/products/dice/dice-3.png`}
                         imageContainerClassname="aspect-[1000/713] max-w-[1000px] m-auto"
                         title={` `}
                         story={`Lastly, we built out their web presence using Webflow for them to easily manage the site within the designer view and native CMS.`}
                     />
                 </div>
-            
 
                 <div className="rounded-[20px] mt-10 mx-5 py-20 lg:py-[200px]">
                     <BigImageOnly
-                    className="rounded-[20px] aspect-[1133/975] max-w-[1133px] m-auto"
+                        className="rounded-[20px] aspect-[1133/975] max-w-[1133px] m-auto"
                         imgUrl={`/img/products/dice/dice-4.png`}
-                        />
+                    />
                 </div>
             </div>
         </>

@@ -64,9 +64,10 @@ export default function BlueprintPage() {
                         className="aspect-[990/612] max-w-[990px] m-auto"
                         />
                 </div>
-                <div className="rounded-[20px] mt-[120px] lg:mt-[200px] p-5 lg:p-10 ">
-                    <BigImageOnly
+                <div className="rounded-[20px] mt-[120px] lg:mt-[200px] p-5 lg:p-10 pb-[120px] lg:pb-[200px]">
+                    <BigImageOnly 
                         imgUrl={`/img/products/blueprint/blueprint-4.png`}
+                        imageClassname="rounded-lg"
                         />
                 </div>
             </div>
