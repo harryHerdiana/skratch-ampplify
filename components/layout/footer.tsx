@@ -2,6 +2,7 @@ import footerLogo from "@/public/img/common/skratch_footer.svg";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { projectsData } from "../sections/projectdata";
 
 const Footer: React.FC = () => {
     return (
@@ -14,22 +15,15 @@ const Footer: React.FC = () => {
                     <div />
                 </div>
                 <div className="grid grid-cols-2 mt-[60px] md:hidden">
-                    <p>projects</p>
+                    <p>Projects:</p>
                     <ul>
-                        <li>certor</li>
-                        <li>vicis</li>
-                        <li>schutt</li>
-                        <li>tucci</li>
-                        <li>the home edit</li>
-                        <li>volt athletics</li>
-                        <li>speakesy</li>
-                        <li>tryit</li>
-                        <li>evvy</li>
-                        <li>proprio</li>
-                        <li>blueprint</li>
-                        <li>aftco</li>
-                        <li>TDE</li>
-                        <li>Mione</li>
+                    {projectsData.map((project) => (
+                            <li>
+                                <Link href={`/projects/${project.title.toLowerCase().replace(/ /g, "-")}`}>
+                                    {project.title}
+                                </Link>
+                            </li>
+                    ))}
                     </ul>
                 </div>
                 <div className="grid grid-cols-2 mt-[60px] md:hidden">
@@ -66,25 +60,18 @@ const Footer: React.FC = () => {
                 </div>
                 <div className="hidden md:grid grid-cols-4">
                     <div className="flex flex-col">
-                        <Link href="">contact</Link>
+                        <Link href="mailto:studio@skratch.co">contact</Link>
                     </div>
 
-                    <p>projects</p>
+                    <p>Projects:</p>
                     <ul>
-                        <li>certor</li>
-                        <li>vicis</li>
-                        <li>schutt</li>
-                        <li>tucci</li>
-                        <li>the home edit</li>
-                        <li>volt athletics</li>
-                        <li>speakesy</li>
-                        <li>tryit</li>
-                        <li>evvy</li>
-                        <li>proprio</li>
-                        <li>blueprint</li>
-                        <li>aftco</li>
-                        <li>TDE</li>
-                        <li>Mione</li>
+                    {projectsData.map((project) => (
+                            <li>
+                                <Link href={`/projects/${project.title.toLowerCase().replace(/ /g, "-")}`}>
+                                    {project.title}
+                                </Link>
+                            </li>
+                    ))}
                     </ul>
                     <ul>
                         <li>
