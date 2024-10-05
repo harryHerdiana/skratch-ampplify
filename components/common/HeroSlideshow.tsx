@@ -1,4 +1,4 @@
-import heroImage from "@/public/img/new-layout/hero1.png";
+import heroImage from "@/public/img/products/tdeproduct.png";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
@@ -37,11 +37,11 @@ const SliderItem = () => {
                 </div>
                 <div className=" flex justify-between md:grid grid-cols-2">
                     <div>
-                        <p>2023</p>
-                        <p>Certor</p>
+                        <p className="text-[12px]">2024</p>
+                        <p>TDE</p>
                     </div>
 
-                    <Link href="/" className="underline self-end">
+                    <Link href="/projects/tde-apparel" className="underline self-end">
                         View Project
                     </Link>
                 </div>

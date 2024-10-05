@@ -14,7 +14,7 @@ const ProjectItem = (props: IProjectList) => {
                     .replace(/ /g, "-")}`}
             >
                 <p className="text-20 md:text-32 w-max mb-2.5 text-[#565652]">
-                    <span className="text-[#1F1F1F66]">{props.year}</span>
+                    <span className="text-[#1F1F1F66] text-12 mb-2 md:text[18px] lg:text-18">{props.year}</span>
                     <br />
                     {props.title}
                 </p>
