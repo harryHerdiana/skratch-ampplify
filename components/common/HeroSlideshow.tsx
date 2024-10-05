@@ -1,12 +1,33 @@
 import heroImage from "@/public/img/new-layout/hero1.png";
 import Image from "next/image";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
 const SliderItem = () => {
+    const [time, setTime] = useState(new Date());
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setTime(new Date());
+        }, 1000);
+
+        return () => {
+            clearInterval(timer);
+        };
+    }, []);
+
+    const formattedTime = time.toLocaleTimeString('en-US', {
+        hour: 'numeric',
+        minute: '2-digit',
+        hour12: true
+    });
+
     return (
         <div className="relative h-full w-full flex  text-white justify-between   bg-dark">
             <div className="z-10 text-20 h-full w-full flex flex-col justify-between p-2.5 md:p-5 ">
-                <p></p>
+                <div className="text-center">
+                    <div className="hidden md:flex text-15 relative w-max m-auto justify-center"><span className="absolute top-[3px] -left-5 text-12 rotate-[90deg]">▲</span> {formattedTime}</div>
+                </div>
                 <div className="grid md:grid-cols-2 grid-cols-1 w-full justify-between">
                     <div className="block text-15 md:text-18 pb-5 md:pb-0">( Info )</div>
                     <p className="md:max-w-[505px] font-[MonumentGrotesk-Regular] text-[30px] leading-[34px]">
