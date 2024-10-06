@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
                     <p>Projects:</p>
                     <ul>
                     {projectsData.map((project) => (
-                            <li>
+                            <li key={project.title}>
                                 <Link href={`/projects/${project.title.toLowerCase().replace(/ /g, "-")}`}>
                                     {project.title}
                                 </Link>
@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
                     <p>Projects:</p>
                     <ul>
                     {projectsData.map((project) => (
-                            <li>
+                            <li key={project.title}>
                                 <Link href={`/projects/${project.title.toLowerCase().replace(/ /g, "-")}`}>
                                     {project.title}
                                 </Link>
