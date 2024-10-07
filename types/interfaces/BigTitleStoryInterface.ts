@@ -2,6 +2,6 @@ interface BigTitleProps {
     title: string;
     titleLeft?: string;
     titleRight?: string;
-    textLeft?: string;
+    textLeft?: React.ReactNode;
     textRight?: string;
 }
