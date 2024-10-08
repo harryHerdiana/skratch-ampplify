@@ -1,7 +1,7 @@
 import heroImage from "@/public/img/products/tdeproduct.png";
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const SliderItem = () => {
     const [time, setTime] = useState(new Date());

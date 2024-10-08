@@ -35,7 +35,7 @@ const BigImageStory = (props: BigImageStoryProps) => {
                 )}
             >
                 {props.title && props.story && (
-                <><div className="border-t border-[#D6D8CE] mt-8 opacity-15 mix-blend-difference "></div>
+                <><div className="border-t border-[#D6D8CE] opacity-15 mix-blend-difference "></div>
                 <div
                     className={classNames(
                         "flex flex-col md:flex-row  font-['MonumentGrotesk-Regular'] mt-5  lg:px-[0]"

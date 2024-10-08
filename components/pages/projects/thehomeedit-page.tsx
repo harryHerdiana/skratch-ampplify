@@ -65,13 +65,13 @@ export default function TheHomeEditPage() {
                         imgUrl={`/img/products/thehomeedit/thehomeedit-3.png`}
                         imageContainerClassname="aspect-[37/112]  m-auto max-w-[925px] "
                     />
+                </div>
                     <BigImageStory2
                         title={`Approach`}
                         story={`A significant aspect of The Home Edit's online sales hinges on their tailor-made labels. Ensuring a user-friendly shopping experience, as well as creating a reliable fulfillment solution for their printing vendor, was our focal point to boost conversions and efficiency.`}
                         textColor={`text-white`}
                         textContainerClassname="px-[9px] lg:px-[19px]"
                     />
-                </div>
 
                 <div className="rounded-[20px] mt-[120px] lg:mt-[200px] pb-20 px-[19px] lg:px-40 lg:pb-[200px] ">
                     <BigImageOnly
