@@ -2,7 +2,6 @@
 import HeroTitle from "@/components/common/HeroTitle";
 import BigImageOnly from "@/components/sections/big-img-only";
 import BigImageStory from "@/components/sections/big-img-story";
-import BigImageStory2 from "@/components/sections/big-img-story-2";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
 import { projectsData } from "../../sections/projectdata";
@@ -64,8 +63,8 @@ export default function TDEApparel() {
                         story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands.`}
                     />
                 </div>
-                <div className="bg-[#D6D8CE] rounded-[20px]">
-                    <BigImageStory2
+                <div className="bg-[#D6D8CE] rounded-[20px]  pb-[80px]">
+                    <BigImageStory
                         textContainerClassname="px-[9px] lg:px-[19px]"
                         imgUrl={`/img/products/tde/tde-2.png`}
                         imageContainerClassname="aspect-[1601/1715] max-w-[1601px] m-auto"

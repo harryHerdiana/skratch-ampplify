@@ -2,7 +2,6 @@
 import HeroTitle from "@/components/common/HeroTitle";
 import BigImageOnly from "@/components/sections/big-img-only";
 import BigImageStory from "@/components/sections/big-img-story";
-import BigImageStory2 from "@/components/sections/big-img-story-2";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
 
@@ -65,7 +64,7 @@ export default function SpeakeasyPage() {
                 </div>
 
                 <div className="pb-[80px] lg:pb-[200px]">
-                    <BigImageStory2
+                    <BigImageStory
                         imgUrl={`/img/new-layout/item-3.png`}
                         textContainerClassname="px-[9px] lg:px-[19px]"
                         imageOuterContainerClassname="px-10 lg:px-0"
@@ -77,7 +76,7 @@ export default function SpeakeasyPage() {
                 </div>
 
                 <div className="bg-[#D6D8CE] rounded-[20px] pb-[80px] lg:pb-[200px]">
-                    <BigImageStory2
+                    <BigImageStory
                         imgUrl={`/img/new-layout/item-4.png`}
                         textContainerClassname="px-[9px] lg:px-[19px]"
                         imageOuterContainerClassname="px-10 lg:px-0"
@@ -88,7 +87,7 @@ export default function SpeakeasyPage() {
                 </div>
 
                 <div className="pb-[80px] lg:pb-[200px]">
-                    <BigImageStory2
+                    <BigImageStory
                         imgUrl={`/img/new-layout/item-5.png`}
                         textContainerClassname="px-[9px] lg:px-[19px]"
                         imageOuterContainerClassname="px-10 lg:px-0"
@@ -100,7 +99,7 @@ export default function SpeakeasyPage() {
                 </div>
 
                 <div className="bg-[#D6D8CE] rounded-[20px] pb-[80px] lg:pb-[200px]">
-                    <BigImageStory2
+                    <BigImageStory
                         imgUrl={`/img/new-layout/item-6.png`}
                         imageContainerClassname="aspect-[46/31] max-w-[926px]"
                         textContainerClassname="px-[9px] lg:px-[19px]"

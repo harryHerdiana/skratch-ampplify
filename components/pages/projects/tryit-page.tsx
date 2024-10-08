@@ -45,8 +45,8 @@ export default function TryitPage() {
                     />
                 </div>
 
-                <div className="">
-                    <BigImageStory2
+                <div className="mb-[40px] lg:mb-[169px]">
+                    <BigImageStory
                         imgUrl={`/img/products/tryit/tryit-2.png`}
                         imageContainerClassname="aspect-[39/49] m-auto max-w-[1572px]"
                         title={`Challenge`}
@@ -55,8 +55,8 @@ export default function TryitPage() {
                         textContainerClassname="px-[9px] lg:px-[19px]"
                     />
                 </div>
-                <div className="bg-[#FDFCF3] rounded-[20px] px-[9px] lg:px-[19px]">
-                    <BigImageStory2
+                <div className="bg-[#FDFCF3] rounded-[20px] px-[9px] lg:px-[19px] pb-[40px] lg:pb-[169px]">
+                    <BigImageStory
                         imgUrl={`/img/products/tryit/tryit-3.png`}
                         imageContainerClassname="aspect-[82/47] m-auto max-w-[1304px]"
                         title={`Challenge`}
@@ -65,12 +65,13 @@ export default function TryitPage() {
                         
                     />
                 </div>
-                <div className="rounded-[20px]  bg-[url(/img/products/tryit/tryit-4-bg.png)] bg-cover bg-center bg-no-repeat overflow-hidden">
+                <div className="rounded-[20px]  bg-[url(/img/products/tryit/tryit-4-bg.png)] bg-cover bg-center bg-no-repeat overflow-hidden mb-[40px] lg:mb-[169px]">
                     <BigImageStory2
                               imgUrl={`/img/products/tryit/tryit-4.png`}
                               imageContainerClassname="aspect-[92/44] m-auto max-w-[920px]"
                        
                     />
+                </div>
                     <BigImageStory2
                         title={`Approach`}
                         story={`A significant aspect of The Home Edit's online sales hinges on their tailor-made labels. Ensuring a user-friendly shopping experience, as well as creating a reliable fulfillment solution for their printing vendor, was our focal point to boost conversions and efficiency.`}
@@ -78,7 +79,6 @@ export default function TryitPage() {
                         textContainerClassname="px-[9px] lg:px-[19px]"
 
                     />
-                </div>
 
                 <div className="rounded-[20px] mt-[120px] lg:mt-[200px] pb-20 px-[19px] lg:px-40 lg:pb-[200px] ">
                     <BigImageOnly

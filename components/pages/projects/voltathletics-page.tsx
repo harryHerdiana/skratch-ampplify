@@ -5,8 +5,38 @@ import BigImageStory from "@/components/sections/big-img-story";
 import BigImageStory2 from "@/components/sections/big-img-story-2";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
+import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 
 export default function VoltAthleticsPage() {
+    const scrollContainerRef = useRef<HTMLDivElement>(null);
+    const [isDragging, setIsDragging] = useState(false);
+    const [startX, setStartX] = useState(0);
+    const [scrollLeft, setScrollLeft] = useState(0);
+
+    const handleMouseDown = (e: React.MouseEvent) => {
+        setIsDragging(true);
+        setStartX(e.pageX - scrollContainerRef.current!.offsetLeft);
+        setScrollLeft(scrollContainerRef.current!.scrollLeft);
+    };
+
+    const handleMouseUp = () => {
+        setIsDragging(false);
+    };
+
+    const handleMouseMove = (e: React.MouseEvent) => {
+        if (!isDragging) return;
+        e.preventDefault();
+        const x = e.pageX - scrollContainerRef.current!.offsetLeft;
+        const walk = (x - startX) * 2; // Adjust scrolling speed
+        scrollContainerRef.current!.scrollLeft = scrollLeft - walk;
+    };
+
+    useEffect(() => {
+        document.addEventListener("mouseup", handleMouseUp);
+        return () => document.removeEventListener("mouseup", handleMouseUp);
+    }, []);
+
     return (
         <>
             <Head>
@@ -53,14 +83,31 @@ export default function VoltAthleticsPage() {
                         story={`Following our initial discussions with the Volt team, a mutual decision was made to employ a more modern react-based framework for their front-end.`}
                     />
                 </div>
-                <div className="translate-y-10 no-scrollbar overflow-x-scroll flex-col hidden lg:flex">
+                <div className="translate-y-10 flex-col hidden lg:flex relative">
+                    <div
+                        className="overflow-x-auto  mt-[80px] lg:mt-[169px] no-scrollbar"
+                        onMouseDown={handleMouseDown}
+                        ref={scrollContainerRef}
+                        onMouseMove={handleMouseMove}
+                    >
+                        <div className="relative h-[538px] w-[3588px]">
+                            <Image
+                                src={"/img/products/volt/volt-3.png"}
+                                alt="volt-3"
+                                className="object-contain"
+                                fill
+                                draggable={false}
+                                quality={100}
+                                priority
+                                unoptimized
+                            />
+                        </div>
+                    </div>
                     <BigImageStory2
-                        imgUrl={"/img/products/volt/volt-3.png"}
-                        imageContainerClassname="aspect-[45/7] m-auto h-full w-full lg:h-[536px] lg:w-[3588px]"
                         title={`Approach`}
                         story={`Following our initial discussions with the Volt team, a mutual decision was made to employ a more modern react-based framework for their front-end.`}
                         textColor={`text-white`}
-                        textContainerClassname="px-[9px] lg:px-[19px]"
+                        textContainerClassname="px-[9px] lg:px-[19px] mt-[80px] lg:mt-[169px] "
                     />
                 </div>
                 <div className="bg-[#FDFCF3] lg:hidden">
@@ -80,7 +127,7 @@ export default function VoltAthleticsPage() {
                         title={`Approach`}
                         story={`Post comprehensive quality assurance conducted by all stakeholders, necessary modifications were implemented before launching the new website, meeting all requirements and expectations. `}
                         textContainerClassname="px-[9px] lg:px-[19px]"
-                     />
+                    />
                 </div>
                 <div className="rounded-[20px] mt-[120px] lg:mt-[200px] pb-20 lg:px-40 lg:pb-[200px] ">
                     <BigImageOnly

@@ -61,31 +61,30 @@ export default function AftcoPage() {
                         textColor="text-white"
                     />
                 </div>
-                <div className="  bg-[url(/img/products/aftco/aftco-4-bg.png)] bg-cover bg-center bg-no-repeat overflow-hidden">
+                <div className="  bg-[url(/img/products/aftco/aftco-4-bg.png)] bg-cover bg-center bg-no-repeat overflow-hidden mb-[40px] lg:mb-[169px]">
                     <BigImageStory2
                         imgUrl={`/img/products/aftco/aftco-4.png`}
                         imageClassname="rounded-[8px] px-[9px] lg:px-[19px]"
                         imageContainerClassname="aspect-[160/183] m-auto max-w-[908px]"
                     />
+                </div>
                     <BigImageStory2
                         title={`Approach`}
                         textContainerClassname="px-[9px] lg:px-[19px]"
                         story={`Utilizing the new user interface contributed by AFTCO, we kicked off the project by building an MVP as proof of concept to ensure they chose the right approach.`}
                         textColor={`text-white`}
                     />
-                </div>
-                <div className="bg-[#FDFCF3] rounded-[20px] px-[9px] lg:px-[19px]">
-                    <BigImageStory2
+           
+                <div className="rounded-[20px] px-[9px] lg:px-[19px] pb-[80px] bg-[#FDFCF3] ">
+                    <BigImageStory
                         imgUrl={`/img/products/aftco/aftco-5.png`}
                         imageContainerClassname="aspect-[235/189] m-auto max-w-[1177px]"
                         title={`Challenge`}
-                        textContainerClassname=""
                         story={`The integration of diverse third-party services such as accessibility, search, and personalization played a pivotal role in the complexity of the new build. `}
                     />
                 </div>
                 <div className="rounded-[20px] px-[9px] lg:px-[19px] pb-[80px]">
                     <BigImageStory
-                    
                         imgUrl={`/img/products/aftco/aftco-6.png`}
                         imageContainerClassname="aspect-[45/26] m-auto max-w-[1080px]"
                         title={`Challenge`}

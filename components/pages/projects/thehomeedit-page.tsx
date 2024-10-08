@@ -59,7 +59,7 @@ export default function TheHomeEditPage() {
                     />
                 </div>
 
-                <div className="rounded-[20px] bg-[url(/img/products/thehomeedit/thehomeedit-3-bg.png)] bg-cover bg-center bg-no-repeat overflow-hidden">
+                <div className="rounded-[20px] bg-[url(/img/products/thehomeedit/thehomeedit-3-bg.png)] bg-cover bg-center bg-no-repeat overflow-hidden mb-[40px] lg:mb-[169px]">
                     <BigImageStory2
                         imageOuterContainerClassname=" px-[50px]  lg:px-[19px]  max-h-[940px] overflow-y-scroll translate-x-10"
                         imgUrl={`/img/products/thehomeedit/thehomeedit-3.png`}
