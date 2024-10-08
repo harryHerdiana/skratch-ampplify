@@ -4,6 +4,7 @@ import Head from "next/head";
 import ProfileSection from "../sections/profile-section";
 import ProjectArchives from "../sections/project-archives";
 import ProjectList from "../sections/project-list";
+import ServicesSection from "../sections/services-section";
 import TestimonialsSection from "../sections/testimonials-section";
 
 export default function Homepage() {
@@ -24,6 +25,7 @@ export default function Homepage() {
                 <ProfileSection/>
                 <TestimonialsSection/>
                 <ProjectArchives/>
+                <ServicesSection/>
             </div>
         </>
     );
