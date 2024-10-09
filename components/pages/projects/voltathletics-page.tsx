@@ -11,10 +11,6 @@ import { projectsData } from "../../sections/projectdata";
 
 export default function VoltAthleticsPage() {
     const project = projectsData.find((project) => project.title === "Volt Athletics");
-
-     if (!project) {
-         return <div>Project data not found.</div>;
-     }
     const scrollContainerRef = useRef<HTMLDivElement>(null);
     const [isDragging, setIsDragging] = useState(false);
     const [startX, setStartX] = useState(0);
@@ -43,6 +39,9 @@ export default function VoltAthleticsPage() {
         return () => document.removeEventListener("mouseup", handleMouseUp);
     }, []);
 
+     if (!project) {
+         return <div>Project data not found.</div>;
+     }
     return (
         <>
             <Head>
