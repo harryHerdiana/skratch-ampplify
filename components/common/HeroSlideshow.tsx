@@ -41,7 +41,7 @@ const SliderItem = () => {
                         <p>TDE</p>
                     </div>
 
-                    <Link href="/projects/tde-apparel" className="underline self-end">
+                    <Link href="/projects/tde" className="underline self-end">
                         View Project
                     </Link>
                 </div>

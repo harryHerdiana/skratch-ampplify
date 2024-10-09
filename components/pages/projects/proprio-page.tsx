@@ -4,8 +4,14 @@ import BigImageOnly from "@/components/sections/big-img-only";
 import BigImageStory2 from "@/components/sections/big-img-story-2";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
+import { projectsData } from "../../sections/projectdata";
 
 export default function ProprioPage() {
+    const project = projectsData.find((project) => project.title === "Proprio");
+
+     if (!project) {
+         return <div>Project data not found.</div>;
+     }
     return (
         <>
             <Head>
@@ -28,9 +34,15 @@ export default function ProprioPage() {
                     <BigTitleStory
                         title={`Modernizing the way we predict, perform, and perfect surgery`}
                         titleLeft={`Services`}
-                        textLeft={`1. webflow development
-                            2. APP INTEGRATION
-                           `}
+                        textLeft={
+                            <ul>
+                                {project.services
+                                    .filter(service => service) // Filter out empty strings
+                                    .map((service, index) => (
+                                        <li key={index}>{service}</li>
+                                    ))}
+                            </ul>
+                        }
                         titleRight={`About`}
                         textRight="Proprio is a tech company revolutionizing surgery with a blend of expert knowledge and immersive technology. This platform equips surgeons with crucial insights for informed decisions during surgeries."
                     />

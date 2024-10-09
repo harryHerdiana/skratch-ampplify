@@ -5,8 +5,15 @@ import BigImageStory from "@/components/sections/big-img-story";
 import BigImageStory2 from "@/components/sections/big-img-story-2";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
+import { projectsData } from "../../sections/projectdata";
 
 export default function TryitPage() {
+    const project = projectsData.find((project) => project.title === "Tryit");
+
+     if (!project) {
+         return <div>Project data not found.</div>;
+     }
+    
     return (
         <>
             <Head>
@@ -29,9 +36,15 @@ export default function TryitPage() {
                 <BigTitleStory
                         title={`Fun project where I can share my design process and release random products`}
                         titleLeft={`Services`}
-                        textLeft={`1. UX/UI DESIGN
-                            2. SHOPIFY THEME DEVELOPMENT
-                           `}
+                        textLeft={
+                            <ul>
+                                {project.services
+                                    .filter(service => service) // Filter out empty strings
+                                    .map((service, index) => (
+                                        <li key={index}>{service}</li>
+                                    ))}
+                            </ul>
+                        }
                         titleRight={`About`}
                         textRight="Try It Studios is a design studio situated in Los Angeles. They curate unique partnerships with up-and-coming brands and special events, infusing their collection with an exclusive and varied appeal."
                     />

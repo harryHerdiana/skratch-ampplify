@@ -5,8 +5,14 @@ import BigImageStory from "@/components/sections/big-img-story";
 import BigImageStory2 from "@/components/sections/big-img-story-2";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
+import { projectsData } from "../../sections/projectdata";
 
 export default function BlueprintPage() {
+    const project = projectsData.find((project) => project.title === "Blueprint");
+
+     if (!project) {
+         return <div>Project data not found.</div>;
+     }
     return (
         <>
             <Head>
@@ -29,8 +35,15 @@ export default function BlueprintPage() {
                 <BigTitleStory
                         title={`Success in real estate requires more than just luck and hard work`}
                         titleLeft={`Services`}
-                        textLeft={`1. WEBFLOW DEVELOPMENT
-                            2. APP INTEGRATION`}
+                        textLeft={
+                            <ul>
+                                {project.services
+                                    .filter(service => service) // Filter out empty strings
+                                    .map((service, index) => (
+                                        <li key={index}>{service}</li>
+                                    ))}
+                            </ul>
+                        }
                         titleRight={`About`}
                         textRight="Blueprint Capital provides construction financing to small-scale builders and develops income producing property for long-term value. As part of a new marketing initiative, Blueprint came to us looking for a development partner to rebuild their website."
                     />

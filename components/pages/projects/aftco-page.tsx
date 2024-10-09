@@ -5,8 +5,14 @@ import BigImageStory from "@/components/sections/big-img-story";
 import BigImageStory2 from "@/components/sections/big-img-story-2";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
+import { projectsData } from "../../sections/projectdata";
 
 export default function AftcoPage() {
+    const project = projectsData.find((project) => project.title === "Aftco");
+
+     if (!project) {
+         return <div>Project data not found.</div>;
+     }
     return (
         <>
             <Head>
@@ -29,10 +35,15 @@ export default function AftcoPage() {
                     <BigTitleStory
                         title={`Unparalleled quality, performance, and reliability when it counts most`}
                         titleLeft={`Services`}
-                        textLeft={`1. FRONT-END DEVELOPMENT
-                            2. SHOPIFY DEVELOPMENT
-                            3. HEADLESS DEVELOPMENT
-                            4. APP INTEGRATION`}
+                        textLeft={
+                            <ul>
+                                {project.services
+                                    .filter(service => service) // Filter out empty strings
+                                    .map((service, index) => (
+                                        <li key={index}>{service}</li>
+                                    ))}
+                            </ul>
+                        }
                         titleRight={`About`}
                         textRight="AFTCO, the American Fishing Tackle Company, is renowned for its top-quality fishing apparel and accessories. With a rich history and dedication to quality, innovation, and conservation, AFTCO stands as a trusted name in the fishing community."
                     />

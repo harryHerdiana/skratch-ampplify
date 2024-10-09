@@ -5,8 +5,14 @@ import BigImageStory from "@/components/sections/big-img-story";
 import BigImageStory2 from "@/components/sections/big-img-story-2";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
+import { projectsData } from "../../sections/projectdata";
 
 export default function EvvyPage() {
+    const project = projectsData.find((project) => project.title === "Evvy");
+
+    if (!project) {
+        return <div>Project data not found.</div>;
+    }
     return (
         <>
             <Head>
@@ -29,9 +35,15 @@ export default function EvvyPage() {
                     <BigTitleStory
                         title={`The female body shouldn’t be a medical mystery`}
                         titleLeft={`Services`}
-                        textLeft={`1. Shopify Theme Development
-                            2. Custom App Development
-                            3. App Integration`}
+                        textLeft={
+                            <ul>
+                                {project.services
+                                    .filter(service => service) // Filter out empty strings
+                                    .map((service, index) => (
+                                        <li key={index}>{service}</li>
+                                    ))}
+                            </ul>
+                        }
                         titleRight={`About`}
                         textRight="Evvy is a health and wellness company that provides customers with science-backed insights to improve their overall well-being. Evvy approached us to develop their eCommerce platform and enhance their marketing website."
                     />
@@ -50,7 +62,7 @@ export default function EvvyPage() {
                     <BigImageStory2
                         textContainerClassname=""
                         imgUrl={`/img/products/evvy/evvy-2.png`}
-                        imageContainerClassname="aspect-[53/40] m-auto max-w-[1066px]"
+                        imageContainerClassname="aspect-[53/40] m-auto max-w-[1066px] md:mb-[120px] "
                         title={`Challenge`}
                         story={`Synchronization was crucial as time was limited before their official launch, giving them confidence in our ability to recreate the desired experience swiftly.`}
                         textColor={`text-white`}
@@ -87,7 +99,7 @@ export default function EvvyPage() {
                         story={`This eCommerce stack created a strong foundation, enabling Evvy to offer top-notch virtual healthcare services while delivering a seamless online journey for their customers. `}
                     />
                 </div>
-                <div className="rounded-[20px] mt-[120px] lg:mt-[200px] p-5 lg:p-10 pb-[120px] lg:pb-[200px]">
+                <div className="rounded-[20px]">
                     <BigImageOnly imgUrl={`/img/products/evvy/evvy-6.png`}  imageClassname="rounded-lg"/>
                 </div>
             </div>

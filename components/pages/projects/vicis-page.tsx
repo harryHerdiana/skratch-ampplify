@@ -5,8 +5,14 @@ import BigImageStory from "@/components/sections/big-img-story";
 import BigImageStory2 from "@/components/sections/big-img-story-2";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
+import { projectsData } from "../../sections/projectdata";
 
 export default function VicisPage() {
+    const project = projectsData.find((project) => project.title === "Vicis");
+
+     if (!project) {
+         return <div>Project data not found.</div>;
+     }
     return (
         <>
             <Head>
@@ -29,11 +35,15 @@ export default function VicisPage() {
                     <BigTitleStory
                         title={`Football’s most protective helmets for athletes at all ages and levels of competition`}
                         titleLeft={`Services`}
-                        textLeft={`1. UX/UI DESIGN
-                            2. CUSTOM THEME DEVELOPMENT
-                            3. STORE SET-UP
-                            4. APP INTEGRATION
-                            5. CUSTOM APP DEVELOPMENT`}
+                        textLeft={
+                            <ul>
+                                {project.services
+                                    .filter(service => service) // Filter out empty strings
+                                    .map((service, index) => (
+                                        <li key={index}>{service}</li>
+                                    ))}
+                            </ul>
+                        }
                         titleRight={`About`}
                         textRight="VICIS produces advanced football helmets designed to enhance player safety through innovative technology and materials. After being acquired by Certor, they approached us with a request to create a unified shopping experience across their range of brands. "
                     />

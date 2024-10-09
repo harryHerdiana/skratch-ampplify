@@ -38,11 +38,14 @@ const supportList = [
 
 const ServicesSection = () => {
     return (
-        <div className="bg-dark text-white px-2.5 py-[100px] hidden lg:block">
-            <div className="flex justify-between">
+        <div className="bg-dark text-white px-2.5 py-[120px] hidden lg:block mb-[120px]">
+            <h3 className="uppercase text-52 md:text-120  max-w-[85%] lg:max-w-[1163px] font-['MonumentGrotesk-Bold'] tracking-[-2px]">
+                Services enim ad min veniam min quis enim
+            </h3>
+            <div className="mt-[100px] mb-2.5 md:translate-y-10 flex justify-between">
                 {" "}
-                <h3 className="text-[30px] leading-[34px] mb-[20px]">
-                    Services
+                <h3 className="text-12 lg:text-15 mb-[25px]">
+                ( What we do )
                 </h3>{" "}
             </div>
             <div className="font-[MonumentGrotesk-Semi-Mono] uppercase text-12 leading-[16px] ">
@@ -59,7 +62,7 @@ const ServicesSection = () => {
                             )}
                         >
                             <div className="flex items-center ">
-                                <p>Eeommerce</p>
+                                <p>Ecommerce</p>
                             </div>
                             <p className="col-span-1">Modern Web</p>
                         </div>

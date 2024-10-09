@@ -1,4 +1,4 @@
-import TDEApparel from "@/components/pages/projects/tdeapparel-page";
+import TDEApparel from "@/components/pages/projects/tde-page";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

@@ -35,12 +35,10 @@ export default function TDEApparel() {
                     desktopImgUrl={project.image}
                     mobileImgUrl="/img/products/mobile/tdeproduct-mobile.png"
                 />
-                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[210px]">
+                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[120px]">
                     <BigTitleStory
-                        title={`We’re leaders in 
-                            technology, innovation 
-                            design,  and sport`}
-                        titleLeft={`Services`}
+                        title={`The house that kendrick built`}
+                        titleLeft={`Sevices`}
                         textLeft={
                             <ul>
                                 {project.services
@@ -51,7 +49,7 @@ export default function TDEApparel() {
                             </ul>
                         }
                         titleRight={`About`}
-                        textRight="One main purpose of the site was to showcase job opportunities and attract potential employees. We developed a custom integration of their current hiring platform that was required to display current openings."
+                        textRight="Top Dawg Entertainment (TDE) is a renowned independent record label known for launching the careers of major artists like Kendrick Lamar, SZA, and Schoolboy Q. Celebrating their 20th anniversary, they approached us to modernize their eCommerce experience."
                     />
 
                     <BigImageStory
@@ -60,7 +58,7 @@ export default function TDEApparel() {
                         width={`90%`}
                         height={`60%`}
                         title={`Challenge`}
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands.`}
+                        story={`Facing a tight deadline per usual, we jumped right into the design phase, working closely with the team to finalize decisions quickly before moving on to theme development. This gave us additional time to thoroughly QA the site before the official launch.`}
                     />
                 </div>
                 <div className="bg-[#D6D8CE] rounded-[20px]  pb-[80px]">
@@ -68,14 +66,13 @@ export default function TDEApparel() {
                         textContainerClassname="px-[9px] lg:px-[19px]"
                         imgUrl={`/img/products/tde/tde-2.png`}
                         imageContainerClassname="aspect-[1601/1715] max-w-[1601px] m-auto"
-                        title={`Challenge`}
-                        story={`One main purpose of the site was to showcase job opportunities and attract potential employees. We developed a custom integration of their current hiring platform that was required to display current openings.`}
-                        textColor="text-black"
+                        title={`Output`}
+                        story={`Within 24 hours of the new site's launch, we boosted sales by four times through our custom performance-optimized Shopify theme and an impactful Klayvio campaign, which now serves as a template for future marketing efforts.`}
                     />
                 </div>
                 <div className="bg-[#1F1F1F] rounded-[20px]">
                     <BigImageStory
-                        imageContainerClassname="aspect-[1025/581] m-auto max-w-[1025px]"
+                        imageContainerClassname="aspect-[1025/581] m-auto max-w-[1440px]"
                         imgUrl={`/img/products/tde/tde-3.png`}
                     />
                 </div>

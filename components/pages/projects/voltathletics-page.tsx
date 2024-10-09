@@ -7,8 +7,14 @@ import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import { projectsData } from "../../sections/projectdata";
 
 export default function VoltAthleticsPage() {
+    const project = projectsData.find((project) => project.title === "Volt Athletics");
+
+     if (!project) {
+         return <div>Project data not found.</div>;
+     }
     const scrollContainerRef = useRef<HTMLDivElement>(null);
     const [isDragging, setIsDragging] = useState(false);
     const [startX, setStartX] = useState(0);
@@ -59,7 +65,15 @@ export default function VoltAthleticsPage() {
                     <BigTitleStory
                         title={`Expert fitness guidance, whether you are training as an individual or part of a group`}
                         titleLeft={`Services`}
-                        textLeft={`Front-end Development`}
+                        textLeft={
+                            <ul>
+                                {project.services
+                                    .filter(service => service) // Filter out empty strings
+                                    .map((service, index) => (
+                                        <li key={index}>{service}</li>
+                                    ))}
+                            </ul>
+                        }
                         titleRight={`About`}
                         textRight="Volt Athletics specializes in providing strength and conditioning solutions for athletes. Their training app combines cutting-edge technology with expert coaching to create individualized training plans that cater to each athlete's goals and needs."
                     />

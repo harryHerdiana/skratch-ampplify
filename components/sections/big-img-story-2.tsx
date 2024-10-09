@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const BigImageStory2 = (props: BigImageStoryProps) => {
     return (
-        <div className="text-black font-['MonumentGrotesk-Regular'] lg:pb-[169px] pb-[60px]">
+        <div className="text-black font-['MonumentGrotesk-Regular']">
             {props.imgUrl && (
                 <div
                     className={classNames(
