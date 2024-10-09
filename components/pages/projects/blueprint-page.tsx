@@ -31,7 +31,7 @@ export default function BlueprintPage() {
                     desktopImgUrl="/img/products/blueprintproduct.png"
                     mobileImgUrl="/img/products/mobile/blueprintproduct-mobile.png"
                 />
-                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[210px]">
+                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[120px]">
                 <BigTitleStory
                         title={`Success in real estate requires more than just luck and hard work`}
                         titleLeft={`Services`}
@@ -58,31 +58,30 @@ export default function BlueprintPage() {
                     />
                 </div>
 
-                <div className="  bg-[url(/img/products/blueprint/blueprint-2-bg.png)] bg-cover bg-center bg-no-repeat overflow-hidden">
+                <div className="rounded-[20px] bg-[url(/img/products/blueprint/blueprint-2-bg.png)] bg-cover bg-center bg-no-repeat overflow-hidden">
                     <BigImageStory2
                         imgUrl={`/img/products/blueprint/blueprint-2.png`}
                         imageClassname="rounded-[8px]"
-                        imageContainerClassname="aspect-[13/8] m-auto max-w-[1040px]"
+                        imageContainerClassname="aspect-[13/8] m-auto max-w-[1280px] mb-[160px]"
                     />
-                    <BigImageStory2                         textContainerClassname="px-[9px] lg:px-[19px]"
-
+                   
+                </div>
+                <div className="rounded-[20px] mt-[120px] lg:mt-[200px] ">
+                    <BigImageOnly
+                        imgUrl={`/img/products/blueprint/blueprint-3.png`}
+                        className="aspect-[990/612] max-w-[1440px] m-auto mb-[120px]"
+                        />
+                     <BigImageStory2
+                        textContainerClassname="px-[9px] lg:px-[19px] pb-[120px]"
                         title={`Approach`}
                         story={`The second phase of development required us to rebuild a new Home Search experience, while still utilizing their current backend to manage property listings.`}
                         textColor={`text-white`}
                     />
                 </div>
-                <div className="rounded-[20px] mt-[120px] lg:mt-[200px] p-5 lg:p-10 ">
-                    <BigImageOnly
-                        imgUrl={`/img/products/blueprint/blueprint-3.png`}
-                        className="aspect-[990/612] max-w-[990px] m-auto"
-                        />
-                </div>
-                <div className="rounded-[20px] mt-[120px] lg:mt-[200px] p-5 lg:p-10 pb-[120px] lg:pb-[200px]">
                     <BigImageOnly 
                         imgUrl={`/img/products/blueprint/blueprint-4.png`}
-                        imageClassname="rounded-lg"
+                        imageClassname="rounded-[20px]"
                         />
-                </div>
             </div>
         </>
     );

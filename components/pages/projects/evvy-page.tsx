@@ -58,48 +58,42 @@ export default function EvvyPage() {
                     />
                 </div>
 
-                <div className="px-[9px] lg:px-[19px] ">
+                <div className="bg-[#D6D8CE] rounded-[20px] px-[9px] lg:px-[19px] pb-[120px] ">
                     <BigImageStory2
                         textContainerClassname=""
                         imgUrl={`/img/products/evvy/evvy-2.png`}
                         imageContainerClassname="aspect-[53/40] m-auto max-w-[1066px] md:mb-[120px] "
                         title={`Challenge`}
                         story={`Synchronization was crucial as time was limited before their official launch, giving them confidence in our ability to recreate the desired experience swiftly.`}
-                        textColor={`text-white`}
                     />
                 </div>
-                <div className="bg-[#FDFCF3] rounded-[20px] ">
+                <div className="pb-[120px]">
                     <BigImageStory2
                         textContainerClassname="px-[9px] lg:px-[19px] "
                         imgUrl={`/img/products/evvy/evvy-3.png`}
                         imageContainerClassname="aspect-[17/12] m-auto max-w-[1224px]"
                         title={`Challenge`}
                         story={`Utilizing their existing product page on Webflow, we synced the product availability with Shopify and maintained a fluid transition to checkout to ensure a seamless user experience. `}
+                        textColor="text-white"
                     />
                 </div>
-                <div className="rounded-[20px]  bg-[url(/img/products/evvy/evvy-4-bg.png)] bg-cover bg-center bg-no-repeat overflow-hidden">
+                <div className="rounded-[20px] bg-[url(/img/products/evvy/evvy-4-bg.png)] bg-cover bg-center bg-no-repeat overflow-hidden">
                     <BigImageStory2
                         imgUrl={`/img/products/evvy/evvy-4.png`}
-                        imageContainerClassname="aspect-[18/11] m-auto max-w-[920px]"
+                        imageContainerClassname="aspect-[18/11] m-auto max-w-[920px] mb-[160px]"
                         imageClassname="px-[9px] lg:px-[19px] "
                     />
-                    <BigImageStory2
-                        textContainerClassname="px-[9px] lg:px-[19px] "
-                        title={`Approach`}
-                        story={`The integration of ReCharge facilitated smooth management of their subscription-based healthcare service and recurring billing. `}
-                        textColor={`text-white`}
-                    />
                 </div>
-                <div className="bg-[#FDFCF3] rounded-[20px] ">
+                <div className="bg-[#FDFCF3] rounded-[20px] pb-[120px]">
                     <BigImageStory2
                         textContainerClassname="px-[9px] lg:px-[19px] "
                         imgUrl={`/img/products/evvy/evvy-5.png`}
                         imageContainerClassname="aspect-[95/83] m-auto max-w-[908px]"
                         title={`Challenge`}
-                        story={`This eCommerce stack created a strong foundation, enabling Evvy to offer top-notch virtual healthcare services while delivering a seamless online journey for their customers. `}
+                        story={`ReCharge enabled efficient management of Evvy's subscription-based healthcare services and recurring billing, laying a solid foundation for offering premium virtual healthcare with a seamless customer experience. `}
                     />
                 </div>
-                <div className="rounded-[20px]">
+                <div className="rounded-[20px] overflow-hidden">
                     <BigImageOnly imgUrl={`/img/products/evvy/evvy-6.png`}  imageClassname="rounded-lg"/>
                 </div>
             </div>

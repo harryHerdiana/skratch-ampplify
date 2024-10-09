@@ -31,7 +31,7 @@ export default function TheHomeEditPage() {
                     desktopImgUrl="/img/products/thehomeeditproduct.png"
                     mobileImgUrl="/img/products/mobile/thehomeeditproduct-mobile.png"
                 />
-                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[210px]">
+                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[120px]">
                 <BigTitleStory
                         title={`Improving the everyday with a unique blend of form, function, and fun`}
                         titleLeft={`Services`}
@@ -75,7 +75,7 @@ export default function TheHomeEditPage() {
                     />
                     
                 </div>
-                <div className="bg-[#FDFCF3] rounded-[20px] px-[9px] lg:px-[19px]rounded-[20px] pb-20 lg:pb-[200px] ">
+                <div className="bg-[#FDFCF3] rounded-[20px] px-[9px] lg:px-[19px]rounded-[20px] pb-20 lg:pb-[120px] ">
                     <BigImageStory
                         imgUrl={`/img/products/thehomeedit/thehomeedit-4.png`}
                         imageContainerClassname="aspect-[58/53] md:aspect-[58/53] h-full max-w-[1280px]"

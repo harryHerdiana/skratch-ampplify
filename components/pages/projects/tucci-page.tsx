@@ -26,13 +26,13 @@ export default function TucciPage() {
             <div className="relative bg-dark">
                 <HeroTitle
                     title="TUCCI"
-                    subtitle="Built For Battle"
+                    subtitle="Trusted by the game's top pros"
                     desktopImgUrl="/img/products/tucciproduct.png"
                     mobileImgUrl="/img/products/mobile/tucciproduct-mobile.png"
                 />
-                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[210px]">
+                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[120px]">
                     <BigTitleStory
-                        title={`Optimized impact performance, increased athlete comfort, and improved fit flexibility`}
+                        title={`Baseball's Next Evolution is Here`}
                         titleLeft={`Services`}
                         textLeft={
                             <ul>
@@ -44,7 +44,7 @@ export default function TucciPage() {
                             </ul>
                         }
                         titleRight={`About`}
-                        textRight="Schutt Sports is a leading manufacturer of athletic equipment, particularly renowned for its football gear, emphasizing player safety and innovation. After being acquired by Certor, they approached us with a request to create a unified shopping experience across their range of brands. "
+                        textRight="Tucci Limited is a premium baseball brand, known for their high-quality craftsmanship and used by many professional MLB players. After being acquired by Certor, they approached us with a request to create a unified shopping experience across their range of brands. "
                     />
 
                     <BigImageStory
@@ -56,7 +56,7 @@ export default function TucciPage() {
                         story="The objective was to enable users to add products from any of Certor's brand stores and view them in a single shopping cart for a seamless checkout process. This approach aimed to enhance user convenience and streamline the shopping journey."
                     />
                 </div>
-                <div className="bg-[#D6D8CE] rounded-[20px]">
+                <div className="bg-[#D6D8CE] rounded-[20px] pb-[120px]">
                     <BigImageStory2
                         imgUrl={`/img/products/tucci/tucci-2.png`}
                         imageOuterContainerClassname="m-auto "
@@ -72,10 +72,10 @@ export default function TucciPage() {
                     <BigImageStory2
                         imageClassname=" px-[9px] lg:px-[19px]"
                         imgUrl={`/img/products/tucci/tucci-3.png`}
-                        imageContainerClassname="aspect-[5/4] max-w-[1440px] m-auto"
+                        imageContainerClassname="aspect-[5/4] max-w-[1440px] m-auto  mb-[120px]"
                     />
                 </div>
-                <div className="bg-[#D6D8CE] rounded-[20px]">
+                <div className="bg-[#D6D8CE] rounded-[20px] pb-[120px]">
                     <BigImageStory2
                         imageClassname=" px-[9px] lg:px-[19px]"
                         imgUrl={`/img/products/tucci/tucci-4.png`}
@@ -86,7 +86,7 @@ export default function TucciPage() {
                     />
                 </div>
 
-                <div className="">
+                <div className="pb-[120px]">
                 <BigImageStory2
                         imageClassname=" px-[9px] lg:px-[19px]"
                         imgUrl={`/img/products/tucci/tucci-5.png`}

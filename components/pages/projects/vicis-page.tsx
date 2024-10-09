@@ -31,7 +31,7 @@ export default function VicisPage() {
                     desktopImgUrl="/img/products/vicisproduct.png"
                     mobileImgUrl="/img/products/mobile/vicisproduct-mobile.png"
                 />
-                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[210px]">
+                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[120px]">
                     <BigTitleStory
                         title={`Football’s most protective helmets for athletes at all ages and levels of competition`}
                         titleLeft={`Services`}
@@ -57,46 +57,37 @@ export default function VicisPage() {
                         story="The objective was to enable users to add products from any of Certor's brand stores and view them in a single shopping cart for a seamless checkout process. This approach aimed to enhance user convenience and streamline the shopping journey."
                     />
                 </div>
-                <div className="px-[9px] lg:px-[19px]">
+                <div className="rounded-[20px] bg-[#D6D8CE] px-[9px] lg:px-[19px] pb-[120px]">
                     <BigImageStory2
                         imgUrl={`/img/products/vicis/vicis-2.png`}
                         imageContainerClassname="aspect-[19/18] max-w-[1280px] m-auto md:mb-[120px]"
                         title={`Approach`}
                         story={`With a clear understanding of the prerequisites and a keen awareness of API capabilities and limitations of Shopify Plus, we embarked on the creation of a bespoke app designed to fit seamlessly into this collaborative shopping concept.`}
-                        textColor={`text-white`}
                     />
                 </div>
 
-                <div className="bg-[#FDFCF3] px-[9px] lg:px-[19px]">
+                <div className="px-[9px] lg:px-[19px] pb-[120px]">
                     <BigImageStory2
                         imgUrl={`/img/products/vicis/vicis-3.png`}
                         imageContainerClassname="aspect-[40/41] max-w-[1280px] m-auto md:mb-[120px] "
                         title={`Approach`}
                         story={`Each brand's store operates through its individual Shopify instance, displaying the custom themes we developed in partnership with MUTO.`}
+                        textColor={`text-white`}
                     />
                 </div>
-                <div className="">
+                <div className="rounded-[20px] bg-[#D6D8CE]">
                     <BigImageStory2
                         imgUrl={`/img/products/vicis/vicis-4.png`}
                         imageContainerClassname="aspect-[16/9] m-auto md:mb-[120px]"
-                        title={`Approach`}
-                        story={`The synchronization of cart drawers across all sites ensures a consistent shopping experience, leading to a unified checkout process.`}
-                        textColor={`text-white`}
-                        textContainerClassname="px-[9px] lg:px-[19px]"
                     />
                 </div>
-                <div className="bg-[#FDFCF3] px-[9px] lg:px-[19px]">
+                <div className="rounded-[20px] px-[9px] lg:px-[19px] pb-[120px]">
                     <BigImageStory2
                         imgUrl={`/img/products/vicis/vicis-5.png`}
                         imageContainerClassname="aspect-video max-w-[1280px] m-auto md:mb-[120px]"
                         title={`Vicis`}
                         story={`The synchronization of cart drawers across all sites ensures a consistent shopping experience, leading to a unified checkout process.`}
-                    />
-                </div>
-                <div className="rounded-[20px] mt-[180px] pb-[180px]">
-                    <BigImageOnly
-                        imgUrl={`/img/products/vicis/vicis-6.png`}
-                        contain
+                        textColor={`text-white`}
                     />
                 </div>
             </div>

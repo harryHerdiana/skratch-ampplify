@@ -60,7 +60,7 @@ export default function VoltAthleticsPage() {
                     desktopImgUrl="/img/products/voltproduct.png"
                     mobileImgUrl="/img/products/mobile/voltproduct-mobile.png"
                 />
-                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[210px]">
+                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[120px]">
                     <BigTitleStory
                         title={`Expert fitness guidance, whether you are training as an individual or part of a group`}
                         titleLeft={`Services`}
@@ -86,7 +86,7 @@ export default function VoltAthleticsPage() {
                         story={`As Volt Athletics was undertaking a digital revamp, we were brought in to seamlessly blend design and functionality to enhance Volt Athletics' online presence. This required creating a high-performing front-end that prioritized speed, SEO, and accessibility while still aligning with the website's redesign.  `}
                     />
                 </div>
-                <div className="bg-[#D6D8CE] rounded-[20px]">
+                <div className="bg-[#D6D8CE] rounded-[20px] pb-[120px]">
                     <BigImageStory2
                         imageClassname=" px-[9px] lg:px-[19px]"
                         imgUrl={"/img/products/volt/volt-2.png"}
@@ -96,7 +96,7 @@ export default function VoltAthleticsPage() {
                         story={`Following our initial discussions with the Volt team, a mutual decision was made to employ a more modern react-based framework for their front-end.`}
                     />
                 </div>
-                <div className="translate-y-10 flex-col hidden lg:flex relative">
+                <div className="flex-col lg:flex relative">
                     <div
                         className="overflow-x-auto  mt-[80px] lg:mt-[169px] no-scrollbar"
                         onMouseDown={handleMouseDown}
@@ -118,36 +118,36 @@ export default function VoltAthleticsPage() {
                     </div>
                     <BigImageStory2
                         title={`Approach`}
-                        story={`Following our initial discussions with the Volt team, a mutual decision was made to employ a more modern react-based framework for their front-end.`}
+                        story={`The development process was segmented into phases, aligning with app releases. Upon receiving approved designs, we diligently constructed each new page as they were delivered. `}
                         textColor={`text-white`}
-                        textContainerClassname="px-[9px] lg:px-[19px] mt-[80px] lg:mt-[169px] "
+                        textContainerClassname="px-[9px] lg:px-[19px] mt-[80px] lg:mt-[169px] pb-[120px]"
                     />
                 </div>
-                <div className="bg-[#FDFCF3] lg:hidden">
+                <div className="bg-[#FDFCF3] lg:hidden pb-[120px]">
                     <BigImageStory2
                         imgUrl={"/img/products/volt/volt-3.png"}
                         imageContainerClassname="aspect-[45/7] m-auto h-full w-full lg:hidden"
                         textContainerClassname="px-[9px] lg:px-[19px] "
                         title={`Approach`}
-                        story={`Following our initial discussions with the Volt team, a mutual decision was made to employ a more modern react-based framework for their front-end.`}
+                        story={`Post comprehensive quality assurance conducted by all stakeholders, necessary modifications were implemented before launching the new website, meeting all requirements and expectations. `}
                     />
                 </div>
-                <div className="bg-[#FDFCF3] rounded-[20px]">
+                <div className="rounded-[20px] bg-[#FDFCF3] pb-20 pb-[120px] pb-20 lg:pb-[120px] ">
                     <BigImageStory2
                         imageClassname=" px-[9px] lg:px-[19px]"
-                        imgUrl={"/img/products/volt/volt-4.png"}
+                        imgUrl={"/img/products/volt/volt-5.png"}
                         imageContainerClassname="aspect-[92/59] m-auto md:mb-[120px]"
                         title={`Approach`}
                         story={`Post comprehensive quality assurance conducted by all stakeholders, necessary modifications were implemented before launching the new website, meeting all requirements and expectations. `}
                         textContainerClassname="px-[9px] lg:px-[19px]"
                     />
                 </div>
-                <div className="rounded-[20px] mt-[120px] lg:mt-[200px] pb-20 lg:px-40 lg:pb-[200px] ">
+                <div className="rounded-[20px] overflow-hidden">
                     <BigImageOnly
-                        imgUrl={"/img/products/volt/volt-5.png"}
-                        imageClassname=" lg:object-contain"
-                        className="aspect-[41/42]"
-                    />
+                            imgUrl={"/img/products/volt/volt-4.png"}
+                            imageClassname=" lg:object-cover"
+                            className="aspect-[16/9] m-auto"
+                        />
                 </div>
             </div>
         </>

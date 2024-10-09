@@ -27,7 +27,7 @@ export default function TryitPage() {
 
             <div className="relative bg-dark">
                 <HeroTitle
-                    title="TRYIT"
+                    title="TRY IT"
                     subtitle="Stick To The Plan"
                     desktopImgUrl="/img/products/tryitproduct.png"
                     mobileImgUrl="/img/products/mobile/tryitproduct-mobile.png"

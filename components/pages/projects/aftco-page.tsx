@@ -31,7 +31,7 @@ export default function AftcoPage() {
                     desktopImgUrl="/img/products/aftcoproduct.png"
                     mobileImgUrl="/img/products/mobile/aftcoproduct-mobile.png"
                 />
-                <div className="bg-[#FDFCF3] rounded-t-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[210px]">
+                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[120px]">
                     <BigTitleStory
                         title={`Unparalleled quality, performance, and reliability when it counts most`}
                         titleLeft={`Services`}
@@ -57,53 +57,44 @@ export default function AftcoPage() {
                     />
                 </div>
               
-                <div className="rounded-[20px] mt-[120px] lg:mt-[200px] p-5 lg:p-10 ">
+                <div className="rounded-[20px] bg-[#D6D8CE] p-5 pt-[120px] pb-[120px]">
                     <BigImageOnly
                         imgUrl={`/img/products/aftco/aftco-2.png`}
                         className="aspect-[200/129] max-w-[1200px] m-auto"
                     />
-                </div>
-                <div className="rounded-[20px] p-5 lg:p-10 ">
                     <BigImageStory
                         imgUrl={`/img/products/aftco/aftco-3.png`}
                         imageContainerClassname="aspect-[227/159] m-auto max-w-[908px]"
                         title={`Challenge`}
                         story={`Our challenge was to develop a customized commerce experience that not only prioritizes speed and performance but also achieves outstanding lighthouse scores.  `}
-                        textColor="text-white"
                     />
                 </div>
-                <div className="  bg-[url(/img/products/aftco/aftco-4-bg.png)] bg-cover bg-center bg-no-repeat overflow-hidden mb-[40px] lg:mb-[169px]">
+                <div className="rounded-[20px] bg-[url(/img/products/aftco/aftco-4-bg.png)] bg-cover bg-center bg-no-repeat overflow-hidden]">
                     <BigImageStory2
                         imgUrl={`/img/products/aftco/aftco-4.png`}
-                        imageClassname="rounded-[8px] px-[9px] lg:px-[19px]"
-                        imageContainerClassname="aspect-[160/183] m-auto max-w-[908px]"
+                        imageClassname="rounded-[20px]"
+                        imageContainerClassname="aspect-[160/183] m-auto max-w-[908px] mb-[120px]"
                     />
                 </div>
-                    <BigImageStory2
-                        title={`Approach`}
-                        textContainerClassname="px-[9px] lg:px-[19px]"
-                        story={`Utilizing the new user interface contributed by AFTCO, we kicked off the project by building an MVP as proof of concept to ensure they chose the right approach.`}
-                        textColor={`text-white`}
-                    />
-           
-                <div className="rounded-[20px] px-[9px] lg:px-[19px] pb-[80px] bg-[#FDFCF3] ">
+                <div className=" px-[9px] lg:px-[19px] pb-[80px]">
                     <BigImageStory
                         imgUrl={`/img/products/aftco/aftco-5.png`}
                         imageContainerClassname="aspect-[235/189] m-auto max-w-[1177px]"
                         title={`Challenge`}
-                        story={`The integration of diverse third-party services such as accessibility, search, and personalization played a pivotal role in the complexity of the new build. `}
+                        story={`Utilizing the new user interface contributed by AFTCO, we kicked off the project by building an MVP as proof of concept to ensure they chose the right approach. `}
+                        textColor="text-white"
                     />
                 </div>
-                <div className="rounded-[20px] px-[9px] lg:px-[19px] pb-[80px]">
+                <div className="bg-[#FDFCF3] rounded-[20px] px-[9px] lg:px-[19px] pb-[80px]">
                     <BigImageStory
                         imgUrl={`/img/products/aftco/aftco-6.png`}
                         imageContainerClassname="aspect-[45/26] m-auto max-w-[1080px]"
                         title={`Challenge`}
-                        story={`We dedicated extensive hours to quality assurance and accessibility audits to ensure exceptional website experience and adherence to web compliance.`}
-                        textColor="text-white"
+                        story={`The integration of diverse third-party services such as accessibility, search, and personalization played a pivotal role in the complexity of the new build.`}
+                        
                     />
                 </div>
-                <div className="bg-[#FDFCF3] rounded-[20px] ">
+                <div className=" ">
                     <BigImageStory
                         imageContainerClassname="aspect-square md:aspect-video lg:mb-16 "
                         imgUrl={`/img/products/aftco/aftco-7.png`}
@@ -111,10 +102,11 @@ export default function AftcoPage() {
                         height={`60%`}
                         textContainerClassname="px-[9px] lg:px-[19px] pb-[80px]"
                         title={`Challenge`}
-                        story={`In line with its ongoing evolution and commitment to innovation, Aftco identified the necessity to overhaul its eCommerce experience. After considering various options, they embraced a headless eCommerce approach, decoupling the front-end while retaining Shopify Plus for checkout. `}
+                        story={`We dedicated extensive hours to quality assurance and accessibility audits to ensure exceptional website experience and adherence to web compliance.`}
+                        textColor="text-white"
                     />
                 </div>
-                <div className="rounded-[20px] mt-[120px] lg:mt-[200px] p-5 lg:p-10 pb-[120px] lg:pb-[200px]">
+                <div className="rounded-[20px]">
                     <BigImageOnly
                         imgUrl={`/img/products/aftco/aftco-8.png`}
                         className="aspect-[68/47]" 
