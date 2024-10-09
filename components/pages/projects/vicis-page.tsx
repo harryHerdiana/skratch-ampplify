@@ -2,7 +2,6 @@
 import HeroTitle from "@/components/common/HeroTitle";
 import BigImageOnly from "@/components/sections/big-img-only";
 import BigImageStory from "@/components/sections/big-img-story";
-import BigImageStory2 from "@/components/sections/big-img-story-2";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
 import { projectsData } from "../../sections/projectdata";
@@ -57,8 +56,8 @@ export default function VicisPage() {
                         story="The objective was to enable users to add products from any of Certor's brand stores and view them in a single shopping cart for a seamless checkout process. This approach aimed to enhance user convenience and streamline the shopping journey."
                     />
                 </div>
-                <div className="px-[9px] lg:px-[19px]">
-                    <BigImageStory2
+                <div className="px-[9px] lg:px-[19px] mb-[40px] lg:mb-[169px]">
+                    <BigImageStory
                         imgUrl={`/img/products/vicis/vicis-2.png`}
                         imageContainerClassname="aspect-[19/18] max-w-[1280px] m-auto md:mb-[120px]"
                         title={`Approach`}
@@ -67,16 +66,16 @@ export default function VicisPage() {
                     />
                 </div>
 
-                <div className="bg-[#FDFCF3] px-[9px] lg:px-[19px]">
-                    <BigImageStory2
+                <div className="bg-[#FDFCF3] px-[9px] lg:px-[19px] pb-[40px] lg:pb-[169px] rounded-[20px]">
+                    <BigImageStory
                         imgUrl={`/img/products/vicis/vicis-3.png`}
                         imageContainerClassname="aspect-[40/41] max-w-[1280px] m-auto md:mb-[120px] "
                         title={`Approach`}
                         story={`Each brand's store operates through its individual Shopify instance, displaying the custom themes we developed in partnership with MUTO.`}
                     />
                 </div>
-                <div className="">
-                    <BigImageStory2
+                <div className="mb-[40px] lg:mb-[169px]">
+                    <BigImageStory
                         imgUrl={`/img/products/vicis/vicis-4.png`}
                         imageContainerClassname="aspect-[16/9] m-auto md:mb-[120px]"
                         title={`Approach`}
@@ -85,12 +84,13 @@ export default function VicisPage() {
                         textContainerClassname="px-[9px] lg:px-[19px]"
                     />
                 </div>
-                <div className="bg-[#FDFCF3] px-[9px] lg:px-[19px]">
-                    <BigImageStory2
+           
+                <div className="bg-[#FDFCF3] px-[9px] lg:px-[19px] pb-[40px] lg:pb-[169px] rounded-[20px]">
+                    <BigImageStory
                         imgUrl={`/img/products/vicis/vicis-5.png`}
                         imageContainerClassname="aspect-video max-w-[1280px] m-auto md:mb-[120px]"
                         title={`Vicis`}
-                        story={`The synchronization of cart drawers across all sites ensures a consistent shopping experience, leading to a unified checkout process.`}
+                        story={`The synchronizations of cart drawers across all sites ensures a consistent shopping experience, leading to a unified checkout process.`}
                     />
                 </div>
                 <div className="rounded-[20px] mt-[180px] pb-[180px]">

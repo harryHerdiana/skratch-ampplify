@@ -2,7 +2,6 @@
 import HeroTitle from "@/components/common/HeroTitle";
 import BigImageOnly from "@/components/sections/big-img-only";
 import BigImageStory from "@/components/sections/big-img-story";
-import BigImageStory2 from "@/components/sections/big-img-story-2";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
 import { projectsData } from "../../sections/projectdata";
@@ -60,7 +59,7 @@ export default function CertortPage() {
                     </div>
         </div>
         <div className="rounded-[20px] bg-[#D6D8CE] px-[9px] lg:px-[19px]">
-          <BigImageStory2
+          <BigImageStory
             imgUrl={`/img/products/certor/certor-2.png`}
             imageContainerClassname="aspect-[15/17] max-w-[1000px] m-auto"
             imageClassname="py-40px"

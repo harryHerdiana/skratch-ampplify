@@ -2,7 +2,6 @@
 import HeroTitle from "@/components/common/HeroTitle";
 import BigImageOnly from "@/components/sections/big-img-only";
 import BigImageStory from "@/components/sections/big-img-story";
-import BigImageStory2 from "@/components/sections/big-img-story-2";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
 import { projectsData } from "../../sections/projectdata";
@@ -57,13 +56,13 @@ export default function AftcoPage() {
                     />
                 </div>
               
-                <div className="rounded-[20px] mt-[120px] lg:mt-[200px] p-5 lg:p-10 ">
+                <div className="rounded-[20px]  px-[9px] py-[40px] lg:px-[19px] lg:py-[169px]">
                     <BigImageOnly
                         imgUrl={`/img/products/aftco/aftco-2.png`}
                         className="aspect-[200/129] max-w-[1200px] m-auto"
                     />
                 </div>
-                <div className="rounded-[20px] p-5 lg:p-10 ">
+                <div className="rounded-[20px] px-[9px] pb-[40px] lg:px-[19px] lg:pb-[169px]">
                     <BigImageStory
                         imgUrl={`/img/products/aftco/aftco-3.png`}
                         imageContainerClassname="aspect-[227/159] m-auto max-w-[908px]"
@@ -73,20 +72,20 @@ export default function AftcoPage() {
                     />
                 </div>
                 <div className="  bg-[url(/img/products/aftco/aftco-4-bg.png)] bg-cover bg-center bg-no-repeat overflow-hidden mb-[40px] lg:mb-[169px]">
-                    <BigImageStory2
+                    <BigImageStory
                         imgUrl={`/img/products/aftco/aftco-4.png`}
-                        imageClassname="rounded-[8px] px-[9px] lg:px-[19px]"
+                        imageClassname="rounded-[8px] "
                         imageContainerClassname="aspect-[160/183] m-auto max-w-[908px]"
                     />
                 </div>
-                    <BigImageStory2
+                    <BigImageStory
                         title={`Approach`}
-                        textContainerClassname="px-[9px] lg:px-[19px]"
+                        textContainerClassname=" px-[9px] pb-[40px] lg:px-[19px] lg:pb-[169px]"
                         story={`Utilizing the new user interface contributed by AFTCO, we kicked off the project by building an MVP as proof of concept to ensure they chose the right approach.`}
                         textColor={`text-white`}
                     />
            
-                <div className="rounded-[20px] px-[9px] lg:px-[19px] pb-[80px] bg-[#FDFCF3] ">
+                <div className="rounded-[20px] px-[9px] pb-[40px] lg:px-[19px] lg:pb-[169px] bg-[#FDFCF3] ">
                     <BigImageStory
                         imgUrl={`/img/products/aftco/aftco-5.png`}
                         imageContainerClassname="aspect-[235/189] m-auto max-w-[1177px]"
@@ -94,7 +93,7 @@ export default function AftcoPage() {
                         story={`The integration of diverse third-party services such as accessibility, search, and personalization played a pivotal role in the complexity of the new build. `}
                     />
                 </div>
-                <div className="rounded-[20px] px-[9px] lg:px-[19px] pb-[80px]">
+                <div className="rounded-[20px]  px-[9px] pb-[40px] lg:px-[19px] lg:pb-[169px]">
                     <BigImageStory
                         imgUrl={`/img/products/aftco/aftco-6.png`}
                         imageContainerClassname="aspect-[45/26] m-auto max-w-[1080px]"
@@ -103,18 +102,18 @@ export default function AftcoPage() {
                         textColor="text-white"
                     />
                 </div>
-                <div className="bg-[#FDFCF3] rounded-[20px] ">
+                <div className="bg-[#FDFCF3] rounded-[20px] pb-[40px] lg:pb-[169px]">
                     <BigImageStory
                         imageContainerClassname="aspect-square md:aspect-video lg:mb-16 "
                         imgUrl={`/img/products/aftco/aftco-7.png`}
                         width={`90%`}
                         height={`60%`}
-                        textContainerClassname="px-[9px] lg:px-[19px] pb-[80px]"
+                        textContainerClassname="px-[9px] lg:px-[19px] "
                         title={`Challenge`}
                         story={`In line with its ongoing evolution and commitment to innovation, Aftco identified the necessity to overhaul its eCommerce experience. After considering various options, they embraced a headless eCommerce approach, decoupling the front-end while retaining Shopify Plus for checkout. `}
                     />
                 </div>
-                <div className="rounded-[20px] mt-[120px] lg:mt-[200px] p-5 lg:p-10 pb-[120px] lg:pb-[200px]">
+                <div className="rounded-[20px] mt-[120px] lg:mt-[200px]  px-[9px] pb-[40px] lg:px-[19px] lg:pb-[169px]">
                     <BigImageOnly
                         imgUrl={`/img/products/aftco/aftco-8.png`}
                         className="aspect-[68/47]" 

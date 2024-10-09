@@ -56,8 +56,8 @@ export default function TucciPage() {
                         story="The objective was to enable users to add products from any of Certor's brand stores and view them in a single shopping cart for a seamless checkout process. This approach aimed to enhance user convenience and streamline the shopping journey."
                     />
                 </div>
-                <div className="bg-[#D6D8CE] rounded-[20px]">
-                    <BigImageStory2
+                <div className="bg-[#D6D8CE] rounded-[20px] pb-[40px] lg:pb-[169px]">
+                    <BigImageStory
                         imgUrl={`/img/products/tucci/tucci-2.png`}
                         imageOuterContainerClassname="m-auto "
                         imageContainerClassname="aspect-[27/9] m-auto w-full md:mb-[120px]"
@@ -75,8 +75,8 @@ export default function TucciPage() {
                         imageContainerClassname="aspect-[5/4] max-w-[1440px] m-auto"
                     />
                 </div>
-                <div className="bg-[#D6D8CE] rounded-[20px]">
-                    <BigImageStory2
+                <div className="bg-[#D6D8CE] rounded-[20px] pb-[40px] lg:pb-[169px]">
+                    <BigImageStory
                         imageClassname=" px-[9px] lg:px-[19px]"
                         imgUrl={`/img/products/tucci/tucci-4.png`}
                         imageContainerClassname="aspect-[16/9] max-w-[1440px] m-auto md:mb-[120px]"
@@ -86,8 +86,8 @@ export default function TucciPage() {
                     />
                 </div>
 
-                <div className="">
-                <BigImageStory2
+                <div className="pb-[40px] lg:pb-[169px]">
+                <BigImageStory
                         imageClassname=" px-[9px] lg:px-[19px]"
                         imgUrl={`/img/products/tucci/tucci-5.png`}
                         imageContainerClassname="aspect-[16/9] max-w-[1440px] m-auto md:mb-[120px]"

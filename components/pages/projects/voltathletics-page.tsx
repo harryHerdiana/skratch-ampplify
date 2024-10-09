@@ -6,42 +6,98 @@ import BigImageStory2 from "@/components/sections/big-img-story-2";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { projectsData } from "../../sections/projectdata";
 
 export default function VoltAthleticsPage() {
-    const project = projectsData.find((project) => project.title === "Volt Athletics");
-
-     if (!project) {
-         return <div>Project data not found.</div>;
-     }
     const scrollContainerRef = useRef<HTMLDivElement>(null);
-    const [isDragging, setIsDragging] = useState(false);
-    const [startX, setStartX] = useState(0);
-    const [scrollLeft, setScrollLeft] = useState(0);
-
-    const handleMouseDown = (e: React.MouseEvent) => {
-        setIsDragging(true);
-        setStartX(e.pageX - scrollContainerRef.current!.offsetLeft);
-        setScrollLeft(scrollContainerRef.current!.scrollLeft);
-    };
-
-    const handleMouseUp = () => {
-        setIsDragging(false);
-    };
-
-    const handleMouseMove = (e: React.MouseEvent) => {
-        if (!isDragging) return;
-        e.preventDefault();
-        const x = e.pageX - scrollContainerRef.current!.offsetLeft;
-        const walk = (x - startX) * 2; // Adjust scrolling speed
-        scrollContainerRef.current!.scrollLeft = scrollLeft - walk;
-    };
+    const speedFactor = 2; // Adjust this value to increase or decrease the scroll speed
 
     useEffect(() => {
-        document.addEventListener("mouseup", handleMouseUp);
-        return () => document.removeEventListener("mouseup", handleMouseUp);
+        let isScrolling = false;
+
+        const handleScroll = () => {
+            if (scrollContainerRef.current && !isScrolling) {
+                isScrolling = true;
+                requestAnimationFrame(() => {
+                    const rect =
+                        scrollContainerRef.current!.getBoundingClientRect();
+                    const containerOffsetTop = rect.top + window.pageYOffset;
+                    const containerHeight = rect.height;
+
+                    const scrollY = window.pageYOffset;
+                    const windowHeight = window.innerHeight;
+
+                    if (
+                        scrollY + windowHeight > containerOffsetTop &&
+                        scrollY < containerOffsetTop + containerHeight
+                    ) {
+                        // The section is in view
+                        const progress =
+                            (scrollY -500 +windowHeight - containerOffsetTop) /
+                            (windowHeight + containerHeight);
+
+                        const scrollPercentage = Math.max(
+                            0,
+                            Math.min(1, progress)
+                        );
+
+                        const maxScroll =
+                            scrollContainerRef?.current?.scrollWidth! -
+                            scrollContainerRef?.current?.clientWidth!;
+
+                        const scrollLeft =
+                            maxScroll * scrollPercentage * speedFactor;
+
+                        scrollContainerRef.current!.scrollLeft = Math.max(
+                            0,
+                            Math.min(maxScroll, scrollLeft)
+                        );
+                    }
+                    isScrolling = false;
+                });
+            }
+        };
+
+        const observerCallback = (entries: IntersectionObserverEntry[]) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    // Start listening to scroll events
+                    window.addEventListener("scroll", handleScroll);
+                } else {
+                    // Stop listening to scroll events
+                    window.removeEventListener("scroll", handleScroll);
+                }
+            });
+        };
+
+        const observerOptions = {
+            root: null, // Use the viewport as the root
+            threshold: 0.5, // Trigger when even one pixel is visible
+        };
+
+        const observer = new IntersectionObserver(
+            observerCallback,
+            observerOptions
+        );
+
+        if (scrollContainerRef.current) {
+            observer.observe(scrollContainerRef.current);
+        }
+
+        // Cleanup on unmount
+        return () => {
+            observer.disconnect();
+            window.removeEventListener("scroll", handleScroll);
+        };
     }, []);
+    const project = projectsData.find(
+        (project) => project.title === "Volt Athletics"
+    );
+
+    if (!project) {
+        return <div>Project data not found.</div>;
+    }
 
     return (
         <>
@@ -68,7 +124,7 @@ export default function VoltAthleticsPage() {
                         textLeft={
                             <ul>
                                 {project.services
-                                    .filter(service => service) // Filter out empty strings
+                                    .filter((service) => service) // Filter out empty strings
                                     .map((service, index) => (
                                         <li key={index}>{service}</li>
                                     ))}
@@ -87,8 +143,8 @@ export default function VoltAthleticsPage() {
                         story={`As Volt Athletics was undertaking a digital revamp, we were brought in to seamlessly blend design and functionality to enhance Volt Athletics' online presence. This required creating a high-performing front-end that prioritized speed, SEO, and accessibility while still aligning with the website's redesign.  `}
                     />
                 </div>
-                <div className="bg-[#D6D8CE] rounded-[20px]">
-                    <BigImageStory2
+                <div className="bg-[#D6D8CE] rounded-[20px] pb-[40px] lg:pb-[169px]">
+                    <BigImageStory
                         imageClassname=" px-[9px] lg:px-[19px]"
                         imgUrl={"/img/products/volt/volt-2.png"}
                         imageContainerClassname="aspect-[92/59] max-w-[1440px] m-auto md:mb-[120px]"
@@ -97,12 +153,10 @@ export default function VoltAthleticsPage() {
                         story={`Following our initial discussions with the Volt team, a mutual decision was made to employ a more modern react-based framework for their front-end.`}
                     />
                 </div>
-                <div className="translate-y-10 flex-col hidden lg:flex relative">
+                <div className=" flex-col hidden lg:flex relative  mb-[40px] lg:mb-[169px]">
                     <div
-                        className="overflow-x-auto  mt-[80px] lg:mt-[169px] no-scrollbar"
-                        onMouseDown={handleMouseDown}
                         ref={scrollContainerRef}
-                        onMouseMove={handleMouseMove}
+                        className="overflow-x-auto  mt-[80px] lg:mt-[169px] no-scrollbar"
                     >
                         <div className="relative h-[538px] w-[3588px]">
                             <Image
@@ -117,15 +171,15 @@ export default function VoltAthleticsPage() {
                             />
                         </div>
                     </div>
-                    <BigImageStory2
+                    <BigImageStory
                         title={`Approach`}
                         story={`Following our initial discussions with the Volt team, a mutual decision was made to employ a more modern react-based framework for their front-end.`}
                         textColor={`text-white`}
                         textContainerClassname="px-[9px] lg:px-[19px] mt-[80px] lg:mt-[169px] "
                     />
                 </div>
-                <div className="bg-[#FDFCF3] lg:hidden">
-                    <BigImageStory2
+                <div className="bg-[#FDFCF3] lg:hidden pb-[40px] lg:pb-[169px]">
+                    <BigImageStory
                         imgUrl={"/img/products/volt/volt-3.png"}
                         imageContainerClassname="aspect-[45/7] m-auto h-full w-full lg:hidden"
                         textContainerClassname="px-[9px] lg:px-[19px] "
@@ -133,7 +187,7 @@ export default function VoltAthleticsPage() {
                         story={`Following our initial discussions with the Volt team, a mutual decision was made to employ a more modern react-based framework for their front-end.`}
                     />
                 </div>
-                <div className="bg-[#FDFCF3] rounded-[20px]">
+                <div className="bg-[#FDFCF3] rounded-[20px]  pb-[40px] lg:pb-[169px]">
                     <BigImageStory2
                         imageClassname=" px-[9px] lg:px-[19px]"
                         imgUrl={"/img/products/volt/volt-4.png"}

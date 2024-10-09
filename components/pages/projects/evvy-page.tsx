@@ -2,7 +2,6 @@
 import HeroTitle from "@/components/common/HeroTitle";
 import BigImageOnly from "@/components/sections/big-img-only";
 import BigImageStory from "@/components/sections/big-img-story";
-import BigImageStory2 from "@/components/sections/big-img-story-2";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
 import { projectsData } from "../../sections/projectdata";
@@ -58,8 +57,8 @@ export default function EvvyPage() {
                     />
                 </div>
 
-                <div className="px-[9px] lg:px-[19px] ">
-                    <BigImageStory2
+                <div className="px-[9px] lg:px-[19px] mb-[40px] lg:mb-[169px]">
+                    <BigImageStory
                         textContainerClassname=""
                         imgUrl={`/img/products/evvy/evvy-2.png`}
                         imageContainerClassname="aspect-[53/40] m-auto max-w-[1066px] md:mb-[120px] "
@@ -68,8 +67,8 @@ export default function EvvyPage() {
                         textColor={`text-white`}
                     />
                 </div>
-                <div className="bg-[#FDFCF3] rounded-[20px] ">
-                    <BigImageStory2
+                <div className="bg-[#FDFCF3] rounded-[20px] pb-[40px] lg:pb-[169px]">
+                    <BigImageStory
                         textContainerClassname="px-[9px] lg:px-[19px] "
                         imgUrl={`/img/products/evvy/evvy-3.png`}
                         imageContainerClassname="aspect-[17/12] m-auto max-w-[1224px]"
@@ -77,21 +76,21 @@ export default function EvvyPage() {
                         story={`Utilizing their existing product page on Webflow, we synced the product availability with Shopify and maintained a fluid transition to checkout to ensure a seamless user experience. `}
                     />
                 </div>
-                <div className="rounded-[20px]  bg-[url(/img/products/evvy/evvy-4-bg.png)] bg-cover bg-center bg-no-repeat overflow-hidden">
-                    <BigImageStory2
+                <div className="rounded-t-[20px]  bg-[url(/img/products/evvy/evvy-4-bg.png)] bg-cover bg-center bg-no-repeat overflow-hidden">
+                    <BigImageStory
                         imgUrl={`/img/products/evvy/evvy-4.png`}
                         imageContainerClassname="aspect-[18/11] m-auto max-w-[920px]"
                         imageClassname="px-[9px] lg:px-[19px] "
                     />
-                    <BigImageStory2
+                </div>
+              <div className="px-[9px] lg:px-[19px] my-[40px] lg:my-[169px] rounded-b-[20px]">      <BigImageStory
                         textContainerClassname="px-[9px] lg:px-[19px] "
                         title={`Approach`}
                         story={`The integration of ReCharge facilitated smooth management of their subscription-based healthcare service and recurring billing. `}
                         textColor={`text-white`}
-                    />
-                </div>
-                <div className="bg-[#FDFCF3] rounded-[20px] ">
-                    <BigImageStory2
+                    /></div>
+                <div className="bg-[#FDFCF3] rounded-[20px] pb-[40px] lg:pb-[169px]">
+                    <BigImageStory
                         textContainerClassname="px-[9px] lg:px-[19px] "
                         imgUrl={`/img/products/evvy/evvy-5.png`}
                         imageContainerClassname="aspect-[95/83] m-auto max-w-[908px]"

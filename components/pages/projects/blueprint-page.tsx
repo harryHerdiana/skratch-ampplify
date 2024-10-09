@@ -8,11 +8,13 @@ import Head from "next/head";
 import { projectsData } from "../../sections/projectdata";
 
 export default function BlueprintPage() {
-    const project = projectsData.find((project) => project.title === "Blueprint");
+    const project = projectsData.find(
+        (project) => project.title === "Blueprint"
+    );
 
-     if (!project) {
-         return <div>Project data not found.</div>;
-     }
+    if (!project) {
+        return <div>Project data not found.</div>;
+    }
     return (
         <>
             <Head>
@@ -32,13 +34,13 @@ export default function BlueprintPage() {
                     mobileImgUrl="/img/products/mobile/blueprintproduct-mobile.png"
                 />
                 <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[210px]">
-                <BigTitleStory
+                    <BigTitleStory
                         title={`Success in real estate requires more than just luck and hard work`}
                         titleLeft={`Services`}
                         textLeft={
                             <ul>
                                 {project.services
-                                    .filter(service => service) // Filter out empty strings
+                                    .filter((service) => service) // Filter out empty strings
                                     .map((service, index) => (
                                         <li key={index}>{service}</li>
                                     ))}
@@ -59,29 +61,29 @@ export default function BlueprintPage() {
                 </div>
 
                 <div className="  bg-[url(/img/products/blueprint/blueprint-2-bg.png)] bg-cover bg-center bg-no-repeat overflow-hidden">
-                    <BigImageStory2
+                    <BigImageStory
                         imgUrl={`/img/products/blueprint/blueprint-2.png`}
                         imageClassname="rounded-[8px]"
                         imageContainerClassname="aspect-[13/8] m-auto max-w-[1040px]"
                     />
-                    <BigImageStory2                         textContainerClassname="px-[9px] lg:px-[19px]"
-
-                        title={`Approach`}
-                        story={`The second phase of development required us to rebuild a new Home Search experience, while still utilizing their current backend to manage property listings.`}
-                        textColor={`text-white`}
-                    />
                 </div>
+                <BigImageStory2
+                    textContainerClassname="px-[9px] lg:px-[19px] mt-[40px] lg:mt-[169px]"
+                    title={`Approach`}
+                    story={`The second phase of development required us to rebuild a new Home Search experience, while still utilizing their current backend to manage property listings.`}
+                    textColor={`text-white`}
+                />
                 <div className="rounded-[20px] mt-[120px] lg:mt-[200px] p-5 lg:p-10 ">
                     <BigImageOnly
                         imgUrl={`/img/products/blueprint/blueprint-3.png`}
                         className="aspect-[990/612] max-w-[990px] m-auto"
-                        />
+                    />
                 </div>
                 <div className="rounded-[20px] mt-[120px] lg:mt-[200px] p-5 lg:p-10 pb-[120px] lg:pb-[200px]">
-                    <BigImageOnly 
+                    <BigImageOnly
                         imgUrl={`/img/products/blueprint/blueprint-4.png`}
                         imageClassname="rounded-lg"
-                        />
+                    />
                 </div>
             </div>
         </>

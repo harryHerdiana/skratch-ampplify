@@ -17,6 +17,9 @@ const BigImageStory = (props: BigImageStoryProps) => {
                         )}
                     >
                         <Image
+                                quality={100}
+                                priority
+                                unoptimized
                             src={props.imgUrl}
                             alt=""
                             className={classNames(

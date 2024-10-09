@@ -2,7 +2,6 @@
 import HeroTitle from "@/components/common/HeroTitle";
 import BigImageOnly from "@/components/sections/big-img-only";
 import BigImageStory from "@/components/sections/big-img-story";
-import BigImageStory2 from "@/components/sections/big-img-story-2";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
 import { projectsData } from "../../sections/projectdata";
@@ -57,8 +56,8 @@ export default function SchuttPage() {
                         story="The objective was to enable users to add products from any of Certor's brand stores and view them in a single shopping cart for a seamless checkout process. This approach aimed to enhance user convenience and streamline the shopping journey."
                     />
                 </div>
-                <div className="bg-[#D6D8CE] rounded-[20px] px-[9px] lg:px-[19px]">
-                    <BigImageStory2
+                <div className="bg-[#D6D8CE] rounded-[20px] px-[9px] lg:px-[19px] pb-[40px] lg:pb-[169px]">
+                    <BigImageStory
                         imgUrl={`/img/products/schutt/schutt-2.png`}
                         imageContainerClassname="aspect-[59/54] max-w-[1280px] m-auto md:mb-[120px]"
                         title="Approach"
@@ -68,8 +67,8 @@ export default function SchuttPage() {
                     />
                 </div>
 
-                <div className="">
-                    <BigImageStory2
+                <div className="mb-[40px] lg:mb-[169px]">
+                    <BigImageStory
                         imgUrl={`/img/products/schutt/schutt-3.png`}
                         imageContainerClassname="aspect-[50/105]  m-auto md:mb-[120px]"
                         title="Approach"
@@ -86,8 +85,8 @@ export default function SchuttPage() {
                     />
                 </div>
 
-                <div className="rounded-[20px] bg-[#FDFCF3] px-5">
-                    <BigImageStory2
+                <div className="rounded-[20px] bg-[#FDFCF3] px-5 pb-[40px] lg:px-[19px] lg:pb-[169px]">
+                    <BigImageStory
                         imgUrl={`/img/products/schutt/schutt-5.png`}
                         imageContainerClassname="aspect-[16/9] max-w-[1280px] m-auto md:mb-[120px]"
                         title="Approach"
