@@ -2,7 +2,6 @@
 import HeroTitle from "@/components/common/HeroTitle";
 import BigImageOnly from "@/components/sections/big-img-only";
 import BigImageStory from "@/components/sections/big-img-story";
-import BigImageStory2 from "@/components/sections/big-img-story-2";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
 
@@ -45,8 +44,8 @@ export default function DicebarbersPage() {
                         story={`We were brought in to help Dice with in preparation with their official launch. First, we provided art direction with their digital and print assets `}
                     />
                 </div>
-                <div className="">
-                    <BigImageStory2
+                <div className="pb-[120px]">
+                    <BigImageStory
                         imgUrl={`/img/products/dice/dice-2.png`}
                         imageContainerClassname="aspect-[1664/2042] max-w-[1664px] m-auto"
                         title={` `}
@@ -56,8 +55,8 @@ export default function DicebarbersPage() {
                     />
                 </div>
 
-                <div className="bg-[#FDFCF3] px-[9px] lg:px-[19px]">
-                    <BigImageStory2
+                <div className="bg-[#FDFCF3] px-[9px] lg:px-[19px] pb-[120px]">
+                    <BigImageStory
                         textContainerClassname=""
                         imgUrl={`/img/products/dice/dice-3.png`}
                         imageContainerClassname="aspect-[1000/713] max-w-[1000px] m-auto"

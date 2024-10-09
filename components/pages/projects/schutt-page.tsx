@@ -30,7 +30,7 @@ export default function SchuttPage() {
                     desktopImgUrl="/img/products/schuttproduct.png"
                     mobileImgUrl="/img/products/mobile/schuttproduct-mobile.png"
                 />
-                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[210px]">
+                <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[120px]">
                 <BigTitleStory
                         title={`Optimized impact performance, increased athlete comfort, and improved fit flexibility`}
                         titleLeft={`Services`}
@@ -56,7 +56,7 @@ export default function SchuttPage() {
                         story="The objective was to enable users to add products from any of Certor's brand stores and view them in a single shopping cart for a seamless checkout process. This approach aimed to enhance user convenience and streamline the shopping journey."
                     />
                 </div>
-                <div className="bg-[#D6D8CE] rounded-[20px] px-[9px] lg:px-[19px] pb-[40px] lg:pb-[169px]">
+                <div className="bg-[#D6D8CE] rounded-[20px] px-[9px] lg:px-[19px] pb-[120px]">
                     <BigImageStory
                         imgUrl={`/img/products/schutt/schutt-2.png`}
                         imageContainerClassname="aspect-[59/54] max-w-[1280px] m-auto md:mb-[120px]"
@@ -71,27 +71,26 @@ export default function SchuttPage() {
                     <BigImageStory
                         imgUrl={`/img/products/schutt/schutt-3.png`}
                         imageContainerClassname="aspect-[50/105]  m-auto md:mb-[120px]"
+                    />
+                </div>
+
+                <div className="rounded-[20px] bg-[#D6D8CE] pb-20 pb-[120px]">
+                    <BigImageStory
+                        imgUrl={`/img/products/schutt/schutt-4.png`}
+                        imageContainerClassname="aspect-[16/9] max-w-[1280px] m-auto md:mb-[120px]"
                         title="Approach"
                         textContainerClassname="px-[9px] lg:px-[19px]"
-                        textColor={`text-white`}
                         story={`Each brand's store operates through its individual Shopify instance, displaying the custom themes we developed in partnership with MUTO.`}
                     />
                 </div>
 
-                <div className="rounded-[20px] px-5 pb-20 lg:px-40 lg:pb-[200px]">
-                    <BigImageOnly
-                        imgUrl={`/img/products/schutt/schutt-4.png`}
-                        contain
-                    />
-                </div>
-
-                <div className="rounded-[20px] bg-[#FDFCF3] px-5 pb-[40px] lg:px-[19px] lg:pb-[169px]">
+                <div className="px-5 pb-[120px]">
                     <BigImageStory
                         imgUrl={`/img/products/schutt/schutt-5.png`}
                         imageContainerClassname="aspect-[16/9] max-w-[1280px] m-auto md:mb-[120px]"
                         title="Approach"
                         story={`The synchronization of cart drawers across all sites ensures a consistent shopping experience, leading to a unified checkout process.`}
-                        
+                        textColor="text-white"
                     />
                 </div>
             </div>

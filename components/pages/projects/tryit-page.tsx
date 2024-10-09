@@ -2,7 +2,6 @@
 import HeroTitle from "@/components/common/HeroTitle";
 import BigImageOnly from "@/components/sections/big-img-only";
 import BigImageStory from "@/components/sections/big-img-story";
-import BigImageStory2 from "@/components/sections/big-img-story-2";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
 import { projectsData } from "../../sections/projectdata";
@@ -27,7 +26,7 @@ export default function TryitPage() {
 
             <div className="relative bg-dark">
                 <HeroTitle
-                    title="TRYIT"
+                    title="TRY IT"
                     subtitle="Stick To The Plan"
                     desktopImgUrl="/img/products/tryitproduct.png"
                     mobileImgUrl="/img/products/mobile/tryitproduct-mobile.png"
@@ -79,26 +78,26 @@ export default function TryitPage() {
                     />
                 </div>
                 <div className="rounded-[20px]  bg-[url(/img/products/tryit/tryit-4-bg.png)] bg-cover bg-center bg-no-repeat overflow-hidden mb-[40px] lg:mb-[169px]">
-                    <BigImageStory2
-                              imgUrl={`/img/products/tryit/tryit-4.png`}
-                              imageContainerClassname="aspect-[92/44] m-auto max-w-[920px]"
+                    <BigImageStory
+                        imgUrl={`/img/products/tryit/tryit-4.png`}
+                        imageContainerClassname="aspect-[92/44] m-auto max-w-[1440px] mb-[160px]"
                        
                     />
                 </div>
-                    <BigImageStory2
-                        title={`Approach`}
-                        story={`A significant aspect of The Home Edit's online sales hinges on their tailor-made labels. Ensuring a user-friendly shopping experience, as well as creating a reliable fulfillment solution for their printing vendor, was our focal point to boost conversions and efficiency.`}
-                        textColor={`text-white`}
-                        textContainerClassname="px-[9px] lg:px-[19px]"
 
-                    />
-
-                <div className="rounded-[20px] mt-[120px] lg:mt-[200px] pb-20 px-[19px] lg:px-40 lg:pb-[200px] ">
+                <div className="rounded-[20px] mt-[120px] lg:mt-[200px] pb-20 px-[19px] lg:px-40 lg:pb-[60px] ">
                     <BigImageOnly
-                              imgUrl={`/img/products/tryit/tryit-5.png`}
-                              className="aspect-[58/53] md:aspect-[52/59] h-full"
+                        imgUrl={`/img/products/tryit/tryit-5.png`}
+                        className="aspect-[58/53] md:aspect-[52/59] h-full m-auto max-w-[1440px]"
                     />
                 </div>
+                <BigImageStory
+                        title={`Approach`}
+                        story={`Shortly after we launched, they were in need of another site for their mix series, Try It Records. We took the initiative and built a continuous playing experience while navigating through the site.`}
+                        textColor={`text-white`}
+                        textContainerClassname="px-[9px] lg:px-[19px] pb-[160px]"
+
+                    />
             </div>
         </>
     );

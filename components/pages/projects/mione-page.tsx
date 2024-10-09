@@ -2,7 +2,6 @@
 import HeroTitle from "@/components/common/HeroTitle";
 import BigImageOnly from "@/components/sections/big-img-only";
 import BigImageStory from "@/components/sections/big-img-story";
-import BigImageStory2 from "@/components/sections/big-img-story-2";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
 import { projectsData } from "../../sections/projectdata";
@@ -77,7 +76,7 @@ export default function MionePage() {
                 </div>
 
                 <div className="bg-[#D6D8CE] rounded-[20px] px-[9px] lg:px-[19px] lg:pb-[120px]">
-                    <BigImageStory2
+                    <BigImageStory
                         imgUrl={`/img/products/mione/mione-3.png`}
                         imageContainerClassname="aspect-[26/17] max-w-[1280px] m-auto mb-[112px] "
                         title={`Challenge`}
