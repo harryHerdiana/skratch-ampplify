@@ -25,7 +25,7 @@ export default function SpeakeasyPage() {
 
             <div className="relative bg-dark">
                 <HeroTitle
-                    title="SPEAKEASY"
+                    title="Speakeasy"
                     subtitle="Spirits Brands' Best Friend"
                     desktopImgUrl="/img/products/speakeasyproduct.png"
                     mobileImgUrl="/img/products/mobile/speakeasyproduct-mobile.png"

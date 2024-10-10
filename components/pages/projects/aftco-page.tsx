@@ -25,7 +25,7 @@ export default function AftcoPage() {
 
             <div className="relative bg-dark">
                 <HeroTitle
-                    title="AFTCO"
+                    title="Aftco"
                     subtitle="American Fishing Tackle Company"
                     desktopImgUrl="/img/products/aftcoproduct.png"
                     mobileImgUrl="/img/products/mobile/aftcoproduct-mobile.png"

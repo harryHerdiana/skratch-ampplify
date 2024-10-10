@@ -112,7 +112,7 @@ export default function VoltAthleticsPage() {
 
             <div className="relative bg-dark">
                 <HeroTitle
-                    title="VOLT ATHLETICS"
+                    title="Volt Athletics"
                     subtitle="Maximize Your Coaching Impact"
                     desktopImgUrl="/img/products/voltproduct.png"
                     mobileImgUrl="/img/products/mobile/voltproduct-mobile.png"

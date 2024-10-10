@@ -25,7 +25,7 @@ export default function SchuttPage() {
 
             <div className="relative bg-dark">
                 <HeroTitle
-                    title="SCHUTT"
+                    title="Schutt"
                     subtitle="Built For Battle"
                     desktopImgUrl="/img/products/schuttproduct.png"
                     mobileImgUrl="/img/products/mobile/schuttproduct-mobile.png"

@@ -8,7 +8,7 @@ const HeroTitle = (props: HeroTitleProps) => {
                     <div></div>
                     <div>
                             <div className="flex justify-between h-max">
-                                <div className="lg:text-[120px] font-['MonumentGrotesk-Bold'] text-[48px] leading-[48px] lg:leading-[106px] tracking-tight">
+                                <div className="lg:text-[120px] font-['MonumentGrotesk-Regular'] text-[48px] leading-[48px] lg:leading-[106px] tracking-tight">
                                     {props.title}
                                 </div>
                             </div>

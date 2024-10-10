@@ -26,7 +26,7 @@ export default function MionePage() {
 
             <div className="relative bg-dark">
                 <HeroTitle
-                    title="MIONE"
+                    title="Mione"
                     subtitle="Here To Contend"
                     desktopImgUrl="/img/products/mioneproduct.png"
                     mobileImgUrl="/img/products/mobile/mioneproduct-mobile.png"

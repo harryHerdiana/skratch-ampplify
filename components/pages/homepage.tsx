@@ -23,7 +23,6 @@ export default function Homepage() {
                 <HeroSlideShow />
                 <ProjectList />
                 <ServicesSection/>
-                <TestimonialsSection/>
             </div>
         </>
     );

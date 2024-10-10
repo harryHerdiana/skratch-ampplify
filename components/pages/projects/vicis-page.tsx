@@ -25,7 +25,7 @@ export default function VicisPage() {
 
             <div className="relative bg-dark">
                 <HeroTitle
-                    title="VICIS"
+                    title="Vicis"
                     subtitle="Game-Changing Helmet Technology"
                     desktopImgUrl="/img/products/vicisproduct.png"
                     mobileImgUrl="/img/products/mobile/vicisproduct-mobile.png"

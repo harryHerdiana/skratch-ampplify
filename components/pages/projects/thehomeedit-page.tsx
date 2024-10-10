@@ -25,7 +25,7 @@ export default function TheHomeEditPage() {
 
             <div className="relative bg-dark">
                 <HeroTitle
-                    title="THE HOME EDIT"
+                    title="The Home Edit"
                     subtitle="Your Home Organized In Style"
                     desktopImgUrl="/img/products/thehomeeditproduct.png"
                     mobileImgUrl="/img/products/mobile/thehomeeditproduct-mobile.png"

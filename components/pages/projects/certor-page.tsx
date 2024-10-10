@@ -22,7 +22,7 @@ export default function CertortPage() {
 
       <div className="relative bg-dark">
         <HeroTitle
-          title="CERTOR"
+          title="Certor"
           subtitle="Here to contend"
           desktopImgUrl="/img/products/certorproduct.png"
           mobileImgUrl="/img/products/mobile/certorproduct-mobile.png"

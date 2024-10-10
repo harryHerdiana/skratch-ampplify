@@ -24,7 +24,7 @@ export default function TucciPage() {
 
             <div className="relative bg-dark">
                 <HeroTitle
-                    title="TUCCI"
+                    title="Tucci"
                     subtitle="Trusted by the game's top pros"
                     desktopImgUrl="/img/products/tucciproduct.png"
                     mobileImgUrl="/img/products/mobile/tucciproduct-mobile.png"

@@ -25,7 +25,7 @@ export default function ProprioPage() {
 
             <div className="relative bg-dark">
                 <HeroTitle
-                    title="PROPRIO"
+                    title="Proprio"
                     subtitle="The New Way Of Seeing"
                     desktopImgUrl="/img/products/proprioproduct.png"
                     mobileImgUrl="/img/products/mobile/proprioproduct-mobile.png"

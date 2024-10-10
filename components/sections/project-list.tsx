@@ -34,15 +34,15 @@ const ProjectItem = (props: IProjectList) => {
             </div>
             </Link>
             <div className="mt-3 text-left">
-                <p className="mb-2 text-18 text-[#565652]">Services</p>
+                <p className="text-[#565652] uppercase font-['MonumentGrotesk-Semi-Mono'] text-12 mb-2">Services</p>
                 <ul className="grid grid-cols-1 lg:grid-cols-2 gap-x-8">
-                    {props.services.map((service, index) => (
+                    {props.services.map((service) => (
                         service.length > 0 && 
                         <li
                             key={service}
                             className="text-[#1F1F1F66] [&:nth-child(2)]:border-t [&:nth-child(1)]:border-t border-b py-0.5 uppercase font-['MonumentGrotesk-Semi-Mono'] text-12 leading-[20px]"
                         >
-                           { <span className="mr-8">{index + 1}</span> }{service}
+                           {service}
                         </li>
                     ))}
                 </ul>
@@ -82,8 +82,8 @@ const ProjectList: React.FC = () => {
 
     return (
         <div className="bg-white pt-[60px] lg:py-[120px] pb-4 rounded-[20px] text-12 md:text-15">
-            <h3 className="pl-2 md:pl-4 uppercase text-52 md:text-120 font-['MonumentGrotesk-Bold'] tracking-[-2px] text-[#565652]">
-                projects
+            <h3 className="pl-2 md:pl-4 text-52 md:text-120 font-['MonumentGrotesk-Regular'] tracking-[-2px] text-[#565652]">
+                Projects
             </h3>
             <div className="flex pl-3 md:pl-5 my-[60px] lg:my-[105px] justify-between md:grid grid-cols-2">
                 <h4 className="w-max text-[#565652]">( Our Work )</h4>

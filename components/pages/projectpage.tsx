@@ -8,8 +8,8 @@ export default function ProjectPage() {
         pt-12 bg-[#FDFCF3] text-[#1F1F1F] rounded-[20px]  font-['MonumentGrotesk-Regular']"
         >
             <main className="mt-10 md:mt-[175px] mx-auto ">
-                <h1 className="text-[#565652] md:text-[120px] text-[52px] leading-[48px] tracking-[-0.02em]  mb-[60px] md:mb-[120px]  font-['MonumentGrotesk-Bold']">
-                    PROJECTS
+                <h1 className="text-[#565652] md:text-[120px] text-[52px] leading-[48px] tracking-[-0.02em]  mb-[60px] md:mb-[120px]  font-['MonumentGrotesk-Regular']">
+                    Projects
                 </h1>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-5">
@@ -39,17 +39,17 @@ export default function ProjectPage() {
                             </div>
                             <div className="space-y-4 md:w-full">
                                 <div className="mt-3">
-                                    <h3 className="text-[#565652] text-12 mb-2 md:text[18px] lg:text-18">
+                                    <h3 className="text-[#565652] uppercase font-['MonumentGrotesk-Semi-Mono'] text-12 mb-2">
                                         Services
                                     </h3>
                                     <ul className="grid grid-cols-1 lg:grid-cols-2 gap-x-8">
-                                        {project.services.map((service, index) => (
+                                        {project.services.map((service) => (
                                             service.length > 0 && 
                                             <li
                                                 key={service}
                                                 className="text-[#1F1F1F66] [&:nth-child(2)]:border-t [&:nth-child(1)]:border-t border-b py-0.5 uppercase font-['MonumentGrotesk-Semi-Mono'] text-12 leading-[20px]"
                                             >
-                                            { <span className="mr-8">{index + 1}</span> }{service}
+                                            {service}
                                             </li>
                                         ))}
                                     </ul>

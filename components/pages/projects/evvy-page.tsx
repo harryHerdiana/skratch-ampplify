@@ -25,7 +25,7 @@ export default function EvvyPage() {
 
             <div className="relative bg-dark">
                 <HeroTitle
-                    title="EVVY"
+                    title="Evvy"
                     subtitle="Know What’s Up Down There"
                     desktopImgUrl="/img/products/evvyproduct.png"
                     mobileImgUrl="/img/products/mobile/evvyproduct-mobile.png"

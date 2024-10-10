@@ -38,9 +38,9 @@ const supportList = [
 
 const ServicesSection = () => {
     return (
-        <div className="bg-dark text-white px-2.5 py-[120px] hidden lg:block mb-[120px]">
-            <h3 className="uppercase text-52 md:text-120  max-w-[85%] lg:max-w-[1163px] font-['MonumentGrotesk-Bold'] tracking-[-2px]">
-                Services enim ad min veniam min quis enim
+        <div className="bg-dark text-white px-2.5 py-[160px]">
+            <h3 className="text-52 md:text-120  max-w-[85%] lg:max-w-[1163px] font-['MonumentGrotesk-Regular'] tracking-[-2px]">
+                Services
             </h3>
             <div className="mt-[100px] mb-2.5 md:translate-y-10 flex justify-between">
                 {" "}

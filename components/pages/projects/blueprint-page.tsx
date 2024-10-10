@@ -27,7 +27,7 @@ export default function BlueprintPage() {
 
             <div className="relative bg-dark">
                 <HeroTitle
-                    title="BLUEPRINT"
+                    title="Blueprint"
                     subtitle="Services To Empower Your Success"
                     desktopImgUrl="/img/products/blueprintproduct.png"
                     mobileImgUrl="/img/products/mobile/blueprintproduct-mobile.png"
