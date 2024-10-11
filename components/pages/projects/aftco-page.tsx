@@ -4,9 +4,93 @@ import BigImageOnly from "@/components/sections/big-img-only";
 import BigImageStory from "@/components/sections/big-img-story";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
+import Image from "next/image";
+import { useEffect, useRef } from "react";
 import { projectsData } from "../../sections/projectdata";
 
 export default function AftcoPage() {
+    const scrollContainerRef = useRef<HTMLDivElement>(null);
+    const speedFactor = 2; // Adjust this value to increase or decrease the scroll speed
+
+    useEffect(() => {
+        let isScrolling = false;
+
+        const handleScroll = () => {
+            if (scrollContainerRef.current && !isScrolling) {
+                isScrolling = true;
+                requestAnimationFrame(() => {
+                    const rect =
+                        scrollContainerRef.current!.getBoundingClientRect();
+                    const containerOffsetTop = rect.top + window.pageYOffset;
+                    const containerHeight = rect.height;
+
+                    const scrollY = window.pageYOffset;
+                    const windowHeight = window.innerHeight;
+
+                    if (
+                        scrollY + windowHeight > containerOffsetTop &&
+                        scrollY < containerOffsetTop + containerHeight
+                    ) {
+                        // The section is in view
+                        const progress =
+                            (scrollY -500 +windowHeight - containerOffsetTop) /
+                            (windowHeight + containerHeight);
+
+                        const scrollPercentage = Math.max(
+                            0,
+                            Math.min(1, progress)
+                        );
+
+                        const maxScroll =
+                            scrollContainerRef?.current?.scrollWidth! -
+                            scrollContainerRef?.current?.clientWidth!;
+
+                        const scrollLeft =
+                            maxScroll * scrollPercentage * speedFactor;
+
+                        scrollContainerRef.current!.scrollLeft = Math.max(
+                            0,
+                            Math.min(maxScroll, scrollLeft)
+                        );
+                    }
+                    isScrolling = false;
+                });
+            }
+        };
+
+        const observerCallback = (entries: IntersectionObserverEntry[]) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    // Start listening to scroll events
+                    window.addEventListener("scroll", handleScroll);
+                } else {
+                    // Stop listening to scroll events
+                    window.removeEventListener("scroll", handleScroll);
+                }
+            });
+        };
+
+        const observerOptions = {
+            root: null, // Use the viewport as the root
+            threshold: 0.5, // Trigger when even one pixel is visible
+        };
+
+        const observer = new IntersectionObserver(
+            observerCallback,
+            observerOptions
+        );
+
+        if (scrollContainerRef.current) {
+            observer.observe(scrollContainerRef.current);
+        }
+
+        // Cleanup on unmount
+        return () => {
+            observer.disconnect();
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     const project = projectsData.find((project) => project.title === "Aftco");
 
      if (!project) {
@@ -102,16 +186,30 @@ export default function AftcoPage() {
                         
                     />
                 </div>
-                <div className="bg-[#FDFCF3] rounded-[20px] pb-[40px] lg:pb-[169px]">
+     
+                <div className=" flex-col hidden lg:flex relative  mb-[40px] lg:mb-[169px]">
+                    <div
+                        ref={scrollContainerRef}
+                        className="overflow-x-auto  mt-[80px] lg:mt-[169px] no-scrollbar "
+                    >
+                        <div className="relative min-w-[1776px] aspect-[1776/843]">
+                            <Image
+                                src={"/img/products/aftco/aftco-7.png"}
+                                alt="volt-3"
+                                className="object-contain"
+                                fill
+                                draggable={false}
+                                quality={100}
+                                priority
+                                unoptimized
+                            />
+                        </div>
+                    </div>
                     <BigImageStory
-                        imageContainerClassname="aspect-square md:aspect-video lg:mb-16 "
-                        imgUrl={`/img/products/aftco/aftco-7.png`}
-                        width={`90%`}
-                        height={`60%`}
-                        textContainerClassname="px-[9px] lg:px-[19px] "
                         title={`Challenge`}
                         story={`We dedicated extensive hours to quality assurance and accessibility audits to ensure exceptional website experience and adherence to web compliance.`}
-                        textColor="text-white"
+                        textColor={`text-white`}
+                        textContainerClassname="px-[9px] lg:px-[19px] mt-[80px] lg:mt-[169px] pb-[120px]"
                     />
                 </div>
                 <div className="rounded-[20px] mt-[120px] lg:mt-[200px]  px-[9px] pb-[40px] lg:px-[19px] lg:pb-[169px]">

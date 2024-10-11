@@ -1,12 +1,94 @@
 "use client";
 import HeroTitle from "@/components/common/HeroTitle";
-import BigImageOnly from "@/components/sections/big-img-only";
 import BigImageStory from "@/components/sections/big-img-story";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
+import Image from "next/image";
+import { useEffect, useRef } from "react";
 import { projectsData } from "../../sections/projectdata";
 
 export default function VicisPage() {
+    const scrollContainerRef = useRef<HTMLDivElement>(null);
+    const speedFactor = 2; // Adjust this value to increase or decrease the scroll speed
+
+    useEffect(() => {
+        let isScrolling = false;
+
+        const handleScroll = () => {
+            if (scrollContainerRef.current && !isScrolling) {
+                isScrolling = true;
+                requestAnimationFrame(() => {
+                    const rect =
+                        scrollContainerRef.current!.getBoundingClientRect();
+                    const containerOffsetTop = rect.top + window.pageYOffset;
+                    const containerHeight = rect.height;
+
+                    const scrollY = window.pageYOffset;
+                    const windowHeight = window.innerHeight;
+
+                    if (
+                        scrollY + windowHeight > containerOffsetTop &&
+                        scrollY < containerOffsetTop + containerHeight
+                    ) {
+                        // The section is in view
+                        const progress =
+                            (scrollY -500 +windowHeight - containerOffsetTop) /
+                            (windowHeight + containerHeight);
+
+                        const scrollPercentage = Math.max(
+                            0,
+                            Math.min(1, progress)
+                        );
+
+                        const maxScroll =
+                            scrollContainerRef?.current?.scrollWidth! -
+                            scrollContainerRef?.current?.clientWidth!;
+
+                        const scrollLeft =
+                            maxScroll * scrollPercentage * speedFactor;
+
+                        scrollContainerRef.current!.scrollLeft = Math.max(
+                            0,
+                            Math.min(maxScroll, scrollLeft)
+                        );
+                    }
+                    isScrolling = false;
+                });
+            }
+        };
+
+        const observerCallback = (entries: IntersectionObserverEntry[]) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    // Start listening to scroll events
+                    window.addEventListener("scroll", handleScroll);
+                } else {
+                    // Stop listening to scroll events
+                    window.removeEventListener("scroll", handleScroll);
+                }
+            });
+        };
+
+        const observerOptions = {
+            root: null, // Use the viewport as the root
+            threshold: 0.5, // Trigger when even one pixel is visible
+        };
+
+        const observer = new IntersectionObserver(
+            observerCallback,
+            observerOptions
+        );
+
+        if (scrollContainerRef.current) {
+            observer.observe(scrollContainerRef.current);
+        }
+
+        // Cleanup on unmount
+        return () => {
+            observer.disconnect();
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
     const project = projectsData.find((project) => project.title === "Vicis");
 
      if (!project) {
@@ -74,11 +156,26 @@ export default function VicisPage() {
                         textColor={`text-white`}
                     />
                 </div>
-                <div className="">
-                    <BigImageStory
-                        imgUrl={`/img/products/vicis/vicis-4.png`}
-                        imageContainerClassname="aspect-[16/9] m-auto md:mb-[120px]"
-                    />
+           
+                <div className=" flex-col hidden lg:flex relative  mb-[40px] lg:mb-[169px]">
+                    <div
+                        ref={scrollContainerRef}
+                        className="overflow-x-auto  mt-[80px] lg:mt-[169px] no-scrollbar"
+                    >
+                        <div className="relative min-w-[1988px] aspect-[1988/656]">
+                            <Image
+                                src={"/img/products/vicis/vicis-4.png"}
+                                alt="vicis-4"
+                                className="object-contain"
+                                fill
+                                draggable={false}
+                                quality={100}
+                                priority
+                                unoptimized
+                            />
+                        </div>
+                    </div>
+               
                 </div>
                 <div className="rounded-[20px] px-[9px] lg:px-[19px] pb-[120px]">
                     <BigImageStory
