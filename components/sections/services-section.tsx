@@ -38,7 +38,7 @@ const supportList = [
 
 const ServicesSection = () => {
     return (
-        <div className="bg-dark text-white px-2.5 py-[160px]">
+        <div className="bg-dark text-white px-5 py-[160px]">
             <h3 className="text-52 md:text-120  max-w-[85%] lg:max-w-[1163px] font-['MonumentGrotesk-Regular'] tracking-[-2px]">
                 Services
             </h3>

@@ -89,7 +89,7 @@ const ProjectList: React.FC = () => {
                 <h4 className="w-max text-[#565652]">( Our Work )</h4>
                     <p
                         className={classNames(
-                            "uppercase w-[282px] font-['MonumentGrotesk-Semi-Mono'] text-12 md:text-12 text-[#565652] ml-[16.7vw]"
+                            "uppercase w-[282px] font-['MonumentGrotesk-Semi-Mono'] text-12 md:text-12 text-[#565652] lg:ml-[16.7vw]"
                         )}
                     >
                         is a digital studio focused on developing experiences to
