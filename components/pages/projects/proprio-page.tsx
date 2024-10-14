@@ -49,7 +49,7 @@ export default function ProprioPage() {
                 <div className=" rounded-[4px] px-[9px] lg:px-[19px] bg-[url(/img/products/proprio/proprio-1-bg.png)] bg-cover bg-center bg-no-repeat overflow-hidden mt-[120px] mb-[120px]">
                     <BigImageStory
                         imgUrl={`/img/products/proprio/proprio-1.png`}
-                        imageContainerClassname="aspect-[13/8] m-auto max-w-[1440px] mb-[120px]"
+                        imageContainerClassname="aspect-[13/8] m-auto max-w-[1280px] mb-[120px]"
                         imageClassname="rounded-md overflow-hidden"
                     />
                 </div>

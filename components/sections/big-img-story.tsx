@@ -6,7 +6,7 @@ const BigImageStory = (props: BigImageStoryProps) => {
             {props.imgUrl && (
                 <div
                     className={classNames(
-                        `py-[40px] relative rounded-[4px] flex items-center justify-center lg:py-[120px]`,
+                        `py-[100px] relative rounded-[4px] flex items-center justify-center lg:py-[120px]`,
                         props.imageOuterContainerClassname
                     )}
                 >

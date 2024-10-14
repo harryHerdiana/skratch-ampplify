@@ -10,6 +10,5 @@ export const projectsData = [
     { image: "/img/products/tucciproduct.png", title: "Tucci", year: "2023", services: ["Front-end deveopment", "Shopify Plus development", "Back-end Development","API Integration","",""] },
     { image: "/img/products/voltproduct.png", title: "Volt Athletics", year: "2022", services: ["Front-end development", "Search engine optimization", "","","",""] },
     { image: "/img/products/aftcoproduct.png", title: "Aftco", year: "2022", services: ["Front-end development", "Shopify Plus Development", "Headless CMS Implementation","","",""] },
-    { image: "/img/products/thehomeeditproduct.png", title: "The Home Edit", year: "2021", services: ["UX/UI Design", "Front-end development", "Shopify development","Custom Web Application","",""] },
     { image: "/img/products/evvyproduct.png", title: "Evvy", year: "2021", services: ["Front-end development", "Shopify Plus development","API Integration","",""] },
 ];

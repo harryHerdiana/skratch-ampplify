@@ -145,8 +145,6 @@ export default function AftcoPage() {
                         imgUrl={`/img/products/aftco/aftco-2.png`}
                         className="aspect-[200/129] max-w-[1200px] m-auto"
                     />
-                </div>
-                <div className="rounded-[20px] px-[9px] pb-[40px] lg:px-[19px] lg:pb-[169px]">
                     <BigImageStory
                         imgUrl={`/img/products/aftco/aftco-3.png`}
                         imageContainerClassname="aspect-[227/159] m-auto max-w-[908px]"
@@ -154,30 +152,22 @@ export default function AftcoPage() {
                         story={`Our challenge was to develop a customized commerce experience that not only prioritizes speed and performance but also achieves outstanding lighthouse scores.  `}
                     />
                 </div>
-                <div className="  bg-[url(/img/products/aftco/aftco-4-bg.png)] bg-cover bg-center bg-no-repeat overflow-hidden mb-[40px] lg:mb-[169px]">
+                <div className="rounded-[20px] bg-[url(/img/products/aftco/aftco-4-bg.png)] bg-cover bg-center bg-no-repeat overflow-hidden">
                     <BigImageStory
                         imgUrl={`/img/products/aftco/aftco-4.png`}
                         imageClassname="rounded-[8px] "
                         imageContainerClassname="aspect-[160/183] m-auto max-w-[908px]"
                     />
                 </div>
-                    <BigImageStory
-                        title={`Approach`}
-                        textContainerClassname=" px-[9px] pb-[40px] lg:px-[19px] lg:pb-[169px]"
-                        story={`Utilizing the new user interface contributed by AFTCO, we kicked off the project by building an MVP as proof of concept to ensure they chose the right approach.`}
-                        textColor={`text-white`}
-                    />
-           
                 <div className="rounded-[20px] px-[9px] pb-[40px] lg:px-[19px] lg:pb-[169px] bg-[#FDFCF3] ">
                     <BigImageStory
                         imgUrl={`/img/products/aftco/aftco-5.png`}
                         imageContainerClassname="aspect-[235/189] m-auto max-w-[1177px]"
                         title={`Challenge`}
                         story={`Utilizing the new user interface contributed by AFTCO, we kicked off the project by building an MVP as proof of concept to ensure they chose the right approach. `}
-                        textColor="text-white"
                     />
                 </div>
-                <div className="bg-[#FDFCF3] rounded-[20px] px-[9px] lg:px-[19px] pb-[80px]">
+                <div className="bg-[#D6D8CE] rounded-[20px] px-[9px] lg:px-[19px] pb-[80px]">
                     <BigImageStory
                         imgUrl={`/img/products/aftco/aftco-6.png`}
                         imageContainerClassname="aspect-[45/26] m-auto max-w-[1080px]"
@@ -212,7 +202,7 @@ export default function AftcoPage() {
                         textContainerClassname="px-[9px] lg:px-[19px] mt-[80px] lg:mt-[169px] pb-[120px]"
                     />
                 </div>
-                <div className="rounded-[20px] mt-[120px] lg:mt-[200px]  px-[9px] pb-[40px] lg:px-[19px] lg:pb-[169px]">
+                <div className="rounded-[20px] overflow-hidden">
                     <BigImageOnly
                         imgUrl={`/img/products/aftco/aftco-8.png`}
                         className="aspect-[68/47]" 
