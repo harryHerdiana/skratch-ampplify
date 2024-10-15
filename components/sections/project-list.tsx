@@ -139,7 +139,7 @@ const ProjectList: React.FC = () => {
 
     return (
         <div className="bg-white pt-[60px] lg:py-[120px] pb-4 rounded-[20px] text-12 md:text-15 h-[800vh]">
-            <h3 className="pl-2 md:pl-4 text-52 md:text-120 font-['MonumentGrotesk-Regular'] tracking-[-2px] text-[#565652]">
+            <h3 className="pl-2 md:pl-4 text-52 md:text-120 font-['MonumentGrotesk-Regular'] tracking-[-2px] text-[#565652] sticky top-[0px] mb-32">
                 Projects
             </h3>
             <div className="flex pl-3 md:pl-5 my-[60px] lg:my-[105px] justify-between md:grid grid-cols-2">
@@ -154,7 +154,7 @@ const ProjectList: React.FC = () => {
                 </p>
             </div>
 
-            <div ref={ref} className="pl-2 md:pl-4 w-full lg:w-auto sticky top-[0px]">
+            <div ref={ref} className="pl-2 md:pl-4 w-full lg:w-auto sticky top-32">
                 <Slider ref={sliderRef as any} {...settings}>
                     {projectsData.map((project, index) => (
                         <ProjectItem
