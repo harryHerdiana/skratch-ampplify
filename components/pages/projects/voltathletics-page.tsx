@@ -2,12 +2,12 @@
 import HeroTitle from "@/components/common/HeroTitle";
 import BigImageOnly from "@/components/sections/big-img-only";
 import BigImageStory from "@/components/sections/big-img-story";
+import BigImageStory2 from "@/components/sections/big-img-story-2";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { projectsData } from "../../sections/projectdata";
-import BigImageStory2 from "@/components/sections/big-img-story-2";
 
 export default function VoltAthleticsPage() {
     const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -119,7 +119,7 @@ export default function VoltAthleticsPage() {
                 />
                 <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[120px]">
                     <BigTitleStory
-                        title={`Expert fitness guidance, whether you are training as an individual or part of a group`}
+                        title={`Expert fitness guidance,   whether you are training   as an individual or part of a group`}
                         titleLeft={`Services`}
                         textLeft={
                             <ul>

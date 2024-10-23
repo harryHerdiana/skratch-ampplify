@@ -34,7 +34,7 @@ export default function BlueprintPage() {
                 />
                 <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[120px]">
                 <BigTitleStory
-                        title={`Success in real estate requires more than just luck and hard work`}
+                        title={`Success in real estate        requires more than just      luck and hard work`}
                         titleLeft={`Services`}
                         textLeft={
                             <ul>

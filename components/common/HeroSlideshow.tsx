@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import AnimatedTextOnView from "./AnimatedTextOnView";
-import AnimatedText from "./AnimatedText";
 
 const SliderItem = () => {
     const [time, setTime] = useState(new Date());
@@ -25,7 +24,7 @@ const SliderItem = () => {
     });
 
     const text =
-        "SKRATCH is a digital studio focused on developing experiences to support brands stay ahead of the game.";
+        "SKRATCH is a digital studio focused  on developing experiences to supportbrands stay ahead of the game.";
 
     return (
         <div className="relative h-screen w-full flex flex-col text-white justify-between bg-dark">
@@ -44,12 +43,7 @@ const SliderItem = () => {
                     </div>
 
                     {/* Use the AnimatedText component here */}
-                    <AnimatedText
-                        text={text}
-                        className="md:max-w-[505px] font-[MonumentGrotesk-Regular] text-[30px] leading-[34px]"
-                        stepSize={0.1}
-                        animDuration={1}
-                    />
+             
                     <AnimatedTextOnView
                         text={text}
                         stepSize={0.01}

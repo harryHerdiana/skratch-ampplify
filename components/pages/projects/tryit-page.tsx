@@ -33,7 +33,7 @@ export default function TryitPage() {
                 />
                 <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[210px]">
                 <BigTitleStory
-                        title={`Fun project where I can share my design process and release random products`}
+                        title={`Fun project where I can    share my design process and release random           products`}
                         titleLeft={`Services`}
                         textLeft={
                             <ul>
@@ -45,7 +45,7 @@ export default function TryitPage() {
                             </ul>
                         }
                         titleRight={`About`}
-                        textRight="Try It Studios is a design studio situated in Los Angeles. They curate unique partnerships with up-and-coming brands and special events, infusing their collection with an exclusive and varied appeal."
+                        textRight="Try It Studios is a design studio situated in Los   Angeles. They curate unique partnerships with up-and-coming brands and special events, infusing their collection with an exclusive and varied appeal."
                     />
 
                     <BigImageStory

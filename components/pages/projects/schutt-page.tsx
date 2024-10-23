@@ -1,6 +1,5 @@
 "use client";
 import HeroTitle from "@/components/common/HeroTitle";
-import BigImageOnly from "@/components/sections/big-img-only";
 import BigImageStory from "@/components/sections/big-img-story";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
@@ -32,7 +31,7 @@ export default function SchuttPage() {
                 />
                 <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[120px]">
                 <BigTitleStory
-                        title={`Optimized impact performance, increased athlete comfort, and improved fit flexibility`}
+                        title={`Optimized impact performance, increased athlete comfort, and improved fit  flexibility`}
                         titleLeft={`Services`}
                         textLeft={
                             <ul>

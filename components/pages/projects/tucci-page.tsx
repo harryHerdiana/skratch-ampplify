@@ -31,7 +31,7 @@ export default function TucciPage() {
                 />
                 <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[120px]">
                     <BigTitleStory
-                        title={`Baseball's Next Evolution is Here`}
+                        title={`Baseball's Next Evolution  is Here`}
                         titleLeft={`Services`}
                         textLeft={
                             <ul>

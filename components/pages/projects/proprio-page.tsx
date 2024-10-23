@@ -32,7 +32,7 @@ export default function ProprioPage() {
                 />
                 <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[210px]">
                     <BigTitleStory
-                        title={`Modernizing the way we predict, perform, and perfect surgery`}
+                        title={`Modernizing the way we    predict, perform, and          perfect surgery`}
                         titleLeft={`Services`}
                         textLeft={
                             <ul>

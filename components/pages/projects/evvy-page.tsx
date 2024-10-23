@@ -32,7 +32,7 @@ export default function EvvyPage() {
                 />
                 <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[210px]">
                     <BigTitleStory
-                        title={`The female body shouldn’t be a medical mystery`}
+                        title={`The female body                  shouldn’t be a medical      mystery`}
                         titleLeft={`Services`}
                         textLeft={
                             <ul>

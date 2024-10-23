@@ -19,7 +19,6 @@ export default function Homepage() {
             <div className="relative bg-dark">
                 <HeroSlideShow />
                 <ServicesSection/>
-                <HeroSlideShow />
                 <ProjectList />
             </div>
         </>

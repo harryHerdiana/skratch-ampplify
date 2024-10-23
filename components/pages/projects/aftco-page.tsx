@@ -116,7 +116,7 @@ export default function AftcoPage() {
                 />
                 <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[120px]">
                     <BigTitleStory
-                        title={`Unparalleled quality, performance, and reliability when it counts most`}
+                        title={`Unparalleled quality,          performance, and                reliability when it counts   most`}
                         titleLeft={`Services`}
                         textLeft={
                             <ul>

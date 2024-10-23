@@ -32,7 +32,7 @@ export default function SpeakeasyPage() {
                 />
                 <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[210px]">
                     <BigTitleStory
-                        title={`INTEGRATED DTC SOLUTIONS FOR BEVERAGE ALCOHOL BRANDS`}
+                        title={`INTEGRATED DTC              SOLUTIONS FOR                BEVERAGE ALCOHOL       BRANDS`}
                         titleLeft={`Services`}
                         textLeft={
                             <ul>

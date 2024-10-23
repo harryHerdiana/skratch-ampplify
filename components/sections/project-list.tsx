@@ -1,14 +1,16 @@
 import classNames from "classnames";
+import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Slider from "react-slick";
 import { projectsData } from "./projectdata";
 
 const ProjectItem = (props: IProjectList) => {
     return (
-        <div className="md:max-w-full px-[5px] w-full sm:translate-x-1/2 translate-x-[18%]">
-            <Link
+        <div className="md:max-w-full px-[5px] w-full sm:translate-x-1/2 translate-x-[18%] hover:cursor-none">
+            <Link 
+            className="cursor-none"
                 href={`/projects/${props.title
                     .toLowerCase()
                     .replace(/ /g, "-")}`}
@@ -21,7 +23,8 @@ const ProjectItem = (props: IProjectList) => {
                     {props.title}
                 </p>
             </Link>
-            <Link
+            <Link  
+            className="cursor-none"
                 href={`/projects/${props.title
                     .toLowerCase()
                     .replace(/ /g, "-")}`}
@@ -58,64 +61,9 @@ const ProjectItem = (props: IProjectList) => {
 };
 
 const ProjectList: React.FC = () => {
-    const ref = useRef<HTMLDivElement>(null);
-    const [width, setWidth] = useState<number>(0);
-    const sliderRef = useRef<Slider>(null);
-    const [isInView, setIsInView] = useState<boolean>(false);
-
-    const scroll = useCallback(
-        (y: number) => {
-            if (y > 0) {
-                return sliderRef.current?.slickNext();
-            } else {
-                return sliderRef.current?.slickPrev();
-            }
-        },
-        [sliderRef]
-    );
-
-    const handleWheel = useCallback(
-        (e: WheelEvent) => {
-            scroll(e.deltaY);
-        },
-        [scroll]
-    );
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                setIsInView(entry.isIntersecting);
-            },
-            { threshold: 0.5 }
-        );
-
-        if (ref.current) {
-            observer.observe(ref.current);
-        }
-
-        return () => {
-            if (ref.current) {
-                observer.unobserve(ref.current);
-            }
-        };
-    }, [ref]);
-
-    useEffect(() => {
-        if (isInView) {
-            window.addEventListener("wheel", handleWheel);
-        }
-
-        return () => {
-            window.removeEventListener("wheel", handleWheel);
-        };
-    }, [isInView, handleWheel]);
-
-    useEffect(() => {
-        if (ref.current) {
-            setWidth(ref.current.offsetWidth);
-        }
-    }, [ref]);
-
+    const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+    const [isHovering, setIsHovering] = useState(false);
+    const [isDragging, setIsDragging] = useState(false);
 
     const settings = {
         infinite: true,
@@ -137,9 +85,32 @@ const ProjectList: React.FC = () => {
         ],
     };
 
+    const handleMouseMove = useCallback((e: React.MouseEvent) => {
+        setCursorPosition({ x: e.clientX, y: e.clientY });
+    }, []);
+
+    const handleMouseEnter = () => setIsHovering(true);
+    const handleMouseLeave = () => {
+        setIsHovering(false);
+        setIsDragging(false);
+    };
+
+    const handleMouseDown = () => setIsDragging(true);
+    const handleMouseUp = () => setIsDragging(false);
+
+    const cursorControls = useAnimation();
+
+    useEffect(() => {
+        if (isHovering) {
+            cursorControls.start({ opacity: 1, scale: 1 });
+        }else {
+            cursorControls.start({ opacity: 0, scale: 0.5 });
+        }
+    }, [isHovering, cursorControls]);
+
     return (
-        <div className="bg-white pt-[60px] lg:py-[120px] pb-4 rounded-[20px] text-12 md:text-15 h-[800vh]">
-            <h3 className="pl-2 md:pl-4 text-52 md:text-120 font-['MonumentGrotesk-Regular'] tracking-[-2px] text-[#565652] sticky top-[0px] mb-32">
+        <div className="bg-white pt-[60px] lg:py-[120px] pb-4 rounded-[20px] text-12 md:text-15 ">
+            <h3 className="pl-2 md:pl-4 text-52 md:text-120 font-['MonumentGrotesk-Regular'] tracking-[-2px] text-[#565652]  mb-32">
                 Projects
             </h3>
             <div className="flex pl-3 md:pl-5 my-[60px] lg:my-[105px] justify-between md:grid grid-cols-2">
@@ -154,24 +125,49 @@ const ProjectList: React.FC = () => {
                 </p>
             </div>
 
-            <div ref={ref} className="pl-2 md:pl-4 w-full lg:w-auto sticky top-32">
-                <Slider ref={sliderRef as any} {...settings}>
-                    {projectsData.map((project, index) => (
-                        <ProjectItem
-                            key={project.title}
-                            services={project.services}
-                            image={project.image}
-                            title={project.title}
-                            year={project.year}
-                        />
-                    ))}
-                </Slider>
-         <div className="mt-32 ">   <Link
-                href="/projects"
-                className="text-20 pl-3 md:pl-5  lg:text-[34px] text-[#565652] underline"
-            >
-                View All Projects
-            </Link></div>
+            <div className="pl-2 md:pl-4 w-full lg:w-auto relative top-32" >
+                <div 
+                    onMouseMove={handleMouseMove}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                    onMouseDown={handleMouseDown}
+                    onMouseUp={handleMouseUp}
+                >
+                    <Slider {...settings} className="cursor-none">
+                        {projectsData.map((project, index) => (
+                            <ProjectItem
+                                key={project.title}
+                                services={project.services}
+                                image={project.image}
+                                title={project.title}
+                                year={project.year}
+                            />
+                        ))}
+                    </Slider>
+                </div>
+                <motion.div
+                    className="fixed pointer-events-none rounded-full bg-black text-white flex items-center justify-center"
+                    animate={cursorControls}
+                    initial={{ opacity: 0, scale: 0 }}
+                    transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                    style={{
+                        left: cursorPosition.x,
+                        top: cursorPosition.y,
+                        width: isDragging ? 80 : 64,
+                        height: isDragging ? 80 : 64,
+                    }}
+                >
+                    drag{isDragging ? "ging" : ""}
+                </motion.div>
+
+                <div className="mt-32">
+                    <Link
+                        href="/projects"
+                        className="text-20 pl-3 md:pl-5  lg:text-[34px] text-[#565652] underline"
+                    >
+                        View All Projects
+                    </Link>
+                </div>
             </div>
         </div>
     );

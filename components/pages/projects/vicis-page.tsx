@@ -114,7 +114,7 @@ export default function VicisPage() {
                 />
                 <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[120px]">
                     <BigTitleStory
-                        title={`Football’s most protective helmets for athletes at all ages and levels of competition`}
+                        title={`Football’s most protective helmets for athletes at all ages and levels of                 competition`}
                         titleLeft={`Services`}
                         textLeft={
                             <ul>

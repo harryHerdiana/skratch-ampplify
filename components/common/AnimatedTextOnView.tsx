@@ -1,5 +1,5 @@
 import { motion, useAnimation } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
 interface AnimatedTextOnViewProps {
@@ -31,8 +31,8 @@ const AnimatedTextOnView = ({
   }, [controls, inView]);
 
   return (
-    <div ref={ref}>
-      <h1 className={`flex flex-wrap ${className}`}>
+    <span ref={ref}>
+      <span className={`flex flex-wrap ${className}`}>
         {characters.map((char, index) => {
           if (char === " ") {
             return <span key={index}>&nbsp;</span>;
@@ -59,8 +59,8 @@ const AnimatedTextOnView = ({
             </motion.span>
           );
         })}
-      </h1>
-    </div>
+      </span>
+    </span>
   );
 };
 

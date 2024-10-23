@@ -33,10 +33,8 @@ export default function MionePage() {
                 />
                 <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[120px]">
                 <BigTitleStory
-                        title={`We’re leaders in
-                        technology, innovation
-                        design,  and sport`}
-                        titleLeft={`Sevices`}
+                        title={`We’re leaders in                    technology, innovation,      design, and sport`}
+                        titleLeft={`Sevices`} 
                         textLeft={
                             <ul>
                                 {project.services
