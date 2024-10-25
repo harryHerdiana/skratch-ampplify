@@ -1,4 +1,5 @@
 import Image from "next/image";
+import AnimatedTextOnView from "../common/AnimatedTextOnView";
 
 const HeroTitle = (props: HeroTitleProps) => {
     return (
@@ -9,13 +10,29 @@ const HeroTitle = (props: HeroTitleProps) => {
                     <div>
                             <div className="flex justify-between h-max">
                                 <div className="lg:text-[120px] font-['MonumentGrotesk-Regular'] text-[48px] leading-[48px] lg:leading-[106px] tracking-tight">
-                                    {props.title}
+                                <AnimatedTextOnView
+                                    text={props.title}
+                                    stepSize={0.01}
+                                    animDuration={0.3}
+                                />
                                 </div>
                             </div>
                         
                         <div className="flex justify-between">
-                            <div className="text-[15px] mt-[12px]">{props.subtitle}</div>
-                            <div className="text-[15px] mt-[12px] opacity-50">{ props.year ?? 2023}</div>
+                            <div className="text-[15px] mt-[12px]">
+                                <AnimatedTextOnView
+                                    text={props.subtitle}
+                                    stepSize={0.01}
+                                    animDuration={0.3}
+                                />
+                            </div>
+                            <div className="text-[15px] mt-[12px] opacity-50">
+                                <AnimatedTextOnView
+                                    text={ props.year ?? 2023}
+                                    stepSize={0.01}
+                                    animDuration={0.3}
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>

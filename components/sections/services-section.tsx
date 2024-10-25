@@ -4,18 +4,18 @@ import classNames from "classnames";
 import Image from "next/image";
 
 const ecommerceList = [
-    "Store Migration",
-    "Custom Storefront",
-    "Store Setup",
-    "APP Integration",
-    "API Implementation",
-    "Optimization",
+    "Shopify Plus Development",
+    "Custom Shopify 2.0 theme",
+    "Shopify App Development",
+    "Migrating to Shopify",
+    "Headless Shopify Development",
+    "Shopify Theme Optimization",
 ];
 
 const modernWebList = [
-    "Rapid Product",
-    "Prototyping",
-    "Information Architecture",
+    "JAMSTACK Development",
+    "CMS Implementation",
+    "Solution Architecture",
     "User Interface",
     "Graphic Design",
     "Brand Identity",
@@ -25,15 +25,14 @@ const modernWebList = [
 
 const loNocodeList = [
     "Webflow",
-    "Shopify Development",
-    "Web-App Development",
-    "Usability Testing",
+    "Squarespace",
+    "Wix Studio",
 ];
 
 const supportList = [
     "Ecommerce Management",
     "Email Campaign Management",
-    "Product Image Capture",
+    "Content Asset Management",
 ];
 
 const ServicesSection = () => {

@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
 interface AnimatedTextOnViewProps {
-  text: string;
+  text: string | number;
   stepSize?: number;
   animDuration?: number;
   className?: string;
