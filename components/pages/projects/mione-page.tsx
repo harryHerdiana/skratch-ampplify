@@ -1,18 +1,19 @@
 "use client";
 import HeroTitle from "@/components/common/HeroTitle";
 import BigImageOnly from "@/components/sections/big-img-only";
+import BigImageSliderStory from "@/components/sections/big-img-slider-story";
 import BigImageStory from "@/components/sections/big-img-story";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
 import { projectsData } from "../../sections/projectdata";
 
 export default function MionePage() {
-     const project = projectsData.find((project) => project.title === "Mione");
+    const project = projectsData.find((project) => project.title === "Mione");
 
-     if (!project) {
-         return <div>Project data not found.</div>;
-     }
-     
+    if (!project) {
+        return <div>Project data not found.</div>;
+    }
+
     return (
         <>
             <Head>
@@ -32,13 +33,13 @@ export default function MionePage() {
                     mobileImgUrl="/img/products/mobile/mioneproduct-mobile.png"
                 />
                 <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[120px]">
-                <BigTitleStory
+                    <BigTitleStory
                         title={`We’re leaders in                    technology, innovation,      design, and sport`}
-                        titleLeft={`Sevices`} 
+                        titleLeft={`Sevices`}
                         textLeft={
                             <ul>
                                 {project.services
-                                    .filter(service => service) // Filter out empty strings
+                                    .filter((service) => service) // Filter out empty strings
                                     .map((service, index) => (
                                         <li key={index}>{service}</li>
                                     ))}
@@ -53,7 +54,6 @@ export default function MionePage() {
                             imageContainerClassname="aspect-square md:aspect-video"
                             imgUrl={`/img/products/mione/mione-1.png`}
                             imageClassname="rounded-[4px]"
-                            
                             title={`Challenge`}
                             story={`One main purpose of the site was to showcase job opportunities and attract potential employees. We developed a custom integration of their current hiring platform that was required to display current openings.`}
                         />
@@ -81,11 +81,15 @@ export default function MionePage() {
                         story={`One main purpose of the site was to showcase job opportunities and attract potential employees. We developed a custom integration of their current hiring platform that was required to display current openings.`}
                     />
                 </div>
-                <div className="rounded-[20px] overflow-hidden min-h-[900px] h-full bg-[url('/img/products/mione/mione-4-bg.png')] bg-auto lg:bg-cover bg-no-repeat bg-center  flex py-[94px] px-[9px] lg:px-[19px]">
-                    <BigImageOnly
-                        contain
-                        imageClassname="px-[19px] lg:pt-[100px] lg:pb-[100px]"
-                        imgUrl={`/img/products/mione/mione-4.png`}
+                <div className="rounded-[20px] overflow-hidden min-h-[900px] h-full bg-[url('/img/products/mione/mione-4-bg.png')] bg-auto lg:bg-cover bg-no-repeat bg-center  flex py-[94px] px-[9px] lg:px-[19px] ">
+                    <BigImageSliderStory
+                        imageContainerClassname="aspect-[92/44]  max-w-[1440px] mb-[160px]"
+                        images={[
+                            "/img/products/mione/mione-4.png",
+                            "/img/products/mione/mione-4.2.png",
+                            "/img/products/mione/mione-4.3.png",
+                        ]}
+                        imageClassname="object-contain"
                     />
                 </div>
                 <div className="bg-[#1F1F1F] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px]">

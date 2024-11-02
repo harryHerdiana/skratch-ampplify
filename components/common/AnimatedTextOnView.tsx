@@ -22,7 +22,7 @@ const AnimatedTextOnView = ({
   });
 
   // Split text into individual characters
-  const characters = Array.from(text);
+  const characters = Array.from(String(text));
 
   useEffect(() => {
     if (inView) {

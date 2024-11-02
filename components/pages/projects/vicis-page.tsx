@@ -1,5 +1,6 @@
 "use client";
 import HeroTitle from "@/components/common/HeroTitle";
+import BigImageSliderStory from "@/components/sections/big-img-slider-story";
 import BigImageStory from "@/components/sections/big-img-story";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
@@ -32,7 +33,10 @@ export default function VicisPage() {
                     ) {
                         // The section is in view
                         const progress =
-                            (scrollY -500 +windowHeight - containerOffsetTop) /
+                            (scrollY -
+                                500 +
+                                windowHeight -
+                                containerOffsetTop) /
                             (windowHeight + containerHeight);
 
                         const scrollPercentage = Math.max(
@@ -91,9 +95,9 @@ export default function VicisPage() {
     }, []);
     const project = projectsData.find((project) => project.title === "Vicis");
 
-     if (!project) {
-         return <div>Project data not found.</div>;
-     }
+    if (!project) {
+        return <div>Project data not found.</div>;
+    }
     return (
         <>
             <Head>
@@ -119,7 +123,7 @@ export default function VicisPage() {
                         textLeft={
                             <ul>
                                 {project.services
-                                    .filter(service => service) // Filter out empty strings
+                                    .filter((service) => service) // Filter out empty strings
                                     .map((service, index) => (
                                         <li key={index}>{service}</li>
                                     ))}
@@ -156,7 +160,7 @@ export default function VicisPage() {
                         textColor={`text-white`}
                     />
                 </div>
-           
+
                 <div className=" flex-col hidden lg:flex relative  mb-[40px] lg:mb-[169px]">
                     <div
                         ref={scrollContainerRef}
@@ -175,15 +179,18 @@ export default function VicisPage() {
                             />
                         </div>
                     </div>
-               
                 </div>
                 <div className="rounded-[20px] px-[9px] lg:px-[19px] pb-[120px]">
-                    <BigImageStory
-                        imgUrl={`/img/products/vicis/vicis-5.png`}
-                        imageContainerClassname="aspect-video max-w-[1280px] m-auto md:mb-[120px]"
-                        title={`Vicis`}
+                    <BigImageSliderStory
+                        images={[
+                            "/img/products/vicis/vicis-5.png",
+                            "/img/products/vicis/vicis-7.png",
+                            "/img/products/vicis/vicis-8.png",
+                        ]}
+                        title="Vicis"
                         story={`The synchronization of cart drawers across all sites ensures a consistent shopping experience, leading to a unified checkout process.`}
                         textColor={`text-white`}
+                        imageContainerClassname="aspect-video max-w-[1280px] m-auto md:mb-[120px]"
                     />
                 </div>
             </div>

@@ -112,6 +112,8 @@ body::before {
         scrollbar-width: none; /* Firefox */
     }
 }
-/* .slick-slide{
-  max-width: 808px;
-} */
+
+
+.slider-story  > .slick-list >  .slick-track >  .slick-slide{
+  padding: 0 10px;
+}

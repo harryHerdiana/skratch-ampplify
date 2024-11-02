@@ -1,6 +1,7 @@
 "use client";
 import HeroTitle from "@/components/common/HeroTitle";
 import BigImageOnly from "@/components/sections/big-img-only";
+import BigImageSliderStory from "@/components/sections/big-img-slider-story";
 import BigImageStory from "@/components/sections/big-img-story";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
@@ -37,12 +38,12 @@ export default function TDEApparel() {
                 />
                 <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[120px]">
                     <BigTitleStory
-                        title={`The house that kendrick built`}
+                        title={`The house that kendrick    built`}
                         titleLeft={`Sevices`}
                         textLeft={
                             <ul>
                                 {project.services
-                                    .filter(service => service) // Filter out empty strings
+                                    .filter((service) => service) // Filter out empty strings
                                     .map((service, index) => (
                                         <li key={index}>{service}</li>
                                     ))}
@@ -71,9 +72,15 @@ export default function TDEApparel() {
                     />
                 </div>
                 <div className="bg-[#1F1F1F] rounded-[20px]">
-                    <BigImageStory
+           
+                    <BigImageSliderStory
                         imageContainerClassname="aspect-[1025/581] m-auto max-w-[1440px]"
-                        imgUrl={`/img/products/tde/tde-3.png`}
+                        images={[
+                            "/img/products/tde/tde-3.png",
+                            "/img/products/tde/tde-3.2.png",
+                            "/img/products/tde/tde-3.3.png",
+                        ]}
+                        imageClassname="object-contain"
                     />
                 </div>
 

@@ -1,5 +1,6 @@
 "use client";
 import HeroTitle from "@/components/common/HeroTitle";
+import BigImageSliderStory from "@/components/sections/big-img-slider-story";
 import BigImageStory from "@/components/sections/big-img-story";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
@@ -8,9 +9,9 @@ import { projectsData } from "../../sections/projectdata";
 export default function TucciPage() {
     const project = projectsData.find((project) => project.title === "Tucci");
 
-     if (!project) {
-         return <div>Project data not found.</div>;
-     }
+    if (!project) {
+        return <div>Project data not found.</div>;
+    }
     return (
         <>
             <Head>
@@ -36,7 +37,7 @@ export default function TucciPage() {
                         textLeft={
                             <ul>
                                 {project.services
-                                    .filter(service => service) // Filter out empty strings
+                                    .filter((service) => service) // Filter out empty strings
                                     .map((service, index) => (
                                         <li key={index}>{service}</li>
                                     ))}
@@ -63,7 +64,6 @@ export default function TucciPage() {
                         title={`Approach`}
                         textContainerClassname="px-[9px] lg:px-[19px]"
                         story={`With a clear understanding of the prerequisites and a deep awareness of API capabilities and limitations of Shopify Plus, we embarked on the creation of a bespoke app designed to fit seamlessly into this collaborative shopping model.`}
-                        
                     />
                 </div>
 
@@ -86,15 +86,16 @@ export default function TucciPage() {
                 </div>
 
                 <div className="pb-[120px]">
-                <BigImageStory
-                        imageClassname=" px-[9px] lg:px-[19px]"
-                        imgUrl={`/img/products/tucci/tucci-5.png`}
-                        imageContainerClassname="aspect-[16/9] max-w-[1440px] m-auto md:mb-[120px]"
-                        title={`Approach`}
+                    <BigImageSliderStory
+                        images={[
+                            "/img/products/tucci/tucci-5.png",
+                            "/img/products/tucci/tucci-6.png",
+                            "/img/products/tucci/tucci-7.png",
+                        ]}
+                        title="Tucci"
                         story={`The synchronization of cart drawers across all sites ensures a consistent shopping experience, leading to a unified checkout process.`}
-                        textContainerClassname="px-[9px] lg:px-[19px]"
                         textColor={`text-white`}
-                        
+                        imageContainerClassname="aspect-video max-w-[1440px] m-auto md:mb-[120px]"
                     />
                 </div>
             </div>

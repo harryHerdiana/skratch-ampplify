@@ -1,5 +1,6 @@
 "use client";
 import HeroTitle from "@/components/common/HeroTitle";
+import BigImageSliderStory from "@/components/sections/big-img-slider-story";
 import BigImageStory from "@/components/sections/big-img-story";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
@@ -8,9 +9,9 @@ import { projectsData } from "../../sections/projectdata";
 export default function SchuttPage() {
     const project = projectsData.find((project) => project.title === "Schutt");
 
-     if (!project) {
-         return <div>Project data not found.</div>;
-     }
+    if (!project) {
+        return <div>Project data not found.</div>;
+    }
     return (
         <>
             <Head>
@@ -30,13 +31,13 @@ export default function SchuttPage() {
                     mobileImgUrl="/img/products/mobile/schuttproduct-mobile.png"
                 />
                 <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[120px]">
-                <BigTitleStory
+                    <BigTitleStory
                         title={`Optimized impact performance, increased athlete comfort, and improved fit  flexibility`}
                         titleLeft={`Services`}
                         textLeft={
                             <ul>
                                 {project.services
-                                    .filter(service => service) // Filter out empty strings
+                                    .filter((service) => service) // Filter out empty strings
                                     .map((service, index) => (
                                         <li key={index}>{service}</li>
                                     ))}
@@ -62,7 +63,6 @@ export default function SchuttPage() {
                         title="Approach"
                         story={`With a clear understanding of the prerequisites and a deep awareness of API capabilities and limitations of Shopify Plus, we embarked on the creation of a bespoke app designed to fit seamlessly into this collaborative shopping model.`}
                         textContainerClassname=""
-
                     />
                 </div>
 
@@ -73,7 +73,7 @@ export default function SchuttPage() {
                     />
                 </div>
 
-                <div className="rounded-[20px] bg-[#D6D8CE] pb-20 pb-[120px]">
+                <div className="rounded-[20px] bg-[#D6D8CE] pb-20 lg:pb-[120px]">
                     <BigImageStory
                         imgUrl={`/img/products/schutt/schutt-4.png`}
                         imageContainerClassname="aspect-[16/9] max-w-[1280px] m-auto md:mb-[120px]"
@@ -84,12 +84,18 @@ export default function SchuttPage() {
                 </div>
 
                 <div className="px-5 pb-[120px]">
-                    <BigImageStory
-                        imgUrl={`/img/products/schutt/schutt-5.png`}
-                        imageContainerClassname="aspect-[16/9] max-w-[1280px] m-auto md:mb-[120px]"
+                    <BigImageSliderStory
+                        autoPlay
+                        images={[
+                            "/img/products/schutt/schutt-5.png",
+                            "/img/products/schutt/schutt-6.png",
+                            "/img/products/schutt/schutt-7.png",
+                        ]}
                         title="Approach"
                         story={`The synchronization of cart drawers across all sites ensures a consistent shopping experience, leading to a unified checkout process.`}
-                        textColor="text-white"
+                        textColor={`text-white`}
+                        imageClassname="object-contain"
+                        imageContainerClassname="aspect-video max-w-[1280px] m-auto md:mb-[120px] "
                     />
                 </div>
             </div>

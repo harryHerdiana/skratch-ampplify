@@ -1,6 +1,7 @@
 "use client";
 import HeroTitle from "@/components/common/HeroTitle";
 import BigImageOnly from "@/components/sections/big-img-only";
+import BigImageSliderStory from "@/components/sections/big-img-slider-story";
 import BigImageStory from "@/components/sections/big-img-story";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
@@ -58,20 +59,23 @@ export default function SpeakeasyPage() {
                 </div>
 
                 <div className="bg-[#D6D8CE] rounded-[20px] pb-[80px] lg:pb-[200px]">
-                    <BigImageStory
+            
+                    <BigImageSliderStory
+                        images={[
+                            "/img/products/speakeasy/speakeasy-1.png",
+                            "/img/products/speakeasy/speakeasy-2.png",
+                            "/img/products/speakeasy/speakeasy-3.png",
+                        ]}
+                        title="Challenge"
+                        story={`The synchronization of cart drawers across all sites ensures a consistent shopping experience, leading to a unified checkout process.`}
                         imageOuterContainerClassname="px-10 lg:px-[160px]"
-                        imageContainerClassname="aspect-video m-auto lg:pb-[120px] lg:pt-[160px] py-[112px] "
-                        imgUrl={`/img/new-layout/item-2.png`}
-                        width={`65%`}
-                        height={`100%`}
-                        title={`Challenge`}
-                        textContainerClassname="px-[9px] lg:px-[19px]"
-                        story={`The goal was to migrate client stores from outdated Magento front-ends to Shopify. Our expertise in Shopify development made us the perfect candidate to support Speakeasy and their client brands. `}
+                        imageContainerClassname="aspect-video max-w-[1280px] m-auto md:mb-[120px]"
                     />
                 </div>
 
                 <div className="pb-[80px] lg:pb-[200px]">
                     <BigImageStory
+                    
                         imgUrl={`/img/new-layout/item-3.png`}
                         textContainerClassname="px-[9px] lg:px-[19px]"
                         imageOuterContainerClassname="px-10 lg:px-0"

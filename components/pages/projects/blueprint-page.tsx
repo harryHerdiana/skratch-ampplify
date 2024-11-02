@@ -1,6 +1,7 @@
 "use client";
 import HeroTitle from "@/components/common/HeroTitle";
 import BigImageOnly from "@/components/sections/big-img-only";
+import BigImageSliderStory from "@/components/sections/big-img-slider-story";
 import BigImageStory from "@/components/sections/big-img-story";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
@@ -33,7 +34,7 @@ export default function BlueprintPage() {
                     mobileImgUrl="/img/products/mobile/blueprintproduct-mobile.png"
                 />
                 <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[120px]">
-                <BigTitleStory
+                    <BigTitleStory
                         title={`Success in real estate        requires more than just      luck and hard work`}
                         titleLeft={`Services`}
                         textLeft={
@@ -60,29 +61,38 @@ export default function BlueprintPage() {
                 </div>
 
                 <div className="  bg-[url(/img/products/blueprint/blueprint-2-bg.png)] bg-cover bg-center bg-no-repeat overflow-hidden">
-                    <BigImageStory
-                        imgUrl={`/img/products/blueprint/blueprint-2.png`}
-                        imageClassname="rounded-[8px]"
+                    <BigImageSliderStory
+                        images={[
+                            "/img/products/blueprint/blueprint-2.png",
+                            "/img/products/blueprint/blueprint-2.3.png",
+                            "/img/products/blueprint/blueprint-2.4.png",
+                            "/img/products/blueprint/blueprint-2.5.png",
+                        ]}
                         imageContainerClassname="aspect-[13/8] m-auto max-w-[1280px] mb-[160px]"
+                        imageClassname="rounded-[8px] object-contain"
                     />
-                   
                 </div>
                 <div className="rounded-[20px] mt-[120px] lg:mt-[200px] ">
-                    <BigImageOnly
-                        imgUrl={`/img/products/blueprint/blueprint-3.png`}
-                        className="aspect-[990/612] max-w-[1440px] m-auto mb-[120px]"
-                        />
-                     <BigImageStory
+                    <BigImageSliderStory
+                        images={[
+                            "/img/products/blueprint/blueprint-3.png",
+                            "/img/products/blueprint/blueprint-3.2.png",
+                            "/img/products/blueprint/blueprint-3.3.png",
+                        ]}
+                        imageContainerClassname="aspect-[990/612] max-w-[1440px] m-auto mb-[120px]"
+                        imageClassname="rounded-[8px] object-contain"
+                    />
+                    <BigImageStory
                         textContainerClassname="px-[9px] lg:px-[19px] pb-[120px]"
                         title={`Approach`}
                         story={`The second phase of development required us to rebuild a new Home Search experience, while still utilizing their current backend to manage property listings.`}
                         textColor={`text-white`}
                     />
                 </div>
-                    <BigImageOnly 
-                        imgUrl={`/img/products/blueprint/blueprint-4.png`}
-                        imageClassname="rounded-[20px]"
-                        />
+                <BigImageOnly
+                    imgUrl={`/img/products/blueprint/blueprint-4.png`}
+                    imageClassname="rounded-[20px]"
+                />
             </div>
         </>
     );

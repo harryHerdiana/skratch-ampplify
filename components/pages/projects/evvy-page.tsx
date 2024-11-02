@@ -1,6 +1,7 @@
 "use client";
 import HeroTitle from "@/components/common/HeroTitle";
 import BigImageOnly from "@/components/sections/big-img-only";
+import BigImageSliderStory from "@/components/sections/big-img-slider-story";
 import BigImageStory from "@/components/sections/big-img-story";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
@@ -37,7 +38,7 @@ export default function EvvyPage() {
                         textLeft={
                             <ul>
                                 {project.services
-                                    .filter(service => service) // Filter out empty strings
+                                    .filter((service) => service) // Filter out empty strings
                                     .map((service, index) => (
                                         <li key={index}>{service}</li>
                                     ))}
@@ -77,18 +78,26 @@ export default function EvvyPage() {
                     />
                 </div>
                 <div className="rounded-[20px] bg-[url(/img/products/evvy/evvy-4-bg.png)] bg-cover bg-center bg-no-repeat overflow-hidden">
-                    <BigImageStory
-                        imgUrl={`/img/products/evvy/evvy-4.png`}
+          
+                    <BigImageSliderStory
+                        images={[
+                            "/img/products/evvy/evvy-4.png",
+                            "/img/products/evvy/evvy-4.2.png",
+                            "/img/products/evvy/evvy-4.3.png",
+                        ]}
                         imageContainerClassname="aspect-[18/11] m-auto max-w-[920px] mb-[160px]"
-                        imageClassname="px-[9px] lg:px-[19px] "
+                        imageClassname="px-[9px] lg:px-[19px] object-cover"
                     />
                 </div>
-              <div className="px-[9px] lg:px-[19px] my-[40px] lg:my-[169px] rounded-b-[20px]">      <BigImageStory
+                <div className="px-[9px] lg:px-[19px] my-[40px] lg:my-[169px] rounded-b-[20px]">
+                    {" "}
+                    <BigImageStory
                         textContainerClassname="px-[9px] lg:px-[19px] "
                         title={`Approach`}
                         story={`The integration of ReCharge facilitated smooth management of their subscription-based healthcare service and recurring billing. `}
                         textColor={`text-white`}
-                    /></div>
+                    />
+                </div>
                 <div className="bg-[#FDFCF3] rounded-[20px] pb-[40px] lg:pb-[169px]">
                     <BigImageStory
                         textContainerClassname="px-[9px] lg:px-[19px] "
@@ -99,7 +108,10 @@ export default function EvvyPage() {
                     />
                 </div>
                 <div className="rounded-[20px] overflow-hidden">
-                    <BigImageOnly imgUrl={`/img/products/evvy/evvy-6.png`}  imageClassname="rounded-lg"/>
+                    <BigImageOnly
+                        imgUrl={`/img/products/evvy/evvy-6.png`}
+                        imageClassname="rounded-lg"
+                    />
                 </div>
             </div>
         </>

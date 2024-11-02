@@ -1,6 +1,7 @@
 "use client";
 import HeroTitle from "@/components/common/HeroTitle";
 import BigImageOnly from "@/components/sections/big-img-only";
+import BigImageSliderStory from "@/components/sections/big-img-slider-story";
 import BigImageStory from "@/components/sections/big-img-story";
 import BigTitleStory from "@/components/sections/big-title-story";
 import Head from "next/head";
@@ -9,10 +10,10 @@ import { projectsData } from "../../sections/projectdata";
 export default function TryitPage() {
     const project = projectsData.find((project) => project.title === "Tryit");
 
-     if (!project) {
-         return <div>Project data not found.</div>;
-     }
-    
+    if (!project) {
+        return <div>Project data not found.</div>;
+    }
+
     return (
         <>
             <Head>
@@ -32,13 +33,13 @@ export default function TryitPage() {
                     mobileImgUrl="/img/products/mobile/tryitproduct-mobile.png"
                 />
                 <div className="bg-[#FDFCF3] rounded-[20px] font-[MonumentGrotesk-Semi-Mono] px-[9px] lg:px-[19px] pb-[80px] lg:pb-[210px]">
-                <BigTitleStory
+                    <BigTitleStory
                         title={`Fun project where I can    share my design process and release random           products`}
                         titleLeft={`Services`}
                         textLeft={
                             <ul>
                                 {project.services
-                                    .filter(service => service) // Filter out empty strings
+                                    .filter((service) => service) // Filter out empty strings
                                     .map((service, index) => (
                                         <li key={index}>{service}</li>
                                     ))}
@@ -51,7 +52,6 @@ export default function TryitPage() {
                     <BigImageStory
                         imageContainerClassname="aspect-square md:aspect-video"
                         imgUrl={`/img/products/tryit/tryit-1.png`}
-                     
                         title={`Challenge`}
                         story={`Having collaborated on a previous eCommerce project, we approached them about revamping their site and creating a new custom theme for their Shopify store. `}
                     />
@@ -74,14 +74,17 @@ export default function TryitPage() {
                         title={`Challenge`}
                         textContainerClassname=""
                         story={`Their trust in our design approach was evident as we created a new UI style guide with minimal revisions. The process flowed smoothly, enabling us to meet the deadline for their new collection launch successfully and without any complications.`}
-                        
                     />
                 </div>
                 <div className="rounded-[20px]  bg-[url(/img/products/tryit/tryit-4-bg.png)] bg-cover bg-center bg-no-repeat overflow-hidden mb-[40px] lg:mb-[169px]">
-                    <BigImageStory
-                        imgUrl={`/img/products/tryit/tryit-4.png`}
+                    <BigImageSliderStory
                         imageContainerClassname="aspect-[92/44] m-auto max-w-[1440px] mb-[160px]"
-                       
+                        images={[
+                            "/img/products/tryit/tryit-4.png",
+                            "/img/products/tryit/tryit-4.3.png",
+                            "/img/products/tryit/tryit-4.2.png",
+                        ]}
+                        imageClassname="object-contain"
                     />
                 </div>
 
@@ -92,12 +95,11 @@ export default function TryitPage() {
                     />
                 </div>
                 <BigImageStory
-                        title={`Approach`}
-                        story={`Shortly after we launched, they were in need of another site for their mix series, Try It Records. We took the initiative and built a continuous playing experience while navigating through the site.`}
-                        textColor={`text-white`}
-                        textContainerClassname="px-[9px] lg:px-[19px] pb-[160px]"
-
-                    />
+                    title={`Approach`}
+                    story={`Shortly after we launched, they were in need of another site for their mix series, Try It Records. We took the initiative and built a continuous playing experience while navigating through the site.`}
+                    textColor={`text-white`}
+                    textContainerClassname="px-[9px] lg:px-[19px] pb-[160px]"
+                />
             </div>
         </>
     );
