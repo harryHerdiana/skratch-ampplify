@@ -38,7 +38,7 @@ export const BlogItem: React.FC<BlogItemInterface> = ({
                     src={imgUrl}
                     alt={title}
                     fill
-                    className="object-cover rounded-sm"
+                    className="object-cover rounded-md"
                 />
             </div>
         </div>
