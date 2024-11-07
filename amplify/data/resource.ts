@@ -12,7 +12,7 @@ const schema = a.schema({
       title: a.string(),
       description: a.string(),
       featuredImage: a.string(),
-      // images: a.list(a.string()),
+      // images: (a.string()),
       publishedAt: a.date(),
       publishedBy: a.string(),
       content: a.string(),
@@ -20,7 +20,7 @@ const schema = a.schema({
       slug: a.string(),
       // tags: a.list(a.string()),
     })
-    .authorization((allow) => [allow.guest()]),
+    .authorization((allow) => [allow.guest().to(['read']), allow.authenticated().to(['create', 'read', 'update', 'delete'])]),
 });
 
 export type Schema = ClientSchema<typeof schema>;
@@ -28,7 +28,10 @@ export type Schema = ClientSchema<typeof schema>;
 export const data = defineData({
   schema,
   authorizationModes: {
-    defaultAuthorizationMode: 'iam',
+    defaultAuthorizationMode: "apiKey",
+    apiKeyAuthorizationMode: {
+      expiresInDays: 30,
+    },
   },
 });
 
